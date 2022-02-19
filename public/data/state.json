@@ -1,0 +1,41 @@
+{
+	"pisoMax": 6,
+	"piso": 6,
+	"group": "dos",
+	"prog" : {
+		"num": "100%",
+		"piso": "6to Piso",
+		"title": "¡Tenemos el valor probado y garantizada la viabilidad!",
+		"desc": "Validación de la solución, prototipo terminado y pitch final",
+		"entrega": "Documentacion TPI+EXPOIDEAS / Sala de Juntas"
+	},
+	"modal": {
+		"visibility": false,
+		"type": "none"
+	},
+	"lastUpdates": {
+		"general": [
+			"El piso 4 ya se encuentra habilitado para que revises todos los contenidos de este.",
+			"No olvides revisar los contenidos del calendario, el 12 de Enero es la entrega del primer trabajo escrito"
+		],
+		"etesc": [
+			"El entregable del Diseño y Prototipo",
+			"El entregable del avance de trabajo escrito",
+			"El entregable de la evaluacion de desempeños",
+			"4 retos nuevos para resolver"
+		],
+		"lobby": [
+			"El protocolo y la rubrica del Pitch - piso 4"
+		],
+		"asesor": [
+			"Los videos de los conversatorios del 6 de Diciembre: Prototipado, Laboratorio, Mercadeo",
+			"Encuesta de percepcion de los conversatorios"
+		],
+		"news": [
+			"17 de Diciembre - La experiencia: Banco de Herramientas"
+		],
+		"webbinars": [
+			"Pasos clave para emprender con Luis Felipe Batero"
+		]
+	}
+}
