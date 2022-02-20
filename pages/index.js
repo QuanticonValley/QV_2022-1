@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { prefix } from '../utils/prefix.js';
-import Login from '../UIcomponents/login'
+import Register from '../UIcomponents/login'
 
 const Container = styled.div`
 	background-image: url('${prefix}/imgs/Rectangle 1.png');
@@ -49,7 +49,7 @@ const Login = () => {
       <Intro>
         Listo para hacer parte de esta nueva aventura?
       </Intro>
-      <Link></Link>
+      <Register></Register>
     </Container>
   )
 }
