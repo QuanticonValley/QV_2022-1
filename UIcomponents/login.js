@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import LoginForm from './loginform'
 
 const PanelOut = styled.div`
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 20px;
     padding: 20px 20px;
     margin: 20px;
@@ -16,7 +16,7 @@ const Encabezado = styled.div`
     justify-content: space-between;
 `
 const Button= styled.button`
-    width: 200px;
+    width: 30%;
     color: #172BEF;
     font-weight: bold;
     padding: .5em 1em;

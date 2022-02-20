@@ -6,8 +6,9 @@ const Button2= styled.input`
     color: #172BEF;
     font-weight: bold;
     padding: .5em 1em;
-    margin-top: 70px;
-    border: 2px solid #172BEF;
+    margin-top: 50px;
+    margin-bottom:20px
+    border: 1px solid #172BEF;
     border-radius: .5em;
     cursor:pointer;
     transition: .3s all;
@@ -23,9 +24,9 @@ const Input=styled.input`
     border: 1px solid #fff;
     width: 80%;
     background-color: #bbbbbb;
-    height: 25px;
+    height: 40px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 `
 
 const LoginForm = (login) => {
