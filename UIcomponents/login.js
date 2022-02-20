@@ -50,7 +50,7 @@ const Login = () => {
                     <form>
                         <input type="text" placeholder='Tu Correo'></input>
                         <input type="text" placeholder='Tu Contraseña'></input>
-                        <Link>
+                        <Link href="/principal">
                             <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                         </Link>
                     </form>
@@ -62,7 +62,7 @@ const Login = () => {
                     <input type="text" placeholder='Tu Correo'></input>
                     <input type="text" placeholder='Tu Contraseña'></input>
                     <input type="text" placeholder='Confirma Contraseña'></input>
-                    <Link>
+                    <Link href="/principal">
                         <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                     </Link>
                     </form>
