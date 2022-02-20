@@ -20,10 +20,11 @@ const Registro=styled.div`
     text-align: center;
 `
 const Input=styled.input`
-    border-radius: .5em;
     border: 1px solid #fff;
-    width: 100%;
+    width: 80%;
     background-color: #bbbbbb;
+    height: 25px;
+    padding: 10px;
 `
 
 const LoginForm = (login) => {
@@ -31,10 +32,10 @@ const LoginForm = (login) => {
         <div>
         {login?
             <Registro>
-            <h2>INICIA SESIÓN</h2>
+            <h2>INICIO DE SESIÓN</h2>
             <form>
-                <Input type="text" placeholder='Tu Correo'></Input>
-                <Input type="text" placeholder='Tu Contraseña'></Input>
+                <Input type="text" placeholder='Tu correo'></Input>
+                <Input type="text" placeholder='Tu contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
@@ -42,11 +43,11 @@ const LoginForm = (login) => {
         </Registro>
         :
         <Registro>
-            <h2>REGÍSTRATE</h2>
+            <h2>REGISTRO</h2>
             <form>
-                <Input type="text" placeholder='Tu Correo'></Input>
-                <Input type="text" placeholder='Tu Contraseña'></Input>
-                <Input type="text" placeholder='Confirma Contraseña'></Input>
+                <Input type="text" placeholder='Tu correo'></Input>
+                <Input type="text" placeholder='Tu contraseña'></Input>
+                <Input type="text" placeholder='Confirma tu contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
