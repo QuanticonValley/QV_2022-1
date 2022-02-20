@@ -32,18 +32,25 @@ const Button2= styled.input`
 const Registro=styled.div`
     text-align: center;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+`
+const Input=styled.input`
+    border-radius: .5em;
+    border: 1px solid #fff;
+    height: 100%;
+    background-color: #bbbbbb;
 `
 
 function RegistroLogin(login){
     let code;
+    console.log(login);
     if (login==true) {
         code=(
         <Registro>
             <h2>INICIA SESIÓN</h2>
             <form>
-                <input type="text" placeholder='Tu Correo'></input>
-                <input type="text" placeholder='Tu Contraseña'></input>
+                <Input type="text" placeholder='Tu Correo'></Input>
+                <Input type="text" placeholder='Tu Contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
@@ -54,9 +61,9 @@ function RegistroLogin(login){
         <Registro>
             <h2>REGÍSTRATE</h2>
             <form>
-                <input type="text" placeholder='Tu Correo'></input>
-                <input type="text" placeholder='Tu Contraseña'></input>
-                <input type="text" placeholder='Confirma Contraseña'></input>
+                <Input type="text" placeholder='Tu Correo'></Input>
+                <Input type="text" placeholder='Tu Contraseña'></Input>
+                <Input type="text" placeholder='Confirma Contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
@@ -66,13 +73,18 @@ function RegistroLogin(login){
     return code;
 }
 
+function cambio(decision){
+    decision===1?login=true:login=false;
+}
+
+let login=true;
 const Login = () => {
-    let login=true;
+    
     return ( 
         <Panel>
             <Encabezado>
-                <Button onClick={()=>login=true}>Iniciar Sesión</Button>
-                <Button onClick={()=>login=false}>Registrarse</Button>
+                <Button onClick={()=>cambio(1)}>Iniciar Sesión</Button>
+                <Button onClick={()=>cambio(2)}>Registrarse</Button>
             </Encabezado>
             
             {RegistroLogin(login)}
