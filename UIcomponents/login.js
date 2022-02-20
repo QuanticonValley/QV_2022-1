@@ -16,7 +16,7 @@ const Encabezado = styled.div`
     justify-content: space-between;
 `
 const Button= styled.button`
-    width: 300px;
+    width: 200px;
     color: #172BEF;
     font-weight: bold;
     padding: .5em 1em;

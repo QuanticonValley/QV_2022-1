@@ -22,7 +22,7 @@ const Registro=styled.div`
 const Input=styled.input`
     border-radius: .5em;
     border: 1px solid #fff;
-    height: 100%;
+    width: 100%;
     background-color: #bbbbbb;
 `
 
