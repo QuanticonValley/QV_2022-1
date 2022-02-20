@@ -9,11 +9,15 @@ const Button2= styled.input`
     margin: 1em auto;
     border: 2px solid #172BEF;
     border-radius: .5em;
+    cursor:pointer;
+    transition: .3s all;
+    &:hover{
+        background-color:#172BEF;
+        color:white;
+    }
 `
 const Registro=styled.div`
     text-align: center;
-    display:flex;
-    flex-direction:row;
 `
 const Input=styled.input`
     border-radius: .5em;

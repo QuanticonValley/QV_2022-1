@@ -1,24 +1,34 @@
 import styled from 'styled-components'
 import LoginForm from './loginform'
 
-const Panel = styled.div`
+const PanelOut = styled.div`
     border: 2px solid #fff;
     border-radius: 20px;
-    padding: 25px 50px;
+    padding: 20px 20px;
     margin: 20px;
+`
+const PanelIn = styled.div`
+    background-color:#fff;
+    padding: 10px 10px;
 `
 const Encabezado = styled.div`
     display: flex;
     justify-content: space-between;
 `
 const Button= styled.button`
-    width: 150px;
+    width: 300px;
     color: #172BEF;
     font-weight: bold;
     padding: .5em 1em;
     margin: 1em auto;
     border: 2px solid #172BEF;
     border-radius: .5em;
+    cursor:pointer;
+    transition: .3s all;
+    &:hover{
+        background-color:#172BEF;
+        color:white;
+    }
 `
 
 function cambio(decision){
@@ -30,18 +40,15 @@ let login=true;
 const Login = () => {
     
     return ( 
-        <Panel>
-            <Encabezado>
-                <Button onClick={()=>cambio(true)}>Iniciar Sesión</Button>
-                <Button onClick={()=>cambio(false)}>Registrarse</Button>
-            </Encabezado>
-            
-            <LoginForm
-            login={login}
-            ></LoginForm>
-
-
-        </Panel>
+        <PanelOut>
+            <PanelIn>
+                <Encabezado>
+                    <Button onClick={()=>cambio(true)}>Iniciar Sesión</Button>
+                    <Button onClick={()=>cambio(false)}>Registrarse</Button>
+                </Encabezado>
+                <LoginForm login={login}></LoginForm>
+            </PanelIn>
+        </PanelOut>
      );
 }
  

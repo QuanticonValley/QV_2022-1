@@ -4,6 +4,9 @@ import Register from '../UIcomponents/login'
 
 const Container = styled.div`
 	background-image: url('${prefix}/imgs/Rectangle 1.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
