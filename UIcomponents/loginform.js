@@ -35,7 +35,7 @@ const LoginForm = (login) => {
             <h2>INICIO DE SESIÓN</h2>
             <form>
                 <Input type="text" placeholder='Tu correo'></Input>
-                <Input type="text" placeholder='Tu contraseña'></Input>
+                <Input type="password" placeholder='Tu contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
@@ -46,8 +46,8 @@ const LoginForm = (login) => {
             <h2>REGISTRO</h2>
             <form>
                 <Input type="text" placeholder='Tu correo'></Input>
-                <Input type="text" placeholder='Tu contraseña'></Input>
-                <Input type="text" placeholder='Confirma tu contraseña'></Input>
+                <Input type="password" placeholder='Tu contraseña'></Input>
+                <Input type="password" placeholder='Confirma tu contraseña'></Input>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
