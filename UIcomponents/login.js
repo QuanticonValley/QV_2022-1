@@ -35,39 +35,47 @@ const Registro=styled.div`
     flex-direction:column;
 `
 
+function RegistroLogin(login){
+    let code;
+    if (login==true) {
+        code=(
+        <Registro>
+            <h2>INICIA SESIÓN</h2>
+            <form>
+                <input type="text" placeholder='Tu Correo'></input>
+                <input type="text" placeholder='Tu Contraseña'></input>
+                <Link href="/principal">
+                    <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
+                </Link>
+            </form>
+        </Registro>)
+    } else {
+        code=(
+        <Registro>
+            <h2>REGÍSTRATE</h2>
+            <form>
+                <input type="text" placeholder='Tu Correo'></input>
+                <input type="text" placeholder='Tu Contraseña'></input>
+                <input type="text" placeholder='Confirma Contraseña'></input>
+                <Link href="/principal">
+                    <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
+                </Link>
+            </form>
+        </Registro>)
+    }
+    return code;
+}
+
 const Login = () => {
     let login=true;
     return ( 
         <Panel>
             <Encabezado>
-                <Button onClick={login=true}>Iniciar Sesión</Button>
-                <Button onClick={login=false}>Registrarse</Button>
+                <Button onClick={()=>login=true}>Iniciar Sesión</Button>
+                <Button onClick={()=>login=false}>Registrarse</Button>
             </Encabezado>
             
-            {login?
-                <Registro>
-                    <h2>INICIA SESIÓN</h2>
-                    <form>
-                        <input type="text" placeholder='Tu Correo'></input>
-                        <input type="text" placeholder='Tu Contraseña'></input>
-                        <Link href="/principal">
-                            <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
-                        </Link>
-                    </form>
-                </Registro>
-                :
-                <Registro>
-                    <h2>REGÍSTRATE</h2>
-                    <form>
-                    <input type="text" placeholder='Tu Correo'></input>
-                    <input type="text" placeholder='Tu Contraseña'></input>
-                    <input type="text" placeholder='Confirma Contraseña'></input>
-                    <Link href="/principal">
-                        <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
-                    </Link>
-                    </form>
-                </Registro>
-            }
+            {RegistroLogin(login)}
 
 
         </Panel>
