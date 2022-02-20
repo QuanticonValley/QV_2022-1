@@ -22,8 +22,8 @@ const Button= styled.button`
 `
 
 function cambio(decision){
+    login=decision;
     console.log(login);
-    decision===1?login=true:login=false;
 }
 
 let login=true;
@@ -32,8 +32,8 @@ const Login = () => {
     return ( 
         <Panel>
             <Encabezado>
-                <Button onClick={()=>cambio(1)}>Iniciar Sesión</Button>
-                <Button onClick={()=>cambio(2)}>Registrarse</Button>
+                <Button onClick={()=>cambio(true)}>Iniciar Sesión</Button>
+                <Button onClick={()=>cambio(false)}>Registrarse</Button>
             </Encabezado>
             
             <LoginForm
