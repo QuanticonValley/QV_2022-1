@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import validadorFormularios from '../utils/validadorFormularios'
+import validarRegistro from '../utils/validarRegistro'
 
 const PanelOut = styled.div`
     border: 1px solid #fff;
@@ -57,12 +59,46 @@ const Input=styled.input`
     padding: 10px;
     margin-bottom: 10px;
 `
+const Error= styled.div`
+    width: 80%;
+    background-color: red;
+    align-text: center;
+    color: white;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    margin:3px;
+`
+const STATE_INICIAL_REGISTRO={
+    nombre: '',
+    rol:'',
+    email: '',
+    password: '',
+    password2:''
+}
+const STATE_INICIAL_LOGIN={
+    rol:'',
+    email: '',
+    password: ''
+}
 
 const Login = () => {
     const [login,setLogin]= useState(true);
     function cambio(decision){
         setLogin(decision);
     }
+    //Validador de Registro
+    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
+
+    function RegistrarUsuario(){
+        console.log("Cuenta creada exitosamente!");
+    }
+
+    //Validador de Login
+    // const {valores2,errores2,handleSubmit2,handleChange2}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
+
+    // function RegistrarUsuario(){
+    //     console.log("Cuenta creada exitosamente!");
+    // }
     return ( 
         <PanelOut>
             <PanelIn>
@@ -75,6 +111,8 @@ const Login = () => {
                     <h2>INICIO DE SESIÓN</h2>
                     <form>
                         <Input type="text" placeholder='Tu correo'></Input>
+                        
+                        <Input type="text" placeholder='Tu rol'></Input>
                         <Input type="password" placeholder='Tu contraseña'></Input>
                         <Link href="/principal">
                             <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
@@ -84,10 +122,17 @@ const Login = () => {
                 :
                 <Registro>
                     <h2>REGISTRO</h2>
-                    <form>
-                        <Input type="text" placeholder='Tu correo'></Input>
-                        <Input type="password" placeholder='Tu contraseña'></Input>
-                        <Input type="password" placeholder='Confirma tu contraseña'></Input>
+                    <form onSubmit={handleSubmit} noValidate>
+                        <Input type="text" placeholder='Tu nombre' value={nombre} onChange={handleChange}></Input>
+                        {errores.nombre && <Error>{errores.nombre}</Error>}
+                        <Input type="text" placeholder='Tu rol' value={rol} onChange={handleChange}></Input>
+                        {errores.rol && <Error>{errores.rol}</Error>}
+                        <Input type="email" placeholder='Tu correo' value={correo} onChange={handleChange}></Input>
+                        {errores.email&& <Error>{errores.email}</Error>}
+                        <Input type="password" placeholder='Tu contraseña' value={password} onChange={handleChange}></Input>
+                        {errores.password && <Error>{errores.password}</Error>}
+                        <Input type="password" placeholder='Confirma tu contraseña' value={password2} onChange={handleChange}></Input>
+                        {errores.password2 && <Error>{errores.password2}</Error>}
                         <Link href="/principal">
                             <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                         </Link>
