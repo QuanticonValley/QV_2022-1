@@ -68,18 +68,18 @@ const Error= styled.div`
     text-transform: uppercase;
     margin:3px;
 `
-const STATE_INICIAL_REGISTRO={
-    nombre: '',
-    rol:'',
-    email: '',
-    password: '',
-    password2:''
-}
-const STATE_INICIAL_LOGIN={
-    rol:'',
-    email: '',
-    password: ''
-}
+// const STATE_INICIAL_REGISTRO={
+//     nombre: '',
+//     rol:'',
+//     email: '',
+//     password: '',
+//     password2:''
+// }
+// const STATE_INICIAL_LOGIN={
+//     rol:'',
+//     email: '',
+//     password: ''
+// }
 
 const Login = () => {
     const [login,setLogin]= useState(true);
@@ -87,11 +87,11 @@ const Login = () => {
         setLogin(decision);
     }
     //Validador de Registro
-    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
+    // const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
 
-    function RegistrarUsuario(){
-        console.log("Cuenta creada exitosamente!");
-    }
+    // function RegistrarUsuario(){
+    //     console.log("Cuenta creada exitosamente!");
+    // }
 
     //Validador de Login
     // const {valores2,errores2,handleSubmit2,handleChange2}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
@@ -107,7 +107,7 @@ const Login = () => {
                     <Button onClick={()=>cambio(false)}>Registrarse</Button>
                 </Encabezado>
                 {login?
-                    <Registro>
+                    (<Registro>
                     <h2>INICIO DE SESIÓN</h2>
                     <form>
                         <Input type="text" placeholder='Tu correo'></Input>
@@ -118,11 +118,11 @@ const Login = () => {
                             <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                         </Link>
                     </form>
-                </Registro>
-                :
+                </Registro>)
+                :(
                 <Registro>
                     <h2>REGISTRO</h2>
-                    <form onSubmit={handleSubmit} noValidate>
+                    {/* <form onSubmit={handleSubmit} noValidate>
                         <Input type="text" placeholder='Tu nombre' value={nombre} onChange={handleChange}></Input>
                         {errores.nombre && <Error>{errores.nombre}</Error>}
                         <Input type="text" placeholder='Tu rol' value={rol} onChange={handleChange}></Input>
@@ -136,8 +136,18 @@ const Login = () => {
                         <Link href="/principal">
                             <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                         </Link>
+                    </form> */}
+                    <form >
+                        <Input type="text" placeholder='Tu nombre'></Input>           
+                        <Input type="text" placeholder='Tu rol' ></Input>                 
+                        <Input type="email" placeholder='Tu correo' ></Input>           
+                        <Input type="password" placeholder='Tu contraseña' ></Input>
+                        <Input type="password" placeholder='Confirma tu contraseña' ></Input>
+                        <Link href="/principal">
+                            <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
+                        </Link>
                     </form>
-                </Registro>
+                </Registro>)
                 }
             </PanelIn>
         </PanelOut>
