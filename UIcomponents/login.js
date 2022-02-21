@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import { useState } from 'react'
 import validadorFormularios from '../utils/validadorFormularios'
 import validarRegistro from '../utils/validarRegistro'
 
