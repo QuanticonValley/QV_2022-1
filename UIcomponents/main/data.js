@@ -33,6 +33,18 @@ const data = {
 			dsc: 'Informacion sobre cada uno de los Equipos',
 		},
 		{
+			title: 'Actores',
+			link: '/actors',
+			src: `${prefix}/imgs/main/Icon_actores.svg`,
+			dsc: 'Informacion sobre los actores del juego',
+		},
+		{
+			title: 'Perfil',
+			link: '/profile',
+			src: `${prefix}/imgs/main/Icon_perfil.svg`,
+			dsc: 'Todo sobre ti',
+		},
+		{
 			title: 'Informacion',
 			link: '/info/about',
 			src: `${prefix}/imgs/main/Icon_Informacion.svg`,

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import { useState } from 'react'
+import validadorFormularios from '../utils/validadorFormularios'
+import validarRegistro from '../utils/validarRegistro'
 
 const Button2= styled.input`
     width: 150px;
@@ -28,36 +31,31 @@ const Input=styled.input`
     padding: 10px;
     margin-bottom: 10px;
 `
+const STATE_INICIAL_LOGIN={
+    rol:'',
+    email: '',
+    password: ''
+}
 
-const LoginForm = (login) => {
+const LoginForm = () => {
+    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
+
+    function RegistrarUsuario(){
+        console.log("Cuenta creada exitosamente!");
+    }
     return (
-        <div>
-        {login?
-            <Registro>
+        <Registro>
             <h2>INICIO DE SESIÓN</h2>
             <form>
                 <Input type="text" placeholder='Tu correo'></Input>
+                <Input type="text" placeholder='Tu rol'></Input>
                 <Input type="password" placeholder='Tu contraseña'></Input>
+                <hr></hr>
                 <Link href="/principal">
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
                 </Link>
             </form>
         </Registro>
-        :
-        <Registro>
-            <h2>REGISTRO</h2>
-            <form>
-                <Input type="text" placeholder='Tu correo'></Input>
-                <Input type="password" placeholder='Tu contraseña'></Input>
-                <Input type="password" placeholder='Confirma tu contraseña'></Input>
-                <Link href="/principal">
-                    <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
-                </Link>
-            </form>
-        </Registro>
-
-        }
-        </div> 
      );
 }
  

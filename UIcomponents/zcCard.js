@@ -11,7 +11,7 @@ const ZElement = styled.div`
 	justify-content: ${p => (p.type === 'twover') ? 'center' : 'flex-end'};
 	text-align: ${p => (p.type === 'twover') ? 'center' : null};
 	background: #FFFFFF;
-	padding: 10px 20px 15px 20px;
+	padding: 10px 10px 5px 20px;
 	border-radius: 20px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
@@ -26,7 +26,7 @@ const ZElement = styled.div`
 		background-color: #ddd;
 	}
 
-	@media screen and (max-width: 1060px) {
+	@media screen and (max-width: 1350px) {
 		grid-column: span 1;
 		grid-row: span 1;
 		align-items: flex-start;
