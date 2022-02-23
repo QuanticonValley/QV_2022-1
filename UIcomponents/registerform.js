@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 import { useState } from 'react'
+import Router from 'next/router'
 import validadorFormularios from '../utils/validadorFormularios'
 import validarRegistro from '../utils/validarRegistro'
 
@@ -31,14 +31,23 @@ const Input=styled.input`
     padding: 10px;
     margin-bottom: 10px;
 `
+const Selector=styled.select`
+    border: 1px solid #fff;
+    width: 80%;
+    background-color: #bbbbbb;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+`
 const Error= styled.div`
     width: 80%;
     background-color: red;
     align-text: center;
     color: white;
-    font-size:1.2rem;
+    font-size:0.8rem;
     text-transform: uppercase;
-    margin:3px;
+    margin-left:10%;
+    margin-bottom:10px;
 `
 const STATE_INICIAL_REGISTRO={
     nombre: '',
@@ -50,29 +59,40 @@ const STATE_INICIAL_REGISTRO={
 
 const RegisterForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_REGISTRO,validarRegistro,RegistrarUsuario);
-
+    const [rol2, setrol2] = useState('Estudiante');
     const {nombre, rol, email, password, password2} = valores;
     function RegistrarUsuario(){
+        //Hay que enviar la petición de crear cuenta al backend
         console.log("Cuenta creada exitosamente!");
+        Router.push('/principal');
+    }
+    function actSelector(e){
+        setrol2(e.target.value);
+        rol=rol2;
+        handleChange(e);
     }
     return (
         <Registro>
             <h2>REGISTRO</h2>
-            <form>
-                <Input type="text" placeholder='Tu nombre' ></Input>
-                {errores.nombre && <Error>{errores.nombre}</Error>}
-                <Input type="text" placeholder='Tu rol' value={rol} onChange={handleChange}></Input>
+            <form onSubmit={handleSubmit} noValidate> 
+                <Selector name='rol' onChange={actSelector}>
+                    <option disabled selected>Selecciona tu rol</option>
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Explorador">Explorador</option>
+                </Selector>
                 {errores.rol && <Error>{errores.rol}</Error>}
-                <Input type="email" placeholder='Tu correo' value={email} onChange={handleChange}></Input>
+                <Input type="text" placeholder='Tu nombre completo' name='nombre' value={nombre} onChange={handleChange}></Input>
+                {errores.nombre && <Error>{errores.nombre}</Error>}
+                
+                <Input type="email" placeholder='Tu correo' name='email' value={email} onChange={handleChange}></Input>
                 {errores.email&& <Error>{errores.email}</Error>}
-                <Input type="password" placeholder='Tu contraseña' value={password} onChange={handleChange}></Input>
+                <Input type="password" placeholder='Tu contraseña' name='password' value={password} onChange={handleChange}></Input>
                 {errores.password && <Error>{errores.password}</Error>}
-                <Input type="password" placeholder='Confirma tu contraseña' value={password2} onChange={handleChange}></Input>
+                <Input type="password" placeholder='Confirma tu contraseña' name='password2' value={password2} onChange={handleChange}></Input>
                 {errores.password2 && <Error>{errores.password2}</Error>}
                 <hr></hr>
-                <Link href="/principal">
-                    <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
-                </Link>
+                {/* Se debe hacer link cuando no existan errores */}
+                <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
             </form>
         </Registro>
      );

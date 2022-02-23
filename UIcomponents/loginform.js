@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Link from 'next/link'
+import Router from 'next/router'
 import { useState } from 'react'
 import validadorFormularios from '../utils/validadorFormularios'
-import validarRegistro from '../utils/validarRegistro'
+import validarLogin from '../utils/validarLogin'
 
 const Button2= styled.input`
     width: 150px;
@@ -31,29 +31,37 @@ const Input=styled.input`
     padding: 10px;
     margin-bottom: 10px;
 `
+const Error= styled.div`
+    width: 80%;
+    background-color: red;
+    align-text: center;
+    color: white;
+    font-size:0.8rem;
+    text-transform: uppercase;
+    margin-left:10%;
+    margin-bottom:10px;
+`
 const STATE_INICIAL_LOGIN={
-    rol:'',
     email: '',
     password: ''
 }
 
 const LoginForm = () => {
-    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarRegistro,RegistrarUsuario);
-
-    function RegistrarUsuario(){
-        console.log("Cuenta creada exitosamente!");
+    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarLogin,IniciodeSesion);
+    const {email, password} = valores;
+    function IniciodeSesion(){
+        console.log("Entraste a tu cuenta");
+        Router.push('/principal');
     }
     return (
         <Registro>
             <h2>INICIO DE SESIÓN</h2>
-            <form>
-                <Input type="text" placeholder='Tu correo'></Input>
-                <Input type="text" placeholder='Tu rol'></Input>
-                <Input type="password" placeholder='Tu contraseña'></Input>
-                <hr></hr>
-                <Link href="/principal">
+            <form onSubmit={handleSubmit} noValidate>
+                <Input type="email" placeholder='Tu correo' name='email' value={email} onChange={handleChange}></Input>
+                {errores.email&& <Error>{errores.email}</Error>}
+                <Input type="password" placeholder='Tu contraseña' name='password' value={password} onChange={handleChange}></Input>
+                {errores.password && <Error>{errores.password}</Error>}
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>
-                </Link>
             </form>
         </Registro>
      );

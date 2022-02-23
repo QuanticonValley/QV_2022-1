@@ -221,8 +221,8 @@ const Principal = () => {
 
   return <QV pg="Principal">
 		<Header
-			title="Quanticon Valley mi versión"
-			desc="Bienvenidos/as tod@s"
+			title="Quanticon Valley Pruebas"
+			desc="Bienvenidos/as"
 			imgH={imgPrin}
 			primary
 		/>

@@ -8,11 +8,13 @@ export default function validarRegistro(valores){
         errores.nombre="El nombre debe ser de al menos 6 caracteres";
     }else if(valores.nombre.length>41){
         errores.nombre="El nombre puede contener máximo 40 caracteres";
+    }else if(!/^([A-Z]{1}[a-zñáéíóú]+[\s]*)+$/.test(valores.nombre)){
+        errores.nombre="El nombre solo puede contener letras, la primera letra debe ir en mayúscula";
     }
 
     if(!valores.email){
         errores.email="El Email es obligatorio";
-    } else if(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.text(valores.email)){
+    } else if(!/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valores.email)){
         errores.email="El Email no es válido";
     }
 
@@ -28,5 +30,8 @@ export default function validarRegistro(valores){
         errores.password2="Las contraseñas ingresadas no coinciden";
     }
 
+    if(valores.rol===""){
+        errores.rol="Debes elegir un rol";
+    }
     return errores;
 }

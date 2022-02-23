@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
 import ReactTooltip from 'react-tooltip'
 
@@ -7,7 +7,8 @@ import { useMainState } from '../../libs/stateHooks'
 
 import NotiWidget from '../notiWidget'
 import Calendar from '../calendar/index'
-import GroupSel from '../groupSel'
+// import GroupSel from '../groupSel'
+import Miniprofile from '../miniprofile.js';
 
 const Container = styled.div`
 	grid-area: rb;
@@ -37,12 +38,12 @@ const ItemB = styled.div`
   display: flex;
 	align-items: center;
 	border-radius: 1em;
-	justify-content: space-between;
+	justify-content: center;
 	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
-  background-color: #FFC024;
-  color: black;
+  background-color:#1920EF;
+  color: white;
   padding: .5em 1em;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 1em;
 	text-align: end;
   transition: 0.3s;
@@ -58,7 +59,7 @@ const Header = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: .5em;
+	padding: .5em 1em;
 	background-color:#1920EF;
 	color: white;
 	z-index: 4;
@@ -77,6 +78,27 @@ const CloseImg = styled.img`
 	:hover {
 		transform: scale(1.05);
 	}
+`
+const HallFame = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+
+	font-weight: bold;
+	background: #FFC024;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+
+	transition: .3s ease;
+	:hover {
+		transform: scale(1.03);
+		cursor: pointer;
+	}
+`
+const Image = styled.img`
+	margin-right: 1em;
 `
 
 const RightBar = ({active, close}) => {
@@ -100,19 +122,30 @@ const RightBar = ({active, close}) => {
 					/>
 			</Header>
 			<div style={{fontSize: '.9em'}}>
-			<GroupSel/>
+			{/* <GroupSel/> */}
 			</div>
+			
+			<Miniprofile></Miniprofile>
 			<Calendar/>
+			
 			<NotiWidget open={()=>openModal('Noticiero')}/>
 			<a href="https://drive.google.com/file/d/1xRTV1yWZlF3viIvIS8vgQjLpMZy9AP51/view?usp=sharing" target="_blank" rel="noreferrer">
 				<ItemB data-tip data-for="dscTooltipPils">
-					<img src={`${prefix}/imgs/pil.png`}/>
+					<img src={`${prefix}/imgs/pil2.png`}/>
 					Pildoras de la semana
 				</ItemB>
 			</a>
+			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
+				<Image src={`${prefix}/imgs/principal/hallfame.png`}/>
+				Salon de la Fama
+			</HallFame>
 
 			<ReactTooltip id="dscTooltipPils" place='left' type='info'>
 				Informacion para la Semana
+			</ReactTooltip>
+
+			<ReactTooltip id="dscTooltipHF" place='left' type='info'>
+				Tabla de Clasificación 
 			</ReactTooltip>
 		</Container>
 	);

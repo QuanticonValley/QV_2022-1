@@ -22,6 +22,7 @@ const validadorFormularios = (stateinicial, validacion, funcion) => {
         })
     }
     const handleSubmit = e =>{
+        console.log(valores);
         e.preventDefault();
         const erroresValidar = validacion(valores);
         guardarErrores(erroresValidar);
