@@ -3,11 +3,19 @@ import { prefix } from '../../utils/prefix.js';
 import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
+import Navbar from './components/navbar.js';
+import MainComp from './components/mainComp.js';
 
 const imgProfile = `${prefix}/imgs/header/principal.png`
 
-const Margin = styled.div`
-	margin: 0 20px;
+const Main = styled.div`
+	margin: 0 10px;
+	display:flex;
+	height:100%;
+	
+	@media screen and (max-width: 1500px) {
+		flex-direction: column;
+	}
 `
 
 const Profile = () => {
@@ -20,11 +28,10 @@ const Profile = () => {
 			desc="Todo sobre ti"
 			imgH={imgProfile}
 		/>
-		<Margin>
-			<p>
-				Aqui va el contenido de esta pagina (Foto, Info, Trofeos, etc)
-			</p>
-		</Margin>
+		<Main>
+			<Navbar></Navbar>
+			<MainComp></MainComp>
+		</Main>
 	</QV>)
 }
 
