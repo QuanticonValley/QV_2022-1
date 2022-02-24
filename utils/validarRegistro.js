@@ -32,6 +32,8 @@ export default function validarRegistro(valores){
 
     if(valores.rol===""){
         errores.rol="Debes elegir un rol";
+    }else if(valores.rol!=="Estudiante"&&valores.rol!=="Explorador"){
+        errores.rol="Elige un rol valido";
     }
     return errores;
 }
