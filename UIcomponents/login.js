@@ -35,6 +35,9 @@ const Button= styled.button`
         background-color:#172BEF;
         color:white;
     }
+    @media screen and (max-width: 800px) {
+		width: 45%;
+	}
 `
 
 const Login = () => {

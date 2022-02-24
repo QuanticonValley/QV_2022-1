@@ -15,6 +15,9 @@ const Option= styled.div`
     :hover{
 		cursor: pointer;
 	}
+    @media screen and (max-width: 800px) {
+		font-size:1rem;
+	}
 `
 const Contenido= styled.div`
     margin-top:30px;
