@@ -52,7 +52,6 @@ const STATE_INICIAL_REGISTRO={
 const RegisterForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_REGISTRO,validarRegistro,RegistrarUsuario);
     const {nombre, rol, email, password, password2} = valores;
-    rol="Estudiante";
     function RegistrarUsuario(){
         //Hay que enviar la petición de crear cuenta al backend
         console.log("Cuenta creada exitosamente!");
@@ -62,7 +61,7 @@ const RegisterForm = () => {
         <Registro>
             <h2>REGISTRO</h2>
             <form onSubmit={handleSubmit} noValidate> 
-                <Input name='rol' list='roles' onChange={handleChange}></Input>
+                <Input name='rol' value={rol} list='roles' onChange={handleChange}></Input>
                 <datalist id='roles' >
                     <option value="Estudiante">Estudiante</option>
                     <option value="Explorador">Explorador</option>
