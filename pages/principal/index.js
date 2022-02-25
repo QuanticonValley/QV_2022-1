@@ -236,7 +236,7 @@ const Principal = () => {
 			<Title>Guia de Juego</Title>
 		</TitleBox>
 		<Pdf file={"content/guia.pdf"}></Pdf>
-		<ExtLink><a href={`${prefix}/content/guia.pdf`} target="_blank">¿Cargar en una pestaña nueva?</a></ExtLink>
+		<ExtLink><a href={`${prefix}/content/guia.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
 		<TitleBox>
 			<Title>Tu proxima entrega</Title>
 		</TitleBox>
