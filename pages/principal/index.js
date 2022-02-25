@@ -35,7 +35,7 @@ const Button = styled.button`
 	}
 `
 const Title = styled.h3`
-	padding-left: 5%;
+	border-bottom: 2px solid #ffc024;
 `
 const ContProg = styled.div`
 	display: flex;
@@ -121,7 +121,7 @@ const Entrega = styled.div`
 		margin: 0;
 		color: black;
 	}
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 900px) {
 		flex-direction: column;
 	}
 `
@@ -168,6 +168,7 @@ const TitleBox = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	margin: 1em 4em 0 0;
+	margin-left: 5%;
 `
 const TextBox = styled.div`
 	color: black;
@@ -200,7 +201,12 @@ const Box = styled.div`
 		cursor: pointer;
 	}
 `
-
+const ExtLink= styled.div`
+	color: blue;
+	font-weight: 500;
+	text-align: right;
+	margin-right: 8%;
+`
 const Principal = () => {
   const [mState, setMainState] = useMainState()
 	const prog = getDataProg()
@@ -226,9 +232,13 @@ const Principal = () => {
 			imgH={imgPrin}
 			primary
 		/>
-
 		<TitleBox>
-			<Title>_Tu proxima entrega</Title>
+			<Title>Guia de Juego</Title>
+		</TitleBox>
+		<Pdf file={"content/guia.pdf"}></Pdf>
+		<ExtLink><a href={`${prefix}/content/guia.pdf`} target="_blank">¿Cargar en una pestaña nueva?</a></ExtLink>
+		<TitleBox>
+			<Title>Tu proxima entrega</Title>
 		</TitleBox>
 		<Grid>
 		<Link href='etesc'>
@@ -246,7 +256,7 @@ const Principal = () => {
 		</Grid>
 
 		<TitleBox>
-			<Title>_Lo mas relevante</Title>
+			<Title>Lo mas relevante</Title>
 		</TitleBox>
 		<Grid>
 			<Noti 
@@ -271,7 +281,7 @@ const Principal = () => {
 
 
 		<TitleBox>
-			<Title>_Conoce Quanticon Valley</Title>
+			<Title>Conoce Quanticon Valley</Title>
 		</TitleBox>
 		<GridB>
 			<Link href='content'>
@@ -308,7 +318,7 @@ const Principal = () => {
 		</Link>
 
 		<TitleBox>
-			<Title>_Avance del Juego</Title>
+			<Title>Avance del Juego</Title>
 		</TitleBox>
 		<ContProg>
 			<BarProg>

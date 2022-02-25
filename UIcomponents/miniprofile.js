@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
     transition: .5s all;
     :hover {
 		transform: translate(-9px);

@@ -61,7 +61,7 @@ const RegisterForm = () => {
         <Registro>
             <h2>REGISTRO</h2>
             <form onSubmit={handleSubmit} noValidate> 
-                <Input name='rol' value={rol} list='roles' onChange={handleChange}></Input>
+                <Input name='rol' value={rol} list='roles' onChange={handleChange} placeholder='Tu rol'></Input>
                 <datalist id='roles' >
                     <option value="Estudiante">Estudiante</option>
                     <option value="Explorador">Explorador</option>
