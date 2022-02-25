@@ -44,14 +44,14 @@ const Error= styled.div`
 const STATE_INICIAL_REGISTRO={
     nombre: '',
     rol:'',
-    email: '',
+    correo: '',
     password: '',
     password2:''
 }
 
 const RegisterForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_REGISTRO,validarRegistro,RegistrarUsuario);
-    const {nombre, rol, email, password, password2} = valores;
+    const {nombre, rol, correo, password, password2} = valores;
     function RegistrarUsuario(){
         //Hay que enviar la petición de crear cuenta al backend
         console.log("Cuenta creada exitosamente!");
@@ -70,8 +70,8 @@ const RegisterForm = () => {
                 <Input type="text" placeholder='Tu nombre completo' name='nombre' value={nombre} onChange={handleChange}></Input>
                 {errores.nombre && <Error>{errores.nombre}</Error>}
                 
-                <Input type="email" placeholder='Tu correo' name='email' value={email} onChange={handleChange}></Input>
-                {errores.email&& <Error>{errores.email}</Error>}
+                <Input type="email" placeholder='Tu correo electronico' name='correo' value={correo} onChange={handleChange}></Input>
+                {errores.correo&& <Error>{errores.correo}</Error>}
                 <Input type="password" placeholder='Tu contraseña' name='password' value={password} onChange={handleChange}></Input>
                 {errores.password && <Error>{errores.password}</Error>}
                 <Input type="password" placeholder='Confirma tu contraseña' name='password2' value={password2} onChange={handleChange}></Input>

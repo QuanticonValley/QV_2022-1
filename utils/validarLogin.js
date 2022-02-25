@@ -9,8 +9,8 @@ export default function validarLogin(valores){
 
     if(!valores.password){
         errores.password="El password es obligatorio";
-    }else if(valores.password.length<6){
-        errores.password="El password debe ser de al menos 6 caracteres";
+    }else if(valores.password.length<8){
+        errores.password="El password debe ser de al menos 8 caracteres";
     }else if(valores.password.length>26){
         errores.password="El password puede contener máximo 25 caracteres";
     }
