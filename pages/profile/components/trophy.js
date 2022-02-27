@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { prefix } from "../../../utils/prefix";
 
 const Image = styled.div`
 	height:60px;
@@ -7,12 +8,26 @@ const Image = styled.div`
     border-radius: 10px;
     margin:10px;
 `
-
-const Trophy = () => {
+const Trofeo=styled.img`
+    height:60px;
+    width:130px;
+    border-radius: 10px;
+    margin:10px;
+    transition:.3s all;
+    :hover {
+		transform: scale(1.2);
+	}
+`
+const Trophy = ({num}) => {
     return ( 
-    <Image>
-        
-    </Image> );
+        <div>
+            {num?<Trofeo src={`${prefix}/imgs/trophy/${num}.png`}></Trofeo>
+            :<Image></Image>
+            }
+            
+
+        </div>
+     );
 }
  
 export default Trophy;

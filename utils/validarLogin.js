@@ -1,10 +1,10 @@
 export default function validarLogin(valores){
 
     let errores={};
-    if(!valores.email){
-        errores.email="El Email es obligatorio";
-    } else if(!/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valores.email)){
-        errores.email="El Email no es válido";
+    if(!valores.correo){
+        errores.correo="El Email es obligatorio";
+    } else if(!/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(valores.correo)){
+        errores.correo="El Email no es válido";
     }
 
     if(!valores.password){

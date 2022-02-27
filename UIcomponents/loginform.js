@@ -42,13 +42,13 @@ const Error= styled.div`
     margin-bottom:10px;
 `
 const STATE_INICIAL_LOGIN={
-    email: '',
+    correo: '',
     password: ''
 }
 
 const LoginForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarLogin,IniciodeSesion);
-    const {email, password} = valores;
+    const {correo, password} = valores;
     function IniciodeSesion(){
         console.log("Entraste a tu cuenta");
         Router.push('/principal');
@@ -57,8 +57,8 @@ const LoginForm = () => {
         <Registro>
             <h2>INICIO DE SESIÓN</h2>
             <form onSubmit={handleSubmit} noValidate>
-                <Input type="email" placeholder='Tu correo' name='email' value={email} onChange={handleChange}></Input>
-                {errores.email&& <Error>{errores.email}</Error>}
+                <Input type="email" placeholder='Tu correo' name='correo' value={correo} onChange={handleChange}></Input>
+                {errores.correo&& <Error>{errores.correo}</Error>}
                 <Input type="password" placeholder='Tu contraseña' name='password' value={password} onChange={handleChange}></Input>
                 {errores.password && <Error>{errores.password}</Error>}
                     <Button2 type="submit" value="¡AQUI VAMOS!"></Button2>

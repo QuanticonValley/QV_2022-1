@@ -55,23 +55,20 @@ const Trofeos= styled.div`
 	}
 `
 
-const Navbar = () => {
+const Navbar = ({idUsuario, fotoUsuario, trofeosUsuario=[]}) => {
+    function DevTrofeo(trofeo){
+       return <Trophy key={trofeo} num={trofeo}></Trophy>
+    }
     return (  
         <OutContainer>
             <Img>
-                <Photo></Photo>
+                <Photo idUsuario={idUsuario} fotoUsuario={fotoUsuario}></Photo>
             </Img>
             
             <Trop>
                 <h5>Trofeos recientes</h5>
                 <Trofeos>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
-                    <Trophy></Trophy>
+                    {trofeosUsuario.map (item => DevTrofeo(item))}
                 </Trofeos>
             </Trop>
         </OutContainer>

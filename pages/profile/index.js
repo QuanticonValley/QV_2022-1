@@ -5,6 +5,7 @@ import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 import Navbar from './components/navbar.js';
 import MainComp from './components/mainComp.js';
+import { useState } from 'react';
 
 const imgProfile = `${prefix}/imgs/header/principal.png`
 
@@ -19,8 +20,26 @@ const Main = styled.div`
 `
 
 const Profile = () => {
-
-
+	//Petición de datos del usuario
+	let idUsuario=1;
+	let nombreUsuario= "Berny Alejandro Orozco Córdoba";
+    let rolUsuario= "Estudiante";
+    let carreraUsuario= "Ingenie. Sistemas";
+    let empresaUsuario= "Universidad Nacional";
+    let cargoUsuario= "CEO";
+    let puntajeUsuario= 180;
+	let infoUsuario="";
+	let hojadeVidaUsuario="";
+	let contactoUsuario="";
+	let hobbiesUsuario="";
+	let lenguajesUsuario="";
+	let fotoUsuario="https://isenacode.com/wp-content/uploads/2019/06/whatsapp-foto-perfil-malware.jpg";
+	let trofeosUsuario=[8,7,5];
+	let facultadUsuario="";
+	let institucionUsuario="";
+	let IncsUsuario="";
+	let PtsVictoriaUsuario="";
+	
 	return (
     <QV pg="Perfil">
 		<Header
@@ -29,8 +48,29 @@ const Profile = () => {
 			imgH={imgProfile}
 		/>
 		<Main>
-			<Navbar></Navbar>
-			<MainComp></MainComp>
+			<Navbar
+				idUsuario={idUsuario}
+				fotoUsuario={fotoUsuario}
+				trofeosUsuario= {trofeosUsuario}
+			></Navbar>
+			<MainComp
+				idUsuario={idUsuario}
+				nombreUsuario={nombreUsuario}
+				rolUsuario={rolUsuario}
+				carreraUsuario={carreraUsuario}
+				cargoUsuario={cargoUsuario}
+				empresaUsuario={empresaUsuario}
+				puntajeUsuario={puntajeUsuario}
+				infoUsuario={infoUsuario}
+				hojadeVidaUsuario={hojadeVidaUsuario}
+				contactoUsuario={contactoUsuario}
+				hobbiesUsuario={hobbiesUsuario}
+				lenguajesUsuario={lenguajesUsuario}
+				facultadUsuario={facultadUsuario}
+				institucionUsuario={institucionUsuario}
+				IncsUsuario={IncsUsuario}
+				PtsVictoriaUsuario={PtsVictoriaUsuario}
+			></MainComp>
 		</Main>
 	</QV>)
 }
