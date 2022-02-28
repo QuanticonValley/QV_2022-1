@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import ReactTooltip from 'react-tooltip'
+import validadorFormularios from "../../../utils/validadorFormularios";
 
 const Imagen = styled.div`
 	height:220px;
@@ -41,9 +42,20 @@ const Photo = ({idUsuario, fotoUsuario}) => {
         setOpen(!open);
     }
     //Funcion que se ejecuta en el SubmitForm y debe subir la foto al usuario de idUsuario, ejecutar mostrarInput y actualizar la foto
-
-
-
+    const Estado_Inicial={
+        id:idUsuario,
+        foto:""
+    }
+    const {valores,errores,handleSubmit,handleChange}= validadorFormularios(Estado_Inicial,validarFoto,GuardarFoto);
+    const {id,foto}=valores;
+    function validarFoto(){
+        let errores={};
+        return errores;
+    }
+    function GuardarFoto(){
+        //Petición de update de la foto
+        mostrarInput();
+    }
     return ( 
     <div>
         {fotoUsuario?
@@ -55,10 +67,10 @@ const Photo = ({idUsuario, fotoUsuario}) => {
         </div>
         }
         {open?
-        <ND action="">
-            <input type="file" name="foto" accept="image/png, image/jpeg"></input>
+        <ND onSubmit={handleSubmit}>
+            <input type="file" name="foto" value={foto} accept="image/png, image/jpeg" onChange={handleChange}></input>
             <div>
-                <input type="submit" value="Enviar" onClick={mostrarInput}></input>
+                <input type="submit" value="Enviar" ></input>
                 <button onClick={mostrarInput}>Cancelar</button>
             </div>
             

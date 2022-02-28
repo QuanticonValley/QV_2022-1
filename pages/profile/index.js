@@ -24,7 +24,7 @@ const Profile = () => {
 	let idUsuario=1;
 	let nombreUsuario= "Berny Alejandro Orozco Córdoba";
     let rolUsuario= "Estudiante";
-    let carreraUsuario= "Ingenie. Sistemas";
+    let carreraUsuario= "";
     let empresaUsuario= "Universidad Nacional";
     let cargoUsuario= "CEO";
     let puntajeUsuario= 180;
@@ -37,8 +37,8 @@ const Profile = () => {
 	let trofeosUsuario=[8,7,5];
 	let facultadUsuario="";
 	let institucionUsuario="";
-	let IncsUsuario="";
-	let PtsVictoriaUsuario="";
+	let IncsUsuario=0;
+	let PtsVictoriaUsuario=0;
 	
 	return (
     <QV pg="Perfil">
