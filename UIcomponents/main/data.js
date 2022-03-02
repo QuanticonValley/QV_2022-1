@@ -33,11 +33,17 @@ const data = {
 			dsc: 'Informacion sobre cada uno de los Equipos',
 		},
 		{
-			title: 'Actores',
-			link: '/actors',
-			src: `${prefix}/imgs/main/Icon_actores.svg`,
-			dsc: 'Informacion sobre los actores del juego',
+			title: 'Tabla de posiciones',
+			link: '/ranking',
+			src: `${prefix}/imgs/main/Icon_tabla.png`,
+			dsc: 'Puedes encontrar el avance del juego y la clasificatoria',
 		},
+		// {
+		// 	title: 'Actores',
+		// 	link: '/actors',
+		// 	src: `${prefix}/imgs/main/Icon_actores.svg`,
+		// 	dsc: 'Informacion sobre los actores del juego',
+		// },
 		{
 			title: 'Perfil',
 			link: '/profile',
@@ -45,7 +51,7 @@ const data = {
 			dsc: 'Todo sobre ti',
 		},
 		{
-			title: 'Informacion',
+			title: 'Acerca del juego',
 			link: '/info/about',
 			src: `${prefix}/imgs/main/Icon_Informacion.svg`,
 			dsc: 'Para Conocer y Saber mas de Quanticon Valley',

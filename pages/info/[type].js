@@ -60,7 +60,7 @@ const Info = () => {
 		setBarPos(barRef?.current?.getBoundingClientRect())
 	}, [type])
 
-	return <QV pg="Informacion">
+	return <QV pg="Acerca del juego">
 		<Header
 			title="Informacion"
 			desc="Acerca del juego"
