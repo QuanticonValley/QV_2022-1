@@ -3,6 +3,7 @@ import Router from 'next/router'
 import { useState } from 'react'
 import validadorFormularios from '../utils/validadorFormularios'
 import validarLogin from '../utils/validarLogin'
+import AuthService from '../services/authentication-services.js'
 
 const Button2= styled.input`
     width: 150px;
@@ -49,9 +50,17 @@ const STATE_INICIAL_LOGIN={
 const LoginForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_LOGIN,validarLogin,IniciodeSesion);
     const {correo, password} = valores;
-    function IniciodeSesion(){
+    async function  IniciodeSesion(){
         console.log("Entraste a tu cuenta");
-        Router.push('/principal');
+        await AuthService.LogIn(JSON.stringify(valores))
+        .then(function(response){
+            console.log(response);
+            localStorage.setItem('user', JSON.stringify(response.data));
+            Router.push('/principal');
+            console.log(response.status);
+        }).catch(function(error){
+            alert("Credenciales incorrectas, intente nuevamente");
+        })
     }
     return (
         <Registro>

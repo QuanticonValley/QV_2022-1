@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Router from 'next/router'
 import validadorFormularios from '../utils/validadorFormularios'
 import validarRegistro from '../utils/validarRegistro'
+import AuthService from '../services/authentication-services.js'
 
 const Button2= styled.input`
     width: 150px;
@@ -52,10 +53,17 @@ const STATE_INICIAL_REGISTRO={
 const RegisterForm = () => {
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(STATE_INICIAL_REGISTRO,validarRegistro,RegistrarUsuario);
     const {nombre, rol, correo, password, password2} = valores;
-    function RegistrarUsuario(){
-        //Hay que enviar la petición de crear cuenta al backend
-        console.log("Cuenta creada exitosamente!");
-        Router.push('/principal');
+    async function RegistrarUsuario(){
+        await AuthService.SignUp(JSON.stringify(valores))
+        .then(function(response){
+            console.log(response);
+            alert("Registrado exitosamente")
+            Router.push('/principal');
+            console.log(response.status);
+        }).catch(function(error){
+            console.log(error)
+            alert("Error al registrar usuario");
+        })
     }
     return (
         <Registro>
