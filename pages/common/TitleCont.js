@@ -8,6 +8,12 @@ const TitleCont = styled.h2`
 	color: #272835;
 	margin: 0px;
 	display: inline;
-	z-index: 2`;
+	z-index: 2
+	@media screen and (max-width: 800px) {
+		font-size:1.3em;
+	}
+	
+	`;
+	
 
 export default TitleCont;
