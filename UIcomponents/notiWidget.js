@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ReactTooltip from 'react-tooltip'
 import { prefix } from '../utils/prefix.js';
-
+import { useEffect, useState } from 'react';
 import { getNoti } from '../public/data'
 
 const Container = styled.div`
@@ -30,6 +30,10 @@ const Iframe = styled.iframe`
 `
 
 const NotiWidget = ({open}) => {
+	const [isMounted,setIsMounted] = useState(false);
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
 	const noti = getNoti() 
 	const video = noti[0] 
 		? noti[0].video : null
@@ -53,9 +57,9 @@ const NotiWidget = ({open}) => {
 				}}
 			/> : null }
 
-			<ReactTooltip id="dscTooltipNoti" place='left' type='info'>
+			{isMounted &&<ReactTooltip id="dscTooltipNoti" place='left' type='info'>
 				Revisa todos los Noticieros
-			</ReactTooltip>
+			</ReactTooltip>}
 		</Container>
 	);
 }

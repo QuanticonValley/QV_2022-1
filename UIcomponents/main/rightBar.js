@@ -2,6 +2,7 @@ import styled from 'styled-components'
 // import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
 import ReactTooltip from 'react-tooltip'
+import { useState, useEffect } from 'react';
 
 import { useMainState } from '../../libs/stateHooks'
 
@@ -102,6 +103,11 @@ const Image = styled.img`
 `
 
 const RightBar = ({active, close}) => {
+	const [isMounted,setIsMounted] = useState(false);
+    
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
   const [mState, setMainState] = useMainState()
 
 	const openModal = (type) => {
@@ -140,13 +146,13 @@ const RightBar = ({active, close}) => {
 				Salon de la Fama
 			</HallFame>
 
-			<ReactTooltip id="dscTooltipPils" place='left' type='info'>
+			{isMounted &&<ReactTooltip id="dscTooltipPils" place='left' type='info'>
 				Informacion para la Semana
-			</ReactTooltip>
+			</ReactTooltip>}
 
-			<ReactTooltip id="dscTooltipHF" place='left' type='info'>
+			{isMounted &&<ReactTooltip id="dscTooltipHF" place='left' type='info'>
 				Tabla de Clasificación 
-			</ReactTooltip>
+			</ReactTooltip>}
 		</Container>
 	);
 }

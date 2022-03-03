@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Nivel from "./nivel";
 import Info from "./info";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import validadorFormularios from "../../../utils/validadorFormularios";
 import validarCambios from "../../../utils/validarCambios";
 import ReactTooltip from "react-tooltip";
@@ -70,6 +70,11 @@ const Error= styled.div`
 `
 
 const MainComp = (val) => {
+    const [isMounted,setIsMounted] = useState(false);
+    
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
     let {idUsuario,nombreUsuario,rolUsuario,carreraUsuario,empresaUsuario,cargoUsuario,puntajeUsuario,infoUsuario,hojadeVidaUsuario,contactoUsuario,hobbiesUsuario,lenguajesUsuario,facultadUsuario,institucionUsuario,IncsUsuario,PtsVictoriaUsuario}=val;
     const Estado_Inicial={
         id:idUsuario,
@@ -117,9 +122,9 @@ const MainComp = (val) => {
                     {depend1?<ND onSubmit={handleSubmit} noValidate><input type="text" name="carrera" value={carrera} onChange={handleChange} placeholder="Ingresa tu carrera"></input><input type="submit" value="Guardar"></input><button onClick={()=>ShowMod(1)}>Cancelar</button>{errores.carrera&& <Error>{errores.carrera}</Error>}</ND>:null}
                     {depend2?<ND onSubmit={handleSubmit} noValidate><input type="text" name="facultad" value={facultad} onChange={handleChange} placeholder="Ingresa tu facultad"></input><input type="submit" value="Guardar"></input><button onClick={()=>ShowMod(2)}>Cancelar</button>{errores.facultad&& <Error>{errores.facultad}</Error>}</ND>:null}
                     {depend3?<ND onSubmit={handleSubmit} noValidate><input type="text" name="institucion" value={institucion} onChange={handleChange} placeholder="Ingresa tu institución"></input><input type="submit" value="Guardar"></input><button onClick={()=>ShowMod(3)}>Cancelar</button>{errores.institucion&& <Error>{errores.institucion}</Error>}</ND>:null}
-                    <ReactTooltip id="dscTooltipDec" place='bottom' type='info'>
+                    {isMounted &&<ReactTooltip id="dscTooltipDec" place='bottom' type='info'>
                         Click aqui para editar
-                    </ReactTooltip>
+                    </ReactTooltip>}
                 </RolCarr>
                 {empresaUsuario?
                 <Empresa>

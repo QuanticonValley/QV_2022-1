@@ -1,18 +1,14 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ReactTooltip from 'react-tooltip'
 import validadorFormularios from "../../../utils/validadorFormularios";
 
 const Imagen = styled.div`
-	height:220px;
-    width:180px;
+	height:200px;
+    width:160px;
     background-color:#bbbbbb;
     border-radius:5px;
     border: 2px solid #172bef;
-    @media screen and (max-width: 1500px) {
-		height: 200px;
-        width: 160px;
-	}
 `
 const Photo2 = styled.img`
 	height:220px;
@@ -34,9 +30,12 @@ const ND=styled.form`
     display:flex;
     flex-direction: column;
     text-align: right;
-
 `
 const Photo = ({idUsuario, fotoUsuario}) => {
+    const [isMounted,setIsMounted] = useState(false);
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
     const [open, setOpen]= useState(false);
     function mostrarInput(){
         setOpen(!open);
@@ -54,17 +53,16 @@ const Photo = ({idUsuario, fotoUsuario}) => {
     }
     function GuardarFoto(){
         //Petición de update de la foto
+
+        //Hacer un Router.push
         mostrarInput();
     }
     return ( 
-    <div>
+    <div data-tip data-for="dscTooltipPhoto">
         {fotoUsuario?
-        <Photo2 src={fotoUsuario} data-tip data-for="dscTooltipPhoto" onClick={mostrarInput}></Photo2>
+        <Photo2 src={fotoUsuario}  onClick={mostrarInput}></Photo2>
         :
-        <div>
-            <Imagen data-tip data-for="dscTooltipPhoto" onClick={mostrarInput}></Imagen>
-            
-        </div>
+        <Imagen  onClick={mostrarInput}></Imagen>
         }
         {open?
         <ND onSubmit={handleSubmit}>
@@ -77,9 +75,9 @@ const Photo = ({idUsuario, fotoUsuario}) => {
         </ND>
         :null
         }
-        <ReactTooltip id="dscTooltipPhoto" place='right' type='info'>
+        {isMounted &&<ReactTooltip id="dscTooltipPhoto" place='bottom' type='info'>
 			Click aqui para cambiar tu foto
-		</ReactTooltip>
+		</ReactTooltip>}
 
     </div>
     );

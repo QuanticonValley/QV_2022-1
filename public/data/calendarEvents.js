@@ -1,5 +1,5 @@
 const events = [
-  {d: 8, m: 10, y: 2021, event: 'Primera Clase TPI y Inicio - Primer Piso'},
+  {d: 7, m: 3, y: 2022, event: 'Primera Clase TPI y Inicio - Primer Piso'},
   {d:20, m: 10, y: 2021, event: 'Entrega - Primer Piso'},
   {d:25, m: 10, y: 2021, event: 'Inicio - Segundo Piso'},
 

@@ -15,12 +15,6 @@ const data = {
 			dsc: 'Entregables y Retos para cada Semana',
 		},
 		{
-			title: 'Contenido',
-			link: '/content',
-			src: `${prefix}/imgs/main/Icon_cont.svg`,
-			dsc: 'Contenidos que apoyaran el desarrollo de tu proyecto',
-		},
-		{
 			title: 'Zonas Comunes',
 			link: '/zones',
 			src: `${prefix}/imgs/main/Icon_zonas_comunes.svg`,
@@ -38,12 +32,12 @@ const data = {
 			src: `${prefix}/imgs/main/Icon_tabla.png`,
 			dsc: 'Puedes encontrar el avance del juego y la clasificatoria',
 		},
-		// {
-		// 	title: 'Actores',
-		// 	link: '/actors',
-		// 	src: `${prefix}/imgs/main/Icon_actores.svg`,
-		// 	dsc: 'Informacion sobre los actores del juego',
-		// },
+		{
+			title: 'Actores',
+			link: '/actors',
+			src: `${prefix}/imgs/main/Icon_actores.svg`,
+			dsc: 'Informacion sobre los actores del juego',
+		},
 		{
 			title: 'Perfil',
 			link: '/profile',

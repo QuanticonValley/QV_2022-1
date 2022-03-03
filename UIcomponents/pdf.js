@@ -26,12 +26,16 @@ const Container = styled.div`
 
 `
 
-const Pdf = ({file}) => {
+const Pdf = ({file,choice=0}) => {
+	console.log(file);
 	return(
 	<Center>
-		<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+		<Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.min.js">
 			<Container>
+				{choice===0?
 				<Viewer fileUrl={`${prefix}/${file}`} defaultScale={SpecialZoomLevel.PageFit} theme='dark'/>
+				:<Viewer fileUrl={file} defaultScale={SpecialZoomLevel.PageFit} theme='dark'/>}
+				
 			</Container>
 		</Worker>
 	</Center>

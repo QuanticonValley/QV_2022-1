@@ -7,6 +7,7 @@ const TitleCont = styled.h2`
 	letter-spacing: -0.03em;
 	color: #272835;
 	margin: 0px;
+	display: inline;
 	z-index: 2`;
 
 export default TitleCont;

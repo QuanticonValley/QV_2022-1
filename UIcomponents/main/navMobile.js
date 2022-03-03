@@ -14,9 +14,9 @@ const Button = styled.div`
 	transition: 0.5s;
 
 	:hover {
-		transform: scale(1, 1.03);
+		transform: scale(1, 1.1);
 		background-color: #55F;
-		color: #ffffff;
+		fill: black;
 	}
 `
 const Icon = styled.img`

@@ -29,7 +29,7 @@ const Src = styled.div`
 	}
 `
 const Img = styled.img`
-		width: 1em;
+		width: 25px;
 `
 const Title = styled.div`
 		margin-left: 1em;

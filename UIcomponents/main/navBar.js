@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import ReactTooltip from 'react-tooltip'
+import { useEffect, useState } from 'react';
 import { prefix } from '../../utils/prefix.js';
 import { getPages } from './data'
 
@@ -73,6 +74,10 @@ const logo = `${prefix}/imgs/main/QB_blanco_vertical_1.png`
 const navImg = `${prefix}/imgs/main/QV_textura.png`
 
 const NavCont = ({pg}) => {
+	const [isMounted,setIsMounted] = useState(false);
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
 	const pages = getPages()
 	return (
 		<Container>
@@ -89,9 +94,9 @@ const NavCont = ({pg}) => {
 								<Text>{item.title}</Text>
 							</Button>
 						</Link>
-						<ReactTooltip id={"dscTooltip"+i} place='right' type='info'>
+						{isMounted&&<ReactTooltip id={"dscTooltip"+i} place='right' type='info'>
 							{item.dsc}
-						</ReactTooltip>
+						</ReactTooltip>}
 					</span>
 				)
 			})}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import ProfileCards from "./profCards";
 import validadorFormularios from "../../../utils/validadorFormularios";
 import ReactTooltip from "react-tooltip";
 import validarCambios2 from "../../../utils/validarCambios2";
+import Pdf from "../../../UIcomponents/pdf";
 
 const Nav= styled.div`
     display:flex;
@@ -42,6 +43,7 @@ const ND=styled.form`
     border-radius: 10px;
     text-align: right;
     width: 350px;
+    z-index:5;
     @media screen and (max-width: 800px) {
 		position: fixed;
         top: 50%;
@@ -63,6 +65,10 @@ const Error= styled.div`
 `
 
 const Info = ({idUsuario,infoUsuario,hojadeVidaUsuario,hobbiesUsuario,contactoUsuario,lenguajesUsuario}) => {
+    const [Mounted,setIsMounted]=useState(false);
+    useEffect(() => {
+        setIsMounted(true);
+    },[]);
     const [selected,setSelected]= useState(true);
     function cambio(opti){
         setSelected(opti);
@@ -81,11 +87,19 @@ const Info = ({idUsuario,infoUsuario,hojadeVidaUsuario,hobbiesUsuario,contactoUs
         lenguajes: lenguajesUsuario
     }
     const {valores,errores,handleSubmit,handleChange}= validadorFormularios(Estado_Inicial,validarCambios2,GuardarCambios);
-    //Falta validador de cambios
     function GuardarCambios(){
-        //Validador de cambios
-        //Aqui va la petición de update
-        // console.log(valores);
+        //Hat un bug en que si se modifica la hoja de vida, al hacer
+        //Update nuevamente crashea la pagina, en teoria se soluciona
+        //Luego de hacer el Router.push
+
+
+        //Usar NuevosValores para hacer el update
+        let NuevosValores=valores;
+        if(hojadeVida===""){
+            NuevosValores.hojadeVida=hojadeVidaUsuario;
+        }
+        //Aqui va el update
+        console.log(NuevosValores);
         inf?setInf(false):null;
         hojadV?sethojadV(false):null;
         cont?setCont(false):null;
@@ -93,7 +107,7 @@ const Info = ({idUsuario,infoUsuario,hojadeVidaUsuario,hobbiesUsuario,contactoUs
         leng?setLeng(false):null;
         //Recarga la pagina con Router.push
     }
-    const {id,info,hojadeVida,hobbies,contacto,lenguajes}=valores;
+    let {id,info,hojadeVida,hobbies,contacto,lenguajes}=valores;
     return ( 
     <div>
         <Nav>
@@ -105,7 +119,7 @@ const Info = ({idUsuario,infoUsuario,hojadeVidaUsuario,hobbiesUsuario,contactoUs
         {selected?
         (infoUsuario?<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>setInf(!inf)}>{infoUsuario}</Contenido>:<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>setInf(!inf)}>En esta sección va tu descripción personal, puedes escribir hasta 1000 caracteres! haz click aqui para ingresarla</Contenido>)
         :
-        (hojadeVidaUsuario?<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>sethojadV(!hojadV)}>{hojadeVidaUsuario}</Contenido>:<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>sethojadV(!hojadV)}>En esta sección va tu hoja de vida, haz click aqui para ingresarla (Solo se permite en formato PDF)</Contenido>)
+        (hojadeVidaUsuario?<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>sethojadV(!hojadV)}><Pdf file={hojadeVidaUsuario} choice={1}></Pdf></Contenido>:<Contenido data-tip data-for="dscTooltipInf" selected={selected} onClick={()=>sethojadV(!hojadV)}>En esta sección va tu hoja de vida, haz click aqui para ingresarla (Solo se permite en formato PDF)</Contenido>)
         }
         
         {cont?<ND onSubmit={handleSubmit} noValidate><input type="text" name="contacto" value={contacto} onChange={handleChange} placeholder="Ingresa tu contacto"></input><input type="submit" value="Guardar"></input><button onClick={()=>setCont(false)}>Cancelar</button>{errores.contacto&& <Error>{errores.contacto}</Error>}</ND>:null}
@@ -120,12 +134,12 @@ const Info = ({idUsuario,infoUsuario,hojadeVidaUsuario,hobbiesUsuario,contactoUs
             {lenguajesUsuario?<OutCard data-tip data-for="dscTooltip" onClick={()=>setLeng(!leng)}><ProfileCards title={"Lenguajes"} data={lenguajesUsuario} ></ProfileCards></OutCard>:<OutCard data-tip data-for="dscTooltip" onClick={()=>setLeng(!leng)}><ProfileCards title={"Lenguajes"} data={"En esta sección van tus idiomas, Haz click aqui para editar"} ></ProfileCards></OutCard>}
         </Cards>
         
-        <ReactTooltip id="dscTooltip" place='bottom' type='info'>
+        {Mounted &&<ReactTooltip id="dscTooltip" place='bottom' type='info'>
            Click aqui para editar
-        </ReactTooltip>
-        <ReactTooltip id="dscTooltipInf" place='top' type='info'>
+        </ReactTooltip>}
+        {Mounted &&<ReactTooltip id="dscTooltipInf" place='top' type='info'>
            Click aqui para ingresar nueva información
-        </ReactTooltip>
+        </ReactTooltip>}
     </div> );
 }
  

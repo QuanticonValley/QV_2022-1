@@ -29,11 +29,11 @@ const Profile = () => {
     let cargoUsuario= "CEO";
     let puntajeUsuario= 180;
 	let infoUsuario="";
-	let hojadeVidaUsuario="";
+	let hojadeVidaUsuario="https://cdn.quepadres.com/wp-content/uploads/2019/04/Dibujos-de-animales-del-mar-para-colorear.pdf";
 	let contactoUsuario="";
 	let hobbiesUsuario="";
 	let lenguajesUsuario="";
-	let fotoUsuario="https://isenacode.com/wp-content/uploads/2019/06/whatsapp-foto-perfil-malware.jpg";
+	let fotoUsuario="";
 	let trofeosUsuario=[8,7,5];
 	let facultadUsuario="";
 	let institucionUsuario="";
