@@ -18,11 +18,6 @@ const types = [
 		title: 'CONTENIDO',
 		link: '/zones/src/asesor',
 		type: 'src'
-	},
-	{
-		title: 'PREGUNTAS FRECUENTES',
-		link: '/zones/faq/asesor',
-		type: 'faq'
 	}
 ]
 
@@ -66,11 +61,11 @@ const Asesor = () => {
   const type = router.query.type
 
 	return <QV pg="Zonas Comunes">
-		<ZoneHeader	zone={3}/>
+		<ZoneHeader	zone={2}/>
 		<Selector type={type}/>
 		<Srcs active={type === 'src'}/>
 		<Virt active={type === 'vir'}/>
-		<Faqs active={type === 'faq'}/>
+		{/* <Faqs active={type === 'faq'}/> */}
 	</QV>
 }
 

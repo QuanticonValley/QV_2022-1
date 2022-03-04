@@ -13,13 +13,6 @@
 		"link": "/zones/webinar"
 	},
 	{
-		"name": "LOBBY",
-		"desc": "Tus tareas inician aqui",
-		"img": "/imgs/zones/lobby.png",
-		"link": "/zones/lobby",
-		"type": "twover"
-	},
-	{
 		"name": "ASESORES",
 		"desc": "Resuelve tus dudas",
 		"img": "/imgs/zones/asesor.png",

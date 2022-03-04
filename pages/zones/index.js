@@ -12,7 +12,7 @@ const Grid = styled.div`
 	display: grid;
 	grid-auto-flow: dense;
 	grid-auto-rows: 150px;
-	grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 	grid-gap: 1rem;
 	margin-top: 20px;
 `

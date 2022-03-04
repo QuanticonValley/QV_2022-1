@@ -67,7 +67,7 @@ const Element = ({ item }) => {
 		)
 	}
 	return (
-		<Link href={item.link}>
+		<Link href={item.link} passHref>
 			<ZElement type={item.type}>
 				<Img src={`${prefix}${item.img}`} name={item.name}/>
 				<Text>

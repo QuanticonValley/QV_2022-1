@@ -43,7 +43,7 @@ const ZoneHeader = ({ zone }) => {
 	const {name, desc, img} = getZones()[zone]
 	return (
 			<Container>
-				<Link href="/zones">
+				<Link href="/zones" passHref>
 					<Back src={`${prefix}/imgs/items/back.png`}/>
 				</Link>
 				<Cont>
