@@ -1,29 +1,28 @@
 {
-  "name": "quanticon_valley_next",
+  "name": "quanticom-valley-mi-version",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-pdf-viewer/core": "^2.11.0",
+    "@react-pdf-viewer/core": "^3.1.0",
+    "@react-pdf/renderer": "^2.1.1",
     "axios": "^0.21.4",
-    "date-fns": "^2.27.0",
-    "next": "^12.0.8",
-    "pdfjs-dist": "^2.6.347",
+    "next": "12.1.0",
+    "pdfjs-dist": "^2.12.313",
     "react": "17.0.2",
-    "react-calendar": "^3.5.0",
     "react-dom": "17.0.2",
+    "react-player": "^2.9.0",
     "react-tooltip": "^4.2.21",
-    "recoil": "^0.5.2",
+    "recoil": "^0.6.1",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.13.3",
-    "eslint": "7.32.0",
-    "eslint-config-next": "12.0.3"
+    "eslint": "^8.9.0",
+    "eslint-config-next": "12.1.0"
   }
 }

@@ -7,7 +7,7 @@ import noti from './noti.json'
 import info from './info.json'
 import office from './office.json'
 import state from './state.json'
-
+import actors from './actors.json'
 
 export const getstate = () => state
 //statePiso
@@ -30,6 +30,8 @@ export const getZones = () => zones
 // CONTENT
 export const getLobbyDataByGroup = (grp) => lobbydata[grp]
 
+//ACTORS
+export const getMentores=()=>actors.mentores
 // LOBBY
 export const getLobbyData = (grp, piso) => lobbydata[grp][piso]
 export const getHFData = () => lobbydata.hallFame

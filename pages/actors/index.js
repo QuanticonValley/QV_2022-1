@@ -3,6 +3,7 @@ import { prefix } from '../../utils/prefix.js';
 import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
+import Mentores from './components/mentores.js';
 
 const imgCommon = `${prefix}/imgs/header/zones.png`
 
@@ -22,7 +23,7 @@ const Actors = () => {
 		/>
 		<Margin>
 			<p>
-				Aqui va el contenido de esta pagina (Mentores, Evaluadores, Consultores)
+				<Mentores></Mentores>
 			</p>
 		</Margin>
 	</QV>)
