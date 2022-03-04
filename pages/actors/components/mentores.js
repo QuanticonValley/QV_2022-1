@@ -62,7 +62,7 @@ const Mentores = () => {
     <Content>
         <Video>
             {mentores[mentor][0]===""
-            ?<iframe src="https://prezi.com/v/embed/dgu_3zxmqcmt/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="100%" width="100%"></iframe>
+            ?<iframe src="https://prezi.com/v/embed/dgu_3zxmqcmt/" id="iframe_container"  webkitallowfullscreen="" mozallowfullscreen=""  allow="autoplay; fullscreen" height="100%" width="100%"></iframe>
             :<ReactPlayer
             url = {mentores[mentor][0]}
             className='react-player'
@@ -71,7 +71,7 @@ const Mentores = () => {
             ></ReactPlayer>}
         </Video>
         <Nav>
-            {mentores.map((ment,index)=><Imagen onClick={()=>setMentor(index)} src={`${prefix}/imgs/ment/${ment[1]}`}></Imagen>)}
+            {mentores.map((ment,index)=><Imagen onClick={()=>setMentor(index)} key={index} src={`${prefix}/imgs/ment/${ment[1]}`}></Imagen>)}
         </Nav>
     </Content>);
 }
