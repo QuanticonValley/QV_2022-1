@@ -54,10 +54,12 @@ const Imagen= styled.img`
 	}
 `
 
+
+
 const Mentores = () => {
     const mentores = getMentores();
     const [mentor, setMentor]= useState(0);
-    console.log(mentores[mentor]);
+    
     return (
     <Content>
         <Video>

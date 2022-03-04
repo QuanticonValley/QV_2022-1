@@ -51,7 +51,7 @@ const Selector = ({type}) => {
 	return (
 		<SelContainer>
 			{types.map(i => 
-				<Link key={i.title} href={i.link}>
+				<Link key={i.title} href={i.link} passHref>
 					<SelItem active={type === i.type}>
 						{i.title}
 					</SelItem>

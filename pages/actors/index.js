@@ -22,9 +22,7 @@ const Actors = () => {
 			imgH={imgCommon}
 		/>
 		<Margin>
-			<p>
-				<Mentores></Mentores>
-			</p>
+			<Mentores></Mentores>
 		</Margin>
 	</QV>)
 }
