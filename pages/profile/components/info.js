@@ -16,6 +16,7 @@ const Option= styled.div`
     margin-right: 10px;
     margin-bottom: 10px;
     border-bottom: ${p=>p.selected ?'3px solid #172BEF':'0px'};
+    color: ${p=>p.selected ?'black':'#999'};
     :hover{
 		cursor: pointer;
 	}

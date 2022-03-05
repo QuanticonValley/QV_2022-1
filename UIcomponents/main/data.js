@@ -15,19 +15,13 @@ const data = {
 			dsc: 'Entregables y Retos para cada Semana',
 		},
 		{
-			title: 'Zonas Comunes',
-			link: '/zones',
-			src: `${prefix}/imgs/main/Icon_zonas_comunes.svg`,
-			dsc: 'Contenidos, Asesores, Webinars y mas...',
-		},
-		{
 			title: 'Oficina',
 			link: '/office',
 			src: `${prefix}/imgs/main/Icon_Oficina.svg`,
 			dsc: 'Informacion sobre cada uno de los Equipos',
 		},
 		{
-			title: 'Tabla de posiciones',
+			title: 'Ranking',
 			link: '/ranking',
 			src: `${prefix}/imgs/main/Icon_tabla.png`,
 			dsc: 'Puedes encontrar el avance del juego y la clasificatoria',

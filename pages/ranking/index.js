@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 import { statePisoA, getDataProg } from '../../public/data'
-import HallFame from '../../UIcomponents/hallFame.js';
+import { useMainState } from '../../libs/stateHooks'
 
 const imgCommon = `${prefix}/imgs/header/info.png`
 
@@ -29,7 +29,6 @@ const BarProg = styled.div`
 	border-radius: .5em;
 	height: 2.4em;
 	width: 80%;
-
 	@media screen and (max-width: 800px) {
 		width: 100%;
 	}
@@ -48,38 +47,63 @@ const Prog = styled.div`
 `
 const SubTitle = styled.h2`
 	margin: 0;
+	margin-left:10%;
 	margin-top: 1em;
 `
 const Desc = styled.h3`
 	margin: 0;
+	margin-left:10%;
 	font-weight: normal;
 `
 const Margin=styled.div`
-    margin-left:3%;
-    min-height:60%;
-    background-color:#1920EF;
-    border-radius:10px;
-    @media screen and (max-width: 800px) {
-		width: 80%;
+    margin-left:10%;
+	@media screen and (max-width: 800px) {
+		margin-left:0;
 	}
 `
+const HallFame = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	max-width: 900px;
+	font-weight: bold;
+	background: #FFC024;
+	box-sizing: border-box;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	width: 90%;
+	@media screen and (max-width: 800px) {
+		width: 100%;
+	}
+	transition: .3s ease;
+	:hover {
+		transform: scale(1.03);
+		cursor: pointer;
+	}
+`
+const Image = styled.img`
+	margin-right: 1em;
+`
 const Ranking = () => {
-
+	const [mState, setMainState] = useMainState()
+	const openModal = (type) => {
+		setMainState({
+		  ...mState,
+		  modal: {
+			visibility: true,
+			type: type
+		  }
+		})
+	}
     const prog = getDataProg()
 	return (
-    <QV pg="Tabla de posiciones">
+    <QV pg="Ranking">
 		<Header
-			title="Tabla de posiciones"
+			title="Ranking"
 			desc="Aqui podrás ver el avance del juego y el salón de la fama"
 			imgH={imgCommon}
 		/>
-        
-        <TitleBox>
-			<Title>Salón de la fama</Title>
-		</TitleBox>
-        <Margin>
-            <HallFame></HallFame>
-        </Margin>
         <TitleBox>
 			<Title>Avance del Juego</Title>
 		</TitleBox>
@@ -92,6 +116,18 @@ const Ranking = () => {
 			<SubTitle>{prog.title}</SubTitle>
 			<Desc>{prog.desc}</Desc>
 		</ContProg>
+        <TitleBox>
+			<Title>Salón de la fama</Title>
+		</TitleBox>
+		<Margin>
+			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
+				<Image src={`${prefix}/imgs/principal/hallfame.png`}/>
+				Salon de la Fama
+			</HallFame>
+		</Margin>
+		
+
+        
         
         
 	</QV>)

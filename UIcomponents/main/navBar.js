@@ -82,13 +82,13 @@ const NavCont = ({pg}) => {
 	return (
 		<Container>
 			<NavImg src={navImg} alt="nav-img"/>
-			<Link href={"/principal"}>
+			<Link href={"/principal"} passHref>
 				<Logo src={logo} alt="logo"/>
 			</Link>
 			{pages.map((item, i) => {
 				return(
 					<span key={item.link}>
-						<Link href={item.link} >
+						<Link href={item.link} passHref>
 							<Button active={item.title === pg} data-tip data-for={"dscTooltip"+i.toString()}>
 								<Icon src={item.src} alt={item.link}/>
 								<Text>{item.title}</Text>

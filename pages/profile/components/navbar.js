@@ -7,6 +7,7 @@ const OutContainer = styled.div`
     flex-direction: column;
     padding:10px;
     height: 90%;
+    margin-bottom:10px;
     @media screen and (max-width: 1500px) {
 		flex-direction: row;
         height: 40%;

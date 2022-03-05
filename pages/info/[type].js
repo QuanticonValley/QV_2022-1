@@ -67,21 +67,21 @@ const Info = () => {
 			imgH={imgInfo}
 		/>
 		<Selector ref={selRef}>
-			<Link href='/info/about'>
+			<Link href='/info/about' passHref>
 				<SelItem 
 					active={type==='about'}
 					ref={type==='about'? barRef : null}
 				>
 				ACERCA DE
 			</SelItem></Link>
-			<Link href='/info/conoceQV'>
+			<Link href='/info/conoceQV' passHref>
 				<SelItem 
 					active={type==='conoceQV'}
 					ref={type==='conoceQV'? barRef : null}
 				>
 				CONOCE QV
 			</SelItem></Link>
-			<Link href='/info/faqs'>
+			<Link href='/info/faqs' passHref>
 				<SelItem 
 					active={type==='faqs'}
 					ref={type==='faqs'? barRef : null}
