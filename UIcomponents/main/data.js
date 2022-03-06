@@ -32,12 +32,7 @@ const data = {
 			src: `${prefix}/imgs/main/Icon_actores.svg`,
 			dsc: 'Informacion sobre los actores del juego',
 		},
-		{
-			title: 'Perfil',
-			link: '/profile',
-			src: `${prefix}/imgs/main/Icon_perfil.svg`,
-			dsc: 'Todo sobre ti',
-		},
+		
 		{
 			title: 'Acerca del juego',
 			link: '/info/about',
@@ -46,5 +41,11 @@ const data = {
 		},
 	]
 }
+// {
+// 			title: 'Perfil',
+// 			link: '/profile',
+// 			src: `${prefix}/imgs/main/Icon_perfil.svg`,
+// 			dsc: 'Todo sobre ti',
+// 		},
 
 export const getPages = () => data.pages

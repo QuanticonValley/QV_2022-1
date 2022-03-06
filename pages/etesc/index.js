@@ -91,6 +91,9 @@ const Etesc = () => {
 			<p>
 				En esta sección podras realizar los entregables más importantes en el desarrollo de tu proyecto los cuales te permitiran avanzar al proximo piso. 
 				Con estos y otros retos podras ganar Innocoins y Puntos de Victoria .
+			</p>
+			<p>
+				Por favor selecciona tu grupo, ¡ten en cuenta que el contenido varía según el grupo que escojas!
 			</p>	
 			<GroupSel/>
 			<PisosSel/>

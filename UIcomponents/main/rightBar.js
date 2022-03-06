@@ -131,7 +131,7 @@ const RightBar = ({active, close}) => {
 			{/* <GroupSel/> */}
 			</div>
 			
-			<Miniprofile></Miniprofile>
+			{/* <Miniprofile></Miniprofile> */}
 			<Calendar/>
 			
 			<NotiWidget open={()=>openModal('Noticiero')}/>
