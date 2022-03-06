@@ -227,7 +227,7 @@ const Principal = () => {
 
   return <QV pg="Principal">
 		<Header
-			title="Quanticon Valley Pruebas"
+			title="Quanticon Valley"
 			desc="Bienvenidos/as"
 			imgH={imgPrin}
 			primary
@@ -241,7 +241,7 @@ const Principal = () => {
 			<Title>Tu proxima entrega</Title>
 		</TitleBox>
 		<Grid>
-		<Link href='etesc'>
+		<Link href='etesc' passHref>
 			<Entrega>
 				<div>
 					Piso {pisoAct}
@@ -264,14 +264,14 @@ const Principal = () => {
 				onClick={()=>openModal('Noticiero')}
 			/>
 			<HallFame onClick={()=>openModal('Salon de la Fama')}>
-				<Image src={`${prefix}/imgs/principal/hallfame.png`}/>
+				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt=""/>
 				Salon de la Fama
 			</HallFame>
 			<Box 
 				style={{display: 'flex'}}
 				onClick={()=>openModal('Ultimas actualizaciones')}
 			>
-				<Image src={`${prefix}/imgs/principal/updates.png`}/>
+				<Image src={`${prefix}/imgs/principal/updates.png`} alt=""/>
 				<div>
 					<TextBox style={{textAlign: 'left'}}>Conoce las</TextBox>
 					Ultimas Actualizaciones
@@ -284,28 +284,28 @@ const Principal = () => {
 			<Title>Conoce Quanticon Valley</Title>
 		</TitleBox>
 		<GridB>
-			<Link href='content'>
+			<Link href='content' passHref>
 				<Box>
 					<Flex>
-						<Image src={`${prefix}/imgs/principal/lobby.png`}/>
+						<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
 						Contenido
 					</Flex>
 					<TextBox>Descubre las guías, instrucciones y rúbricas para desarrollar tu proyecto</TextBox>
 				</Box>
 			</Link>
-			<Link href='zones/src/asesor'>
+			<Link href='zones/src/asesor' passHref>
 				<Box>
 					<Flex>
-						<Image src={`${prefix}/imgs/principal/asesores.png`}/>
+						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
 						Asesores
 					</Flex>
 					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores.</TextBox>
 				</Box>
 			</Link>
-			<Link href='zones/webinar'>
+			<Link href='zones/webinar' passHref>
 				<Box>
 					<Flex>
-						<Image src={`${prefix}/imgs/principal/webinars.png`}/>
+						<Image src={`${prefix}/imgs/principal/webinars.png`} alt=""/>
 						Webinars
 					</Flex>
 					<TextBox>Descubre temas innovadores para aplicar en tu proyecto, y aprende mucho más</TextBox>
@@ -313,7 +313,7 @@ const Principal = () => {
 			</Link>
 		</GridB>
 
-		<Link href='info/conoceQV'>
+		<Link href='info/conoceQV' passHref>
 			<Button>Conoce mas de Quanticon Valley</Button>
 		</Link>
 

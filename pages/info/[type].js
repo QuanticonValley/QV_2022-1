@@ -11,6 +11,7 @@ import Header from '../../UIcomponents/header'
 import About from './pages/about'
 import Know from './pages/know'
 import Faqs from './pages/faqs'
+import Guide from './pages/guide'
 
 const imgInfo = `${prefix}/imgs/header/info.png`
 const Cont = styled.div`
@@ -62,7 +63,7 @@ const Info = () => {
 
 	return <QV pg="Acerca del juego">
 		<Header
-			title="Informacion"
+			title="Información"
 			desc="Acerca del juego"
 			imgH={imgInfo}
 		/>
@@ -81,6 +82,13 @@ const Info = () => {
 				>
 				CONOCE QV
 			</SelItem></Link>
+			<Link href='/info/guide' passHref>
+				<SelItem 
+					active={type==='guide'}
+					ref={type==='guide'? barRef : null}
+				>
+				GUÍA DEL JUGADOR
+			</SelItem></Link>
 			<Link href='/info/faqs' passHref>
 				<SelItem 
 					active={type==='faqs'}
@@ -93,6 +101,7 @@ const Info = () => {
 		<Cont>
 			{type === 'about' 	&& (<About />)}
 			{type === 'conoceQV'&& (<Know />)}
+			{type === 'guide'&& (<Guide />)}
 			{type === 'faqs' 		&& (<Faqs />)}
 		</Cont>
 	</QV>

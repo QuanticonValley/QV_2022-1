@@ -16,6 +16,7 @@ const monthName = [
   ]
 
 const WeekDay = ({d}) => {
+  
   return (
     <li className='weekDay'>{d}</li>
   )
@@ -51,7 +52,6 @@ const Day = ({d, y, m, haClick, event, today}) => {
 }
 
 const Calendar = ({ styles, handleDay, events }) => {
-
   const today = {d: new Date().getDate(), m:  new Date().getMonth(), y: new Date().getFullYear()}
   const [month, setMonth] = useState(new Date().getMonth())
   const [year, setYear] = useState(new Date().getFullYear())

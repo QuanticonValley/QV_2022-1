@@ -135,14 +135,14 @@ const RightBar = ({active, close}) => {
 			<Calendar/>
 			
 			<NotiWidget open={()=>openModal('Noticiero')}/>
-			<a href="https://drive.google.com/file/d/1xRTV1yWZlF3viIvIS8vgQjLpMZy9AP51/view?usp=sharing" target="_blank" rel="noreferrer">
+			<a href="https://drive.google.com/file/d/1gjLNIgF3h0M2DEksdszSECtPe2O439b7/view?usp=sharing" target="_blank" rel="noreferrer">
 				<ItemB data-tip data-for="dscTooltipPils">
 					<img src={`${prefix}/imgs/pil2.png`}/>
 					Pildoras de la semana
 				</ItemB>
 			</a>
 			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
-				<Image src={`${prefix}/imgs/principal/hallfame.png`}/>
+				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt=""/>
 				Salon de la Fama
 			</HallFame>
 

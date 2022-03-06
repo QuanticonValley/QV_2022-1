@@ -1,12 +1,12 @@
 {
 	"pisos": [
 		"Selecciona un piso",
-		"Piso 1: Ambientación",
-		"Piso 2: Conceptualización",
-		"Piso 3: Ideación",
-		"Piso 4: Diseño + Innovación",
-		"Piso 5: Prototipado",
-		"Piso 6: Sala de Juntas"
+		"Piso 1: ¡Estamos listos!",
+		"Piso 2: ¡Tenemos el problema con una pregunta esencial!",
+		"Piso 3: ¡Construimos la solución!",
+		"Piso 4: ¡Definimos el valor a entregar!",
+		"Piso 5: ¡Tenemos el valor probado y garantizada la viabilidad!",
+		"Piso 6: ¡Demostramos resultados y habilidades ganadas!"
 	],
 	"dos": {
 		"1" : {
