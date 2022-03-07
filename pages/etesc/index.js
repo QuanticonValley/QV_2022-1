@@ -103,7 +103,7 @@ const Etesc = () => {
 			<PisosSel/>
 			<Title>{pisoTitle}</Title>
 
-			{/* <ListItems group={group} piso={piso} data={data}/>	 */}
+			{piso <= pisoA? <div>
 			<Card>
 				<Head onClick={()=>cambio(1)}>
 					{open1===0
@@ -113,10 +113,7 @@ const Etesc = () => {
 					<TitleCont>Retos de piso</TitleCont>
 				</Head>
 				<Content alt={open1}>
-					{piso <= pisoA
-					?	<ListItems data={pisoCont} tipo={1}></ListItems>
-					: null }
-					{/* <ItemList data={dataEntr}/> */}
+						<ListItems data={pisoCont} tipo={1}></ListItems>
 				</Content>
 			</Card>
 			<Card>
@@ -127,10 +124,7 @@ const Etesc = () => {
 					}
 					<TitleCont>Retos adicionales</TitleCont></Head>
 				<Content alt={open2}>
-					{piso <= pisoA
-                    ?	<ListItems data={pisoCont} tipo={2}></ListItems>
-                    : null }
-					{/* <ItemList data={dataLobby}/> */}
+                    <ListItems data={pisoCont} tipo={2}></ListItems>
 				</Content>
 			</Card>
 			<Card>
@@ -141,12 +135,10 @@ const Etesc = () => {
 					}
 					<TitleCont>Encuestas de percepción</TitleCont></Head>
 				<Content alt={open3}>
-					{piso <= pisoA
-                    ?	<ListItems data={pisoCont} tipo={3}></ListItems>
-                    : null }
-					{/* <ItemList data={dataAsrc}/> */}
+                    <ListItems data={pisoCont} tipo={3}></ListItems>
 				</Content>
 			</Card>
+			</div>:<h2>Este piso aún esta bloqueado</h2>}
         </Margin>
 		
 	</QV>

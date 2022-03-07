@@ -16,6 +16,7 @@ const Objeto=styled.div`
 `
 const Subtitle=styled.h3`
 	margin-left:10px;
+	color:${p=>p.tipo===1 ?"black":"#172bef"};
 `
 const Content=styled.p`
 	margin-left:20px;
@@ -32,10 +33,10 @@ const TituloDescr=({data})=>{
 		)}
 	</Objeto>)
 }
-const TituloEnlaces=({data})=>{
+const TituloEnlaces=({data, tipo=0})=>{
 	if(data[1].length==0)return null;
 	return(<Objeto>
-		<Subtitle>{data[0]}</Subtitle>
+		<Subtitle tipo={tipo}>{data[0]}</Subtitle>
 		{data[1].map(i=>
 		<Content key={i}>
 			<a href={i[1]} target="_blank" rel="noreferrer">■ {i[0]}</a>
@@ -47,9 +48,9 @@ const Minicard=({data0,data1,data2,data3})=>{
 	if(data1[1].length==0&&data2[1].length==0&&data3[1].length==0)return null;
 	return(<Objeto>
 		<Subtitle>{data0[0]}</Subtitle>
-		<TituloEnlaces data={data1}></TituloEnlaces>
-		<TituloEnlaces data={data2}></TituloEnlaces>
-		<TituloEnlaces data={data3}></TituloEnlaces>
+		<TituloEnlaces data={data1} tipo={1}></TituloEnlaces>
+		<TituloEnlaces data={data2} tipo={1}></TituloEnlaces>
+		<TituloEnlaces data={data3} tipo={1}></TituloEnlaces>
 	</Objeto>)
 
 }
