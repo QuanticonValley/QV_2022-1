@@ -38,7 +38,7 @@ const Title = styled.div`
 
 const Item = ({data, src}) => {
 	return(
-		<a href={data[1]} target="_blank" withoutrel="noreferrer">
+		<a href={data[1]} target="_blank" rel="noreferrer">
 			<Src>
 				<Img src={`${prefix}/imgs/items/${src}.png`}/>
 				<Title>{data[0]}</Title>

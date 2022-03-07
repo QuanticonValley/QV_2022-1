@@ -10,122 +10,696 @@
 	],
 	"dos": {
 		"1" : {
-			"entrega": [
-				["ACTA DE COMPROMISO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700189"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+			[
+				["Acta de compromiso", "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"]
+			]],
+			"1_2":["Cómo se calificará",[]],
+			"1_3":["Herramientas"],
+			"1_3_1":["_Ova",
+				[
+					["Juego Sala de escape","#",""],
+					["Cronograma interactivo","#",""],
+					["Roles en el equipo de trabajo","#",""],
+					["Comunicación eficaz","#",""],
+					["Decálogo del Mentor","#",""]
+				]],
+			"1_3_2":["_pdf",
+				[
+					["Syllabus libro interactivo","#",""]
+				]],
+			"1_3_3":["_Vídeo",
+				[
+					["Cómo hacer un pitch","#",""],
+					["Pregunta esencial","#",""]
+				]],
+			"1_4":["Entrega tu actividad aqui",
+				[
+					["Acta de compromiso","#",""]
+				]],
+			"2_1":["Lista de retos adicionales",[]],
+			"2_2":["Cómo se calificará",[]],
+			"2_3":["Recursos"],
+			"2_3_1":["_Ova",[]],
+			"2_3_2":["_pdf",[]],
+			"2_3_3":["_Vídeo",[]],
+			"2_4":["Entrega tus retos adicionales aquí",[]],
+			"3":["Encuestas de percepción",
+				[
+					["Encuesta presentación de la materia","#",""],
+					["Encuesta de conocimientos previos","#",""]
+				]]
 		},
 		"2" : {
-			"entrega": [
-				["PREGUNTA ESENCIAL", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701073"]
-			],
-			"reto": [
-				["TALLER DE ÉTICA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745401"],
-				["PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745626"],
-				["PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745684"],
-				["PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745688"],
-				["PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745692"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 2- Pregunta esencial","Pitch de tres minutos donde se plantea la pregunta esencial, se identifican los actores y contextualiza el problema"]
+				]],
+			"1_2":["Cómo se calificará",
+				[
+					["Rúbrica pitch de piso 2","#",""]
+				]],
+			"1_3":["Herramientas"],
+			"1_3_1":["_Ova",
+				[
+					["Metodología Véster y Árbol de problemas","#",""],
+					["Cómo hacer un Pestal","#",""],
+					["Actores","#",""]
+				]],
+			"1_3_2":["_pdf",[]],
+			"1_3_3":["_Vídeo",
+				[
+					["Mapa de Empatía","#",""]
+				]],
+			"1_4":["Entrega tu actividad aqui",
+				[
+					["Pitch Piso 2- Pregunta esencial","#",""]
+				]],
+			"2_1":["Lista de retos adicionales",
+				[
+					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
+					["Taller de ética",""]
+				]],
+			"2_2":["Cómo se calificará",[]],
+			"2_3":["Recursos"],
+			"2_3_1":["_Ova",
+				[
+					["Habilidades blandas","#",""],
+					["Tecnología y sociedad","#",""],
+					["Economía del conocimiento","#",""],
+					["Diseño","#",""],
+					["Ergonomía","#",""],
+					["Mercadeo","#",""]
+				]],
+			"2_3_2":["_pdf",
+				[
+					["Taller de ética","#",""]
+				]],
+			"2_3_3":["_Vídeo",[]],
+			"2_4":["Entrega tus retos adicionales aquí",
+				[
+					["Preguntas conversatorio Habilidades Blandas","#",""],
+					["Preguntas conversatorio Economía del conocimiento","#",""],
+					["Preguntas conversatorio Tecnología y sociedad","#",""],
+					["Preguntas conversatorio Ergonomía","#",""],
+					["Preguntas conversatorio Mercadeo","#",""]
+				]],
+			"3":["Encuestas de percepción",[]]
+			
 		},
 		"3" : {
-			"entrega": [
-				["POSIBLES SOLUCIONES / INFOGRAFIA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700231"]
-			],
-			"reto": [
-				["ENTREGABLE ASUNTOS DE GÉNERO","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=755593"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 3","Infografía"],
+					["Avance trabajo escrito",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 3","#",""],
+					["Rúbrica avance trabajo escrito","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Infografía interactiva de ejemplo","#",""],
+						["Guía metodológica Pitch de piso- Infografía","#",""],
+						["Guía avance trabajo escrito","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Trabajo escrito","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						["Encuesta de percepción conversatorios","#",""]
+					]]
 		},
 		"4" : {
-			"entrega": [
-				["PROBLEMA / Diseño y Prototipo", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701160"],
-				["Avance del trabajo Escrito", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700251"],
-				["Evaluacion de Desempeños", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700274"]
-			],
-			"reto": [
-				["PREGUNTAS CONVERSATORIO TECNOLOGÍAS TRL","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760436"],
-				["PREGUNTAS CONVERSATORIO INNOVACIÓN PARA EL SECTOR RURAL","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760440"],
-				["PREGUNTAS CONVERSATORIO DISEÑO","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760444"],
-				["PREGUNTAS CONVERSATORIO ERGONOMÍA","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760449"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 4","Problema, Diseño y Prototipo"],
+					["Evaluación de desempeños 1",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 4","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Metodología general para el desarrollo de un proyecto","#",""],
+						["Diseño de experimentos","#",""],
+						["Variables críticas en el desarrollo de un proyecto","#",""],
+						["Aspectos de viabilidad","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Pitch de piso 4- Problema/Diseño y Prototipo","#",""],
+						["Evaluación de desempeño 2","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						["Conversatorios 2","Alternativas de protitipado"],
+						["Laboratorios",""]
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						["Alternativas de prototipado: Modelado 3D","#",""],
+						["Alternativas de prototipado: UI para Apps móviles","#",""],
+						["Alternativas de prototipado: Tecnologías TRL","#",""],
+						["Alternativas de prototipado: Herramientas CAD","#",""]
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						["Preguntas conversatorio Modelado 3D","#",""],
+						["Preguntas conversatorio Prototipado UI para apps móviles","#",""],
+						["Preguntas conversatorio Tecnologías TRL","#",""],
+						["Preguntas conversatorio Herramientas CAD","#",""]
+					]],
+				"3":["Encuestas de percepción",
+					[
+						["Encuesta de percepción conversatorios 2","#",""],
+						["Alternativas de prototipado","#",""]
+					]]
 		},
 		"5": {
-			"entrega": [
-				["PITCH DE PISO 5", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701166"],
-				["TRABAJO EN EQUIPO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700299"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch de piso 5","Pitch final"],
+					["Trabajo en equipo",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 5","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Evaluación del impacto","#",""],
+						["Modelo de negocio","#",""],
+						["Propuesta de valor","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						["Guía pitch de piso 5","#",""]
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Trabajo en equipo","#",""],
+						["Pitch de piso 5","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						
+					]]
+
 		},
 		"6": {
-			"entrega": [
-				["DOCUMENTACION TPI+EXPOIDEAS", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700342"],
-				["ENTREGA FINAL DEL TRABAJO ESCRITO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700332"],
-				["EVALUACIÓN DE DESEMPEÑOS II", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700346"],
-				["NOTA APRECIATIVA DEL MENTOR","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700353"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+	
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						
+					]]
+			
 		}
 	},
 	"cuatro": {
 		"1" : {
-			"entrega": [
-				["ACTA DE COMPROMISO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700426"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+			[
+				["Acta de compromiso", "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"]
+			]],
+			"1_2":["Cómo se calificará",[]],
+			"1_3":["Herramientas"],
+			"1_3_1":["_Ova",
+				[
+					["Juego Sala de escape","#",""],
+					["Cronograma interactivo","#",""],
+					["Roles en el equipo de trabajo","#",""],
+					["Comunicación eficaz","#",""],
+					["Decálogo del Mentor","#",""]
+				]],
+			"1_3_2":["_pdf",
+				[
+					["Syllabus libro interactivo","#",""]
+				]],
+			"1_3_3":["_Vídeo",
+				[
+					["Cómo hacer un pitch","#",""],
+					["Pregunta esencial","#",""]
+				]],
+			"1_4":["Entrega tu actividad aqui",
+				[
+					["Acta de compromiso","#",""]
+				]],
+			"2_1":["Lista de retos adicionales",[]],
+			"2_2":["Cómo se calificará",[]],
+			"2_3":["Recursos"],
+			"2_3_1":["_Ova",[]],
+			"2_3_2":["_pdf",[]],
+			"2_3_3":["_Vídeo",[]],
+			"2_4":["Entrega tus retos adicionales aquí",[]],
+			"3":["Encuestas de percepción",
+				[
+					["Encuesta presentación de la materia","#",""],
+					["Encuesta de conocimientos previos","#",""]
+				]]
 		},
 		"2" : {
-			"entrega": [
-				["PREGUNTA ESENCIAL", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701074"]
-			],
-			"reto": [
-				["TALLER DE ÉTICA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745402"],
-				["PREGUNTAS CONVERSATORIO HABILIDADES BLANDAS", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745627"],
-				["PREGUNTAS CONVERSATORIO TECNOLOGÍA Y SOCIEDAD", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745685"],
-				["PREGUNTAS CONVERSATORIO ECONOMÍA DEL CONOCIMIENTO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745689"],
-				["PREGUNTAS CONVERSATORIO DISEÑO Y ERGONOMÍA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=745693"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 2- Pregunta esencial","Pitch de tres minutos donde se plantea la pregunta esencial, se identifican los actores y contextualiza el problema"]
+				]],
+			"1_2":["Cómo se calificará",
+				[
+					["Rúbrica pitch de piso 2","#",""]
+				]],
+			"1_3":["Herramientas"],
+			"1_3_1":["_Ova",
+				[
+					["Metodología Véster y Árbol de problemas","#",""],
+					["Cómo hacer un Pestal","#",""],
+					["Actores","#",""]
+				]],
+			"1_3_2":["_pdf",[]],
+			"1_3_3":["_Vídeo",
+				[
+					["Mapa de Empatía","#",""]
+				]],
+			"1_4":["Entrega tu actividad aqui",
+				[
+					["Pitch Piso 2- Pregunta esencial","#",""]
+				]],
+			"2_1":["Lista de retos adicionales",
+				[
+					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
+					["Taller de ética",""]
+				]],
+			"2_2":["Cómo se calificará",[]],
+			"2_3":["Recursos"],
+			"2_3_1":["_Ova",
+				[
+					["Habilidades blandas","#",""],
+					["Tecnología y sociedad","#",""],
+					["Economía del conocimiento","#",""],
+					["Diseño","#",""],
+					["Ergonomía","#",""],
+					["Mercadeo","#",""]
+				]],
+			"2_3_2":["_pdf",
+				[
+					["Taller de ética","#",""]
+				]],
+			"2_3_3":["_Vídeo",[]],
+			"2_4":["Entrega tus retos adicionales aquí",
+				[
+					["Preguntas conversatorio Habilidades Blandas","#",""],
+					["Preguntas conversatorio Economía del conocimiento","#",""],
+					["Preguntas conversatorio Tecnología y sociedad","#",""],
+					["Preguntas conversatorio Ergonomía","#",""],
+					["Preguntas conversatorio Mercadeo","#",""]
+				]],
+			"3":["Encuestas de percepción",[]]
+			
 		},
 		"3" : {
-			"entrega": [
-				["POSIBLES SOLUCIONES / INFOGRAFIA", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700465"]
-			],
-			"reto": [
-				["ENTREGABLE ASUNTOS DE GÉNERO","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=755594"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 3","Infografía"],
+					["Avance trabajo escrito",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 3","#",""],
+					["Rúbrica avance trabajo escrito","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Infografía interactiva de ejemplo","#",""],
+						["Guía metodológica Pitch de piso- Infografía","#",""],
+						["Guía avance trabajo escrito","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Trabajo escrito","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						["Encuesta de percepción conversatorios","#",""]
+					]]
 		},
 		"4" : {
-			"entrega": [
-				["PROBLEMA / Diseño y Prototipo", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701161"],
-				["Avance del trabajo Escrito", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700485"],
-				["Evaluacion de Desempeños", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700506"]
-			],
-			"reto": [
-				["PREGUNTAS CONVERSATORIO TECNOLOGÍAS TRL","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760437"],
-				["PREGUNTAS CONVERSATORIO INNOVACIÓN PARA EL SECTOR RURAL","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760441"],
-				["PREGUNTAS CONVERSATORIO DISEÑO","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760445"],
-				["PREGUNTAS CONVERSATORIO ERGONOMÍA","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=760450"]
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch Piso 4","Problema, Diseño y Prototipo"],
+					["Evaluación de desempeños 1",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 4","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Metodología general para el desarrollo de un proyecto","#",""],
+						["Diseño de experimentos","#",""],
+						["Variables críticas en el desarrollo de un proyecto","#",""],
+						["Aspectos de viabilidad","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Pitch de piso 4- Problema/Diseño y Prototipo","#",""],
+						["Evaluación de desempeño 2","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						["Conversatorios 2","Alternativas de protitipado"],
+						["Laboratorios",""]
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						["Alternativas de prototipado: Modelado 3D","#",""],
+						["Alternativas de prototipado: UI para Apps móviles","#",""],
+						["Alternativas de prototipado: Tecnologías TRL","#",""],
+						["Alternativas de prototipado: Herramientas CAD","#",""]
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						["Preguntas conversatorio Modelado 3D","#",""],
+						["Preguntas conversatorio Prototipado UI para apps móviles","#",""],
+						["Preguntas conversatorio Tecnologías TRL","#",""],
+						["Preguntas conversatorio Herramientas CAD","#",""]
+					]],
+				"3":["Encuestas de percepción",
+					[
+						["Encuesta de percepción conversatorios 2","#",""],
+						["Alternativas de prototipado","#",""]
+					]]
 		},
 		"5": {
-			"entrega": [
-				["PITCH DE PISO 5", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=701167"],
-				["TRABAJO EN EQUIPO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700531"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+					["Pitch de piso 5","Pitch final"],
+					["Trabajo en equipo",""]
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					["Rúbrica Pitch de piso 5","#",""]
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						["Evaluación del impacto","#",""],
+						["Modelo de negocio","#",""],
+						["Propuesta de valor","#",""]
+					]],
+				"1_3_2":["_pdf",
+					[
+						["Guía pitch de piso 5","#",""]
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						["Trabajo en equipo","#",""],
+						["Pitch de piso 5","#",""]
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						
+					]]
+
 		},
 		"6": {
-			"entrega": [
-				["DOCUMENTACION TPI+EXPOIDEAS", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700574"],
-				["ENTREGA FINAL DEL TRABAJO ESCRITO", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700564"],
-				["EVALUACIÓN DE DESEMPEÑOS II", "https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700578"],
-				["NOTA APRECIATIVA DEL MENTOR","https://campus.virtual.unal.edu.co/mod/assign/view.php?id=700585"]
-			],
-			"reto": [
-			]
+			"1_1":["Lista de entregables de piso",
+				[
+	
+				]],
+				"1_2":["Cómo se calificará",
+				[
+					
+				]],
+				"1_3":["Herramientas"],
+				"1_3_1":["_Ova",
+					[
+						
+					]],
+				"1_3_2":["_pdf",
+					[
+						
+					]],
+				"1_3_3":["_Vídeo",
+					[
+						
+					]],
+				"1_4":["Entrega tu actividad aqui",
+					[
+						
+					]],
+				"2_1":["Lista de retos adicionales",
+					[
+						
+					]],
+				"2_2":["Cómo se calificará",
+					[
+						
+					]],
+				"2_3":["Recursos"],
+				"2_3_1":["_Ova",
+					[
+						
+					]],
+				"2_3_2":["_pdf",
+					[
+						
+					]],
+				"2_3_3":["_Vídeo",
+					[
+						
+					]],
+				"2_4":["Entrega tus retos adicionales aquí",
+					[
+						
+					]],
+				"3":["Encuestas de percepción",
+					[
+						
+					]]
+			
 		}
 	}
 }

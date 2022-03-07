@@ -1,13 +1,11 @@
-import { useState } from 'react'
 import { useMainState } from '../../libs/stateHooks'
-
+import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
 import { statePisoA, getDataProg } from '../../public/data'
 
 import QV from '../../UIcomponents/qv';
-import Pdf from '../../UIcomponents/pdf';
 
 import Header from '../../UIcomponents/header'
 
@@ -18,66 +16,17 @@ const imgPrin = `${prefix}/imgs/header/principal.png`
 const Image = styled.img`
 	margin-right: 1em;
 `
-const Button = styled.button`
-	width: 150px;
-	color: #172BEF;
-	font-weight: bold;
-	padding: .5em 1em;
-	margin: 1em auto;
-	border: 2px solid #172BEF;
-	border-radius: .5em;
-	transition: .3s ease;
-	:hover{
-		transform: scale(1.05);
-		background: #172BEF;
-		cursor: pointer;
-		color: white;
-	}
-`
 const Title = styled.h3`
 	border-bottom: 2px solid #ffc024;
 `
-const ContProg = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 1em 0 2em 0;
+const Descr= styled.h3`
+	text-align:center;
 `
-const BarProg = styled.div`
-	border: solid #1920EF;
-	border-radius: .5em;
-	height: 2.4em;
-	width: 80%;
-
-	@media screen and (max-width: 800px) {
-		width: 100%;
-	}
-`
-const Prog = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #1920EF;
-	border-radius: .2em 0 0 .2em;
-	font-weight: bold;
-	font-size: 1.2em;
-	color: white;
-	height: 100%;
-	width: ${p => p.width};
-`
-const SubTitle = styled.h2`
-	margin: 0;
-	margin-top: 1em;
-`
-const Desc = styled.h3`
-	margin: 0;
-	font-weight: normal;
-`
-
 const Grid = styled.div`
 	display: grid;
 	margin: 0 3em;
 	grid-template-columns: repeat(2, 1fr);
+	align-content:center;
 	grid-gap: 1em;
 	@media screen and (max-width: 1200px) {
 		grid-template-columns: 1fr
@@ -86,7 +35,7 @@ const Grid = styled.div`
 const GridB = styled.div`
 	display: grid;
 	margin: 0 3em;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1em;
 	@media screen and (max-width: 1200px) {
 		grid-template-columns: 1fr
@@ -125,15 +74,7 @@ const Entrega = styled.div`
 		flex-direction: column;
 	}
 `
-const EntDiv = styled.div`
-	width: 3px;
-	height: 80%;
-	background: #172BEF;
-	@media screen and (max-width: 800px) {
-		width: 60%;
-		height: 3px;
-	}
-`
+
 const Noti = styled.img`
 	grid-row: span 2;
 	border-radius: 1em;
@@ -144,13 +85,25 @@ const Noti = styled.img`
 		cursor: pointer;
 	}
 `
-const HallFame = styled.div`
+const LogoExt= styled.div`
+	grid-row: span 2;
 	display: flex;
+	text-align:center;
 	justify-content: center;
 	align-items: center;
-	min-height: 40px;
-
+`
+const Logo = styled.img`
+	border-radius: 1em;
+`
+const MejoresProyectos = styled.a`
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+	grid-row: span 2;
+	min-height: 60px;
 	font-weight: bold;
+	font-size:40px;
 	background: #FFC024;
 	box-sizing: border-box;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
@@ -160,6 +113,12 @@ const HallFame = styled.div`
 	:hover {
 		transform: scale(1.03);
 		cursor: pointer;
+	}
+	@media screen and (max-width: 1500px) {
+		font-size: 30px;
+	}
+	@media screen and (max-width: 900px) {
+		font-size: 20px;
 	}
 `
 
@@ -201,12 +160,6 @@ const Box = styled.div`
 		cursor: pointer;
 	}
 `
-const ExtLink= styled.div`
-	color: blue;
-	font-weight: 500;
-	text-align: right;
-	margin-right: 8%;
-`
 const Principal = () => {
   const [mState, setMainState] = useMainState()
 	const prog = getDataProg()
@@ -232,68 +185,53 @@ const Principal = () => {
 			imgH={imgPrin}
 			primary
 		/>
+		<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
 		<TitleBox>
-			<Title>Guia de Juego</Title>
-		</TitleBox>
-		<Pdf file={"content/guia.pdf"}></Pdf>
-		<ExtLink><a href={`${prefix}/content/guia.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
-		<TitleBox>
-			<Title>Tu proxima entrega</Title>
+			<Title>Conoce Quanticon Valley</Title>
 		</TitleBox>
 		<Grid>
-		<Link href='etesc' passHref>
-			<Entrega>
-				<div>
-					Piso {pisoAct}
-					<p>{prog?.title}</p>
-				</div>
-				<EntDiv/>
-				<div>
-					{prog?.entrega}
-				</div>
-			</Entrega>
-		</Link>
+			<LogoExt><Logo
+				src={`${prefix}/imgs/info/QV.png`}
+			></Logo>
+			</LogoExt>
+			<ReactPlayer
+            url = {"https://www.youtube.com/watch?v=GBQDe060AeE"}
+            className='react-player'
+            width='100%'
+            height='400px'
+            controls
+            ></ReactPlayer>
 		</Grid>
 
 		<TitleBox>
-			<Title>Lo mas relevante</Title>
+			<Title>Conoce a los ganadores de la décima edición</Title>
 		</TitleBox>
 		<Grid>
 			<Noti 
 				src={`${prefix}/imgs/principal/lastNoti.png`}
 				onClick={()=>openModal('Noticiero')}
 			/>
-			<HallFame onClick={()=>openModal('Salon de la Fama')}>
-				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt=""/>
-				Salon de la Fama
-			</HallFame>
-			<Box 
-				style={{display: 'flex'}}
-				onClick={()=>openModal('Ultimas actualizaciones')}
-			>
-				<Image src={`${prefix}/imgs/principal/updates.png`} alt=""/>
-				<div>
-					<TextBox style={{textAlign: 'left'}}>Conoce las</TextBox>
-					Ultimas Actualizaciones
-				</div>
-			</Box>
+			<MejoresProyectos href={"https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"} target="_blank" rel="noreferrer">
+				¡Conoce los proyectos desarrollados por los ganadores!
+			</MejoresProyectos>
+			
 		</Grid>
 
 
 		<TitleBox>
-			<Title>Conoce Quanticon Valley</Title>
+			<Title>Conoce a los actores de Quanticon Valley</Title>
 		</TitleBox>
 		<GridB>
-			<Link href='content' passHref>
+			<Link href='actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
-						Contenido
+						Mentores
 					</Flex>
-					<TextBox>Descubre las guías, instrucciones y rúbricas para desarrollar tu proyecto</TextBox>
+					<TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
 				</Box>
 			</Link>
-			<Link href='zones/src/asesor' passHref>
+			<Link href='actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
@@ -302,33 +240,10 @@ const Principal = () => {
 					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores.</TextBox>
 				</Box>
 			</Link>
-			<Link href='zones/webinar' passHref>
-				<Box>
-					<Flex>
-						<Image src={`${prefix}/imgs/principal/webinars.png`} alt=""/>
-						Webinars
-					</Flex>
-					<TextBox>Descubre temas innovadores para aplicar en tu proyecto, y aprende mucho más</TextBox>
-				</Box>
-			</Link>
+			
 		</GridB>
 
-		<Link href='info/conoceQV' passHref>
-			<Button>Conoce mas de Quanticon Valley</Button>
-		</Link>
 
-		<TitleBox>
-			<Title>Avance del Juego</Title>
-		</TitleBox>
-		<ContProg>
-			<BarProg>
-				<Prog width={prog.num}>
-					{prog.piso}
-				</Prog>
-			</BarProg>
-			<SubTitle>{prog.title}</SubTitle>
-			<Desc>{prog.desc}</Desc>
-		</ContProg>
 	</QV>
 }
 export default Principal

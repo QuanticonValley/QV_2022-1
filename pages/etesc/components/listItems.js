@@ -1,88 +1,92 @@
 import styled from 'styled-components'
 import { prefix } from '../../../utils/prefix.js'
 import { statePiso } from '../../../public/data'
-
-const upFile = `${prefix}/imgs/etesc/up-file.png`
-const reto = `${prefix}/imgs/etesc/reto.png`
+import { useState, useEffect } from 'react'
 
 const Container = styled.div`
-	padding: 10px 20px;
+	
 `
-const SrcList = styled.div`
-	display: flex;
-	flex-direction: column;
-	color: blue;
-	margin-bottom: 30px;
+const Organiz=styled.div`
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
 `
-const ItemCat = styled.div`
-	font-weight: 600;
-	font-size: 25px;
-	line-height: 52px;
-	letter-spacing: -0.03em;
-	color: #272835;
-	margin: 0px;
+const Objeto=styled.div`
+	width:400px;
 `
-const Item = styled.a`
-		display: flex;
-		color: #000;
-		align-items: center;
-		margin-bottom: 10px;
-		margin-top: 10px;
-		margin-left: 20px;
-		transition: 0.3s;
-		
-		:hover {
-			transform: scale(1.02);
-			color: #1920EF;
-		}
+const Subtitle=styled.h3`
+	margin-left:10px;
 `
-const ItemImg = styled.img`
+const Content=styled.p`
+	margin-left:20px;
 `
-const ItemTitle = styled.span`
-	font-weight: 600;
-	font-size: 18px;
-	padding-left: 15px;
-	width: 80%;
-`
-
-const ItemList = ({ title, data, imgSrc }) => {
-	return (
-		<SrcList>
-			<ItemCat>{title}</ItemCat>
-			{(data instanceof Array)  ? data.map(item => 
-			<Item href={item[1]} target="_blank" key={item[0]} >
-					<ItemImg src={imgSrc}/>
-					<ItemTitle>{item[0]}</ItemTitle>
-			</Item>
-			): null}
-		</SrcList>
-	)
+const TituloDescr=({data})=>{
+	if(data[1].length==0)return null;
+	return (<Objeto>
+		<Subtitle>{data[0]}</Subtitle>
+		{data[1].map(i=>
+		<Content key={i}>
+			
+			<p><b>■ {i[0]}: </b>{i[1]}</p>
+		</Content>
+		)}
+	</Objeto>)
 }
-const PisoNo = () => 
-			<h3>El piso seleccionado estara disponible una vez se complete la fase del piso anterior</h3>
+const TituloEnlaces=({data})=>{
+	if(data[1].length==0)return null;
+	return(<Objeto>
+		<Subtitle>{data[0]}</Subtitle>
+		{data[1].map(i=>
+		<Content key={i}>
+			<a href={i[1]} target="_blank" rel="noreferrer">■ {i[0]}</a>
+		</Content>
+		)}
+	</Objeto>)
+}
+const Minicard=({data0,data1,data2,data3})=>{
+	if(data1[1].length==0&&data2[1].length==0&&data3[1].length==0)return null;
+	return(<Objeto>
+		<Subtitle>{data0[0]}</Subtitle>
+		<TituloEnlaces data={data1}></TituloEnlaces>
+		<TituloEnlaces data={data2}></TituloEnlaces>
+		<TituloEnlaces data={data3}></TituloEnlaces>
+	</Objeto>)
 
-const Resources = ({group, piso, data}) => {
-	const pisoA = statePiso()
-
+}
+const Resources = ({tipo, data}) => {
+	const [Mounted, IsMounted]=useState(false)
+	useEffect(()=>{
+		IsMounted(true)
+	},)
 	return (
 		<Container>
-		{piso <= pisoA 
-			? <div>
-					{data.entrega[0] ? 
-					<ItemList
-						title="ENTREGABLES"
-						data={data.entrega}
-						imgSrc={upFile}
-					/> : null}
-					{data.reto[0] ? 
-					<ItemList
-						title="RETOS DE PISO"
-						data={data.reto}
-						imgSrc={reto}
-					/> : null}
-				</div>
-			: <PisoNo/>
-			}
+			{Mounted
+			?<div>
+				{tipo===1?
+				<Organiz>
+					<TituloDescr data={data["1_1"]}></TituloDescr>
+					<TituloEnlaces data={data["1_2"]}></TituloEnlaces>
+					<TituloEnlaces data={data["1_4"]}></TituloEnlaces>
+					<Minicard data0={data["1_3"]} data1={data["1_3_1"]} data2={data["1_3_2"]} data3={data["1_3_3"]}></Minicard>
+				</Organiz>
+				:null}
+				{tipo===2?
+				<Organiz>
+					<TituloDescr data={data["2_1"]}></TituloDescr>
+					<TituloEnlaces data={data["2_2"]}></TituloEnlaces>
+					<TituloEnlaces data={data["2_4"]}></TituloEnlaces>
+					<Minicard data0={data["2_3"]} data1={data["2_3_1"]} data2={data["2_3_2"]} data3={data["2_3_3"]}></Minicard>
+					
+				</Organiz>
+				:null}
+				{tipo===3?
+				<Organiz>
+					<TituloEnlaces data={data["3"]}></TituloEnlaces>
+				</Organiz>
+				:null}
+				
+			</div>
+			:null}
 		</Container>
 	);
 }

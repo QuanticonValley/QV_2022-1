@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { prefix } from '../../utils/prefix.js';
 import { getEtesc, getPisoTitle } from '../../public/data'
 import { useMainState } from '../../libs/stateHooks'
-import { getAsesorSrc, getLobbyData, statePiso, } from "../../public/data";
+import { getAsesorSrc, getLobbyData, statePiso, getPisoData } from "../../public/data";
+import ListItems from './components/listItems'
 import styled from 'styled-components'
 import ItemList from '../../UIcomponents/SrcItemList'
 import QV from '../../UIcomponents/qv';
@@ -54,32 +55,35 @@ const Etesc = () => {
   	const [mState, setMainState] = useMainState()
 	const group = mState.group ? mState.group : 'dos'
 	const piso = mState.piso ? mState.piso : 1
-	const data = getEtesc(group, piso)
 	const pisoTitle = getPisoTitle(piso)
 	const pisoA = statePiso()
-
-	const [dataEntr,setDataEntr]= useState({})
+	const [pisoCont,setPisoCont]= useState({})
 	useEffect(() => {
-		setDataEntr(getEtesc(group, piso))
+		setPisoCont(getPisoData(group, piso))
 	}, [group, piso])
+	
+	// const [dataEntr,setDataEntr]= useState({})
+	// useEffect(() => {
+	// 	setDataEntr(getEtesc(group, piso))
+	// }, [group, piso])
 
-	const [dataLobby, setDataLobby] = useState({})
-	useEffect(() => {
-		setDataLobby(getLobbyData(group, piso))
-	}, [group, piso])
+	// const [dataLobby, setDataLobby] = useState({})
+	// useEffect(() => {
+	// 	setDataLobby(getLobbyData(group, piso))
+	// }, [group, piso])
 
-	const [dataAsrc, setDataAsrc] = useState({})
-	useEffect(() => {
-		setDataAsrc(getAsesorSrc(group, piso))
-	}, [group, piso])
+	// const [dataAsrc, setDataAsrc] = useState({})
+	// useEffect(() => {
+	// 	setDataAsrc(getAsesorSrc(group, piso))
+	// }, [group, piso])
 
 	const [open1,setOpen1]=useState(0);
 	const [open2,setOpen2]=useState(0);
 	const [open3,setOpen3]=useState(0);
 	function cambio(a){
-		if(a===1){open1===0?setOpen1(400):setOpen1(0);}
-		if(a===2){open2===0?setOpen2(400):setOpen2(0);}
-		if(a===3){open3===0?setOpen3(400):setOpen3(0);}
+		if(a===1){open1===0?setOpen1(800):setOpen1(0);}
+		if(a===2){open2===0?setOpen2(800):setOpen2(0);}
+		if(a===3){open3===0?setOpen3(800):setOpen3(0);}
 	}
 	return <QV pg="ETESC">
 		<Header
@@ -106,12 +110,13 @@ const Etesc = () => {
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Entregables</TitleCont>
+					<TitleCont>Retos de piso</TitleCont>
 				</Head>
 				<Content alt={open1}>
 					{piso <= pisoA
-					?	<ItemList data={dataEntr}/>
+					?	<ListItems data={pisoCont} tipo={1}></ListItems>
 					: null }
+					{/* <ItemList data={dataEntr}/> */}
 				</Content>
 			</Card>
 			<Card>
@@ -120,11 +125,12 @@ const Etesc = () => {
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Contenidos de Piso</TitleCont></Head>
+					<TitleCont>Retos adicionales</TitleCont></Head>
 				<Content alt={open2}>
 					{piso <= pisoA
-                    ?	<ItemList data={dataLobby}/>
+                    ?	<ListItems data={pisoCont} tipo={2}></ListItems>
                     : null }
+					{/* <ItemList data={dataLobby}/> */}
 				</Content>
 			</Card>
 			<Card>
@@ -133,11 +139,12 @@ const Etesc = () => {
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Recursos de Asesores</TitleCont></Head>
+					<TitleCont>Encuestas de percepción</TitleCont></Head>
 				<Content alt={open3}>
 					{piso <= pisoA
-                    ?	<ItemList data={dataAsrc}/>
+                    ?	<ListItems data={pisoCont} tipo={3}></ListItems>
                     : null }
+					{/* <ItemList data={dataAsrc}/> */}
 				</Content>
 			</Card>
         </Margin>
