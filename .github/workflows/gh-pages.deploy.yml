@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /nextghp
+      NEXT_PUBLIC_BASE_PATH: /QV_2022-1
 
     strategy:
       matrix:
