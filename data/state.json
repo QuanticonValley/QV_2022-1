@@ -3,11 +3,11 @@
 	"piso": 1,
 	"group": "dos",
 	"prog" : {
-		"num": "100%",
-		"piso": "6to Piso",
-		"title": "¡Tenemos el valor probado y garantizada la viabilidad!",
-		"desc": "Validación de la solución, prototipo terminado y pitch final",
-		"entrega": "Documentacion TPI+EXPOIDEAS / Sala de Juntas"
+		"num": "16%",
+		"piso": "1er Piso",
+		"title": "¡Estamos listos!",
+		"desc": "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto",
+		"entrega": "Acta de compromiso"
 	},
 	"modal": {
 		"visibility": false,
