@@ -63,15 +63,14 @@ const Mentores = () => {
     return (
     <Content>
         <Video>
-            {mentores[mentor][0]===""
-            ?<iframe src="https://prezi.com/v/embed/dgu_3zxmqcmt/" id="iframe_container"  webkitallowfullscreen="" mozallowfullscreen=""  allow="autoplay; fullscreen" height="100%" width="100%"></iframe>
-            :<ReactPlayer
+            {mentores?
+            <ReactPlayer
             url = {mentores[mentor][0]}
             className='react-player'
             width='100%'
             height='100%'
             controls
-            ></ReactPlayer>}
+            ></ReactPlayer>:null}
         </Video>
         <Nav>
             {mentores.map((ment,index)=><Imagen onClick={()=>setMentor(index)} key={index} src={`${prefix}/imgs/ment/${ment[1]}`}></Imagen>)}

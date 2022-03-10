@@ -18,24 +18,25 @@
 			"1_3":["Herramientas"],
 			"1_3_1":["_Ova",
 				[
-					["Juego Sala de escape","#",""],
-					["Cronograma interactivo","#",""],
-					["Roles en el equipo de trabajo","#",""],
-					["Comunicación eficaz","#",""],
-					["Decálogo del Mentor","#",""]
+					["Juego Sala de escape","https://micampus.unal.edu.co/mod/lesson/view.php?id=780610",""],
+					["Cronograma interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=780612",""],
+					["Roles en el equipo de trabajo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780378",""],
+					["Comunicación eficaz","https://micampus.unal.edu.co/mod/hvp/view.php?id=780620",""],
+					["Decálogo del Mentor","https://micampus.unal.edu.co/mod/hvp/view.php?id=780618",""],
+					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780609",""]
 				]],
 			"1_3_2":["_pdf",
 				[
-					["Syllabus libro interactivo","#",""]
+					
 				]],
 			"1_3_3":["_Vídeo",
 				[
-					["Cómo hacer un pitch","#",""],
-					["Pregunta esencial","#",""]
+					["Cómo hacer un pitch","https://micampus.unal.edu.co/mod/page/view.php?id=780732",""],
+					["Pregunta esencial","https://micampus.unal.edu.co/mod/page/view.php?id=780386",""]
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Acta de compromiso","#",""]
+					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=780367",""]
 				]],
 			"2_1":["Lista de retos adicionales",[]],
 			"2_2":["Cómo se calificará",[]],
@@ -46,8 +47,8 @@
 			"2_4":["Entrega tus retos adicionales aquí",[]],
 			"3":["Encuestas de percepción",
 				[
-					["Encuesta presentación de la materia","#",""],
-					["Encuesta de conocimientos previos","#",""]
+					["Encuesta presentación de la materia","https://micampus.unal.edu.co/mod/feedback/view.php?id=780384",""],
+					["Encuesta de conocimientos previos","https://micampus.unal.edu.co/mod/feedback/view.php?id=780388",""]
 				]]
 		},
 		"2" : {
@@ -365,24 +366,25 @@
 			"1_3":["Herramientas"],
 			"1_3_1":["_Ova",
 				[
-					["Juego Sala de escape","#",""],
-					["Cronograma interactivo","#",""],
-					["Roles en el equipo de trabajo","#",""],
-					["Comunicación eficaz","#",""],
-					["Decálogo del Mentor","#",""]
+					["Juego Sala de escape","https://micampus.unal.edu.co/mod/lesson/view.php?id=780952",""],
+					["Cronograma interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=780954",""],
+					["Roles en el equipo de trabajo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780724",""],
+					["Comunicación eficaz","https://micampus.unal.edu.co/mod/hvp/view.php?id=780962",""],
+					["Decálogo del Mentor","https://micampus.unal.edu.co/mod/hvp/view.php?id=780960",""],
+					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780951",""]
 				]],
 			"1_3_2":["_pdf",
 				[
-					["Syllabus libro interactivo","#",""]
+					
 				]],
 			"1_3_3":["_Vídeo",
 				[
-					["Cómo hacer un pitch","#",""],
-					["Pregunta esencial","#",""]
+					["Cómo hacer un pitch","https://micampus.unal.edu.co/mod/hvp/view.php?id=780722",""],
+					["Pregunta esencial","https://micampus.unal.edu.co/mod/page/view.php?id=780732",""]
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Acta de compromiso","#",""]
+					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=780713",""]
 				]],
 			"2_1":["Lista de retos adicionales",[]],
 			"2_2":["Cómo se calificará",[]],
@@ -393,8 +395,8 @@
 			"2_4":["Entrega tus retos adicionales aquí",[]],
 			"3":["Encuestas de percepción",
 				[
-					["Encuesta presentación de la materia","#",""],
-					["Encuesta de conocimientos previos","#",""]
+					["Encuesta presentación de la materia","https://micampus.unal.edu.co/mod/feedback/view.php?id=780730",""],
+					["Encuesta de conocimientos previos","https://micampus.unal.edu.co/mod/feedback/view.php?id=780734",""]
 				]]
 		},
 		"2" : {

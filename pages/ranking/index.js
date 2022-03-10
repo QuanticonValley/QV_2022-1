@@ -54,6 +54,7 @@ const Desc = styled.h3`
 	margin: 0;
 	margin-left:10%;
 	font-weight: normal;
+	text-align: center;
 `
 const Margin=styled.div`
     margin-left:10%;

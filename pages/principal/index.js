@@ -195,7 +195,7 @@ const Principal = () => {
 			></Logo>
 			</LogoExt>
 			<ReactPlayer
-            url = {"https://www.youtube.com/watch?v=GBQDe060AeE"}
+            url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
             className='react-player'
             width='100%'
             height='400px'

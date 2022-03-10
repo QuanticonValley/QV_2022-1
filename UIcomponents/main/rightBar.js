@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { prefix } from '../../utils/prefix.js';
 import ReactTooltip from 'react-tooltip'
 import { useState, useEffect } from 'react';
-
+import { statePiso } from '../../public/data/index.js';
 import { useMainState } from '../../libs/stateHooks'
 
 import NotiWidget from '../notiWidget'
@@ -98,6 +98,13 @@ const HallFame = styled.div`
 		cursor: pointer;
 	}
 `
+const Pis=styled.h2`
+	text-align:center;
+	color:#1920EF;
+	padding: 2px;
+	border-bottom: 2px solid #1920EF;
+	border-top: 2px solid #1920EF;
+`
 const Image = styled.img`
 	margin-right: 1em;
 `
@@ -108,17 +115,8 @@ const RightBar = ({active, close}) => {
     useEffect(() => {
         setIsMounted(true);
     },[]);
-  const [mState, setMainState] = useMainState()
-
-	const openModal = (type) => {
-    setMainState({
-      ...mState,
-      modal: {
-        visibility: true,
-        type: type
-      }
-    })
-	}
+  	const [mState, setMainState] = useMainState()
+  	const piso = statePiso()
 	return (
 		<Container active={active}>
 			<Header>
@@ -130,7 +128,7 @@ const RightBar = ({active, close}) => {
 			<div style={{fontSize: '.9em'}}>
 			{/* <GroupSel/> */}
 			</div>
-			
+			<Pis>¡Estamos en el piso número {piso}!</Pis>
 			{/* <Miniprofile></Miniprofile> */}
 			<Calendar/>
 			

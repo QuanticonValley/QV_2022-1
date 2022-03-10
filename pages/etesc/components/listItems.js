@@ -12,7 +12,7 @@ const Organiz=styled.div`
 	justify-content: space-between;
 `
 const Objeto=styled.div`
-	width:400px;
+	width:350px;
 `
 const Subtitle=styled.h3`
 	margin-left:10px;
@@ -67,17 +67,16 @@ const Resources = ({tipo, data}) => {
 				<Organiz>
 					<TituloDescr data={data["1_1"]}></TituloDescr>
 					<TituloEnlaces data={data["1_2"]}></TituloEnlaces>
-					<TituloEnlaces data={data["1_4"]}></TituloEnlaces>
 					<Minicard data0={data["1_3"]} data1={data["1_3_1"]} data2={data["1_3_2"]} data3={data["1_3_3"]}></Minicard>
+					<TituloEnlaces data={data["1_4"]}></TituloEnlaces>
 				</Organiz>
 				:null}
 				{tipo===2?
 				<Organiz>
 					<TituloDescr data={data["2_1"]}></TituloDescr>
 					<TituloEnlaces data={data["2_2"]}></TituloEnlaces>
-					<TituloEnlaces data={data["2_4"]}></TituloEnlaces>
 					<Minicard data0={data["2_3"]} data1={data["2_3_1"]} data2={data["2_3_2"]} data3={data["2_3_3"]}></Minicard>
-					
+					<TituloEnlaces data={data["2_4"]}></TituloEnlaces>
 				</Organiz>
 				:null}
 				{tipo===3?
