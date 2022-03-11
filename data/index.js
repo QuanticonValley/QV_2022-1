@@ -8,6 +8,7 @@ import info from './info.json'
 import office from './office.json'
 import state from './state.json'
 import actors from './actors.json'
+import logos from './logos.json'
 
 export const getstate = () => state
 //statePiso
@@ -16,7 +17,8 @@ export const statePiso = () => state.piso
 export const statePisoA = () => state.pisoMax
 //stateUpdates
 export const stateUpdates = () => state.lastUpdates
-
+//Principal
+export const getLogosExt = () => logos.logos
 //Progress
 export const getDataProg = () => state.prog
 
