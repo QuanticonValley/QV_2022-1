@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
-import { statePisoA, getDataProg } from '../../public/data'
+import { statePisoA, getDataProg, getLogosExt } from '../../public/data'
 
 import QV from '../../UIcomponents/qv';
 
@@ -139,6 +139,15 @@ const Flex = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1em;
+	
+`
+const Flex2 = styled.div`
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 1em;
+	flex-wrap:wrap;
+	margin-left: 5%;
 `
 const Box = styled.div`
 	justify-content: center;
@@ -160,11 +169,17 @@ const Box = styled.div`
 		cursor: pointer;
 	}
 `
+const Imagen= styled.img`
+	height: 60px;
+	margin:8px;
+	border-radius:10px;
+`
 const Principal = () => {
   const [mState, setMainState] = useMainState()
-	const prog = getDataProg()
-	const pisoAct = statePisoA()
-	const noti = getNoti() 
+	const logos=getLogosExt()
+	console.log(logos);
+
+ 	const noti = getNoti() 
 	const video = noti[0] 
 		? noti[0] : null
 
@@ -222,7 +237,7 @@ const Principal = () => {
 			<Title>Conoce a los actores de Quanticon Valley</Title>
 		</TitleBox>
 		<GridB>
-			<Link href='actors' passHref>
+			<Link href='/actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
@@ -231,7 +246,7 @@ const Principal = () => {
 					<TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
 				</Box>
 			</Link>
-			<Link href='actors' passHref>
+			<Link href='/actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
@@ -242,7 +257,12 @@ const Principal = () => {
 			</Link>
 			
 		</GridB>
-
+		<TitleBox>
+			<Title>Líderes de innovación abierta - participantes</Title>
+		</TitleBox>
+		<Flex2>
+		{logos.map((logo,index)=><Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>)}
+		</Flex2>
 
 	</QV>
 }
