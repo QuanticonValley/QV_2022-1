@@ -177,7 +177,6 @@ const Imagen= styled.img`
 const Principal = () => {
   const [mState, setMainState] = useMainState()
 	const logos=getLogosExt()
-	console.log(logos);
 
  	const noti = getNoti() 
 	const video = noti[0] 

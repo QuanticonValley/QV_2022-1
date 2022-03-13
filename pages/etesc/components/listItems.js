@@ -20,16 +20,23 @@ const Subtitle=styled.h3`
 `
 const Content=styled.p`
 	margin-left:20px;
+	transition:0.2s all;
+	:hover {
+		margin-left:25px;
+	}
+`
+const Content2=styled.p`
+	margin-left:20px;
 `
 const TituloDescr=({data})=>{
 	if(data[1].length==0)return null;
 	return (<Objeto>
 		<Subtitle>{data[0]}</Subtitle>
 		{data[1].map(i=>
-		<Content key={i}>
+		<Content2 key={i}>
 			
-			<p><b>■ {i[0]}: </b>{i[1]}</p>
-		</Content>
+			<p><b><img src={`${prefix}/imgs/roles/TODOS.png`}></img> {i[0]}: </b>{i[1]}</p>
+		</Content2>
 		)}
 	</Objeto>)
 }
@@ -39,7 +46,11 @@ const TituloEnlaces=({data, tipo=0})=>{
 		<Subtitle tipo={tipo}>{data[0]}</Subtitle>
 		{data[1].map(i=>
 		<Content key={i}>
-			<a href={i[1]} target="_blank" rel="noreferrer">■ {i[0]}</a>
+			<a href={i[1]} target="_blank" rel="noreferrer">
+				{i[2]===""?<b>■</b>:
+				<img src={`${prefix}/imgs/roles/${i[2]}.png`}></img>} 
+				{i[0]}
+			</a>
 		</Content>
 		)}
 	</Objeto>)
