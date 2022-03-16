@@ -13,6 +13,7 @@ const Title = styled.h3`
 	font-weight: 700;
 `
 const Item = styled.div`
+	cursor:pointer;
 	align-self: center;
 	border: 1.5px solid #AEBCD9;
 	box-sizing: border-box;
