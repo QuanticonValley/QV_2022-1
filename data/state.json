@@ -1,13 +1,13 @@
 {
 	"pisoMax": 6,
-	"piso": 1,
+	"piso": 2,
 	"group": "dos",
 	"prog" : {
-		"num": "16%",
-		"piso": "1er Piso",
-		"title": "¡Estamos listos!",
-		"desc": "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto",
-		"entrega": "Acta de compromiso"
+		"num": "33%",
+		"piso": "2do Piso",
+		"title": "¡Tenemos el problema con una pregunta esencial!",
+		"desc": "Pitch de tres minutos donde se plantea la pregunta esencial, se identifican los actores y contextualiza el problema",
+		"entrega": "Pitch Piso 2- Pregunta esencial"
 	},
 	"modal": {
 		"visibility": false,
