@@ -47,7 +47,7 @@ const TituloEnlaces=({data, tipo=0})=>{
 		{data[1].map(i=>
 		<Content key={i}>
 			<a href={i[1]} target="_blank" rel="noreferrer">
-				{i[2]===""?<b>■</b>:
+				{i[2]===""?<img src={`${prefix}/imgs/roles/TODOS.png`}></img>:
 				<img src={`${prefix}/imgs/roles/${i[2]}.png`}></img>} 
 				{i[0]}
 			</a>

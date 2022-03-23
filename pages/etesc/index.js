@@ -103,7 +103,7 @@ const Etesc = () => {
 			<PisosSel/>
 			<Title>{pisoTitle}</Title>
 
-			{piso <= pisoA? <div>
+			
 			<Card>
 				<Head onClick={()=>cambio(1)}>
 					{open1===0
@@ -138,7 +138,7 @@ const Etesc = () => {
                     <ListItems data={pisoCont} tipo={3}></ListItems>
 				</Content>
 			</Card>
-			</div>:<h2>Este piso aún esta bloqueado</h2>}
+			
         </Margin>
 		
 	</QV>

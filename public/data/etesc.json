@@ -54,7 +54,7 @@
 		"2" : {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Pitch Piso 2- Pregunta esencial","Pitch de tres minutos donde se plantea la pregunta esencial, se identifican los actores y contextualiza el problema"]
+					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas; se contextualiza el problema y los antecedentes; se definen los expertos."]
 				]],
 			"1_2":["Cómo se calificará",
 				[
@@ -80,7 +80,7 @@
 			"2_1":["Lista de retos adicionales",
 				[
 					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
-					["Taller de ética",""]
+					["Taller de ética","Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."]
 				]],
 			"2_2":["Cómo se calificará",[]],
 			"2_3":["Recursos"],
@@ -95,7 +95,7 @@
 				]],
 			"2_3_2":["_pdf",
 				[
-					["Taller de ética","#","TODOS"]
+					["Guía taller de ética","#","TODOS"]
 				]],
 			"2_3_3":["_Vídeo",[]],
 			"2_4":["Entrega tus retos adicionales aquí",
@@ -292,7 +292,9 @@
 					]],
 				"1_3_2":["_pdf",
 					[
-						
+						["Guía participación de profesores","","TODOS"],
+						["Guía participación de estudiante","","TODOS"],
+						["Guía de presentación final pitch y prototipo","","TODOS"]
 					]],
 				"1_3_3":["_Vídeo",
 					[
@@ -380,7 +382,7 @@
 		"2" : {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Pitch Piso 2- Pregunta esencial","Pitch de tres minutos donde se plantea la pregunta esencial, se identifican los actores y contextualiza el problema"]
+					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas; se contextualiza el problema y los antecedentes; se definen los expertos."]
 				]],
 			"1_2":["Cómo se calificará",
 				[
@@ -406,7 +408,7 @@
 			"2_1":["Lista de retos adicionales",
 				[
 					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
-					["Taller de ética",""]
+					["Taller de ética","Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."]
 				]],
 			"2_2":["Cómo se calificará",[]],
 			"2_3":["Recursos"],
@@ -421,7 +423,7 @@
 				]],
 			"2_3_2":["_pdf",
 				[
-					["Taller de ética","#","TODOS"]
+					["Guía taller de ética","https://micampus.unal.edu.co/mod/page/view.php?id=792620&forceview=1","TODOS"]
 				]],
 			"2_3_3":["_Vídeo",[]],
 			"2_4":["Entrega tus retos adicionales aquí",
@@ -618,7 +620,9 @@
 					]],
 				"1_3_2":["_pdf",
 					[
-						
+						["Guía participación de profesores","","TODOS"],
+						["Guía participación de estudiante","","TODOS"],
+						["Guía de presentación final pitch y prototipo","","TODOS"]
 					]],
 				"1_3_3":["_Vídeo",
 					[
