@@ -63,18 +63,19 @@
 			"1_3":["Herramientas"],
 			"1_3_1":["_Ova",
 				[
-					["Metodología Véster y Árbol de problemas","#","CTO"],
-					["Cómo hacer un Pestal","#","COO"],
+					["Metodología Véster y Árbol de problemas","https://micampus.unal.edu.co/mod/page/view.php?id=780431","TODOS"],
+					["Cómo hacer un Pestal","https://micampus.unal.edu.co/mod/page/view.php?id=780433","TODOS"],
 					["Actores","#","CEO"]
 				]],
 			"1_3_2":["_pdf",[]],
 			"1_3_3":["_Vídeo",
 				[
-					["Mapa de Empatía","#","CMO"]
+					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780435","CEO"],
+					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780435","COO"]
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Pitch Piso 2- Pregunta esencial","#","TODOS"]
+					["Pitch Piso 2- contextualización y actores","https://micampus.unal.edu.co/mod/assign/view.php?id=780394","CEO"]
 				]],
 			"2_1":["Lista de retos adicionales",
 				[
@@ -348,7 +349,7 @@
 					["Roles en el equipo de trabajo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780724","TODOS"],
 					["Comunicación eficaz","https://micampus.unal.edu.co/mod/hvp/view.php?id=780962","TODOS"],
 					["Decálogo del Mentor","https://micampus.unal.edu.co/mod/hvp/view.php?id=780960","CTO"],
-					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=788027&forceview=1","CEO"]
+					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=788026&forceview=1","CEO"]
 				]],
 			"1_3_2":["_pdf",
 				[
@@ -388,18 +389,19 @@
 			"1_3":["Herramientas"],
 			"1_3_1":["_Ova",
 				[
-					["Metodología Véster y Árbol de problemas","#","CTO"],
-					["Cómo hacer un Pestal","#","COO"],
+					["Metodología Véster y Árbol de problemas","https://micampus.unal.edu.co/mod/page/view.php?id=780777","TODOS"],
+					["Cómo hacer un Pestal","https://micampus.unal.edu.co/mod/page/view.php?id=780779","TODOS"],
 					["Actores","#","CEO"]
 				]],
 			"1_3_2":["_pdf",[]],
 			"1_3_3":["_Vídeo",
 				[
-					["Mapa de Empatía","#","CMO"]
+					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780781","CEO"],
+					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780781","COO"]
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Pitch Piso 2- Pregunta esencial","#","TODOS"]
+					["Pitch Piso 2- contextualización y actores","https://micampus.unal.edu.co/mod/assign/view.php?id=780740","CEO"]
 				]],
 			"2_1":["Lista de retos adicionales",
 				[
