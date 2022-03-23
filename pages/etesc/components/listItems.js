@@ -35,7 +35,7 @@ const TituloDescr=({data})=>{
 		{data[1].map(i=>
 		<Content2 key={i}>
 			
-			<p><b><img src={`${prefix}/imgs/roles/TODOS.png`}></img> {i[0]}: </b>{i[1]}</p>
+			<p><b><img src={`${prefix}/imgs/roles/TODOS.png`}></img> {i[0]} </b>{i[1]}</p>
 		</Content2>
 		)}
 	</Objeto>)

@@ -81,9 +81,9 @@ const Etesc = () => {
 	const [open2,setOpen2]=useState(0);
 	const [open3,setOpen3]=useState(0);
 	function cambio(a){
-		if(a===1){open1===0?setOpen1(800):setOpen1(0);}
-		if(a===2){open2===0?setOpen2(800):setOpen2(0);}
-		if(a===3){open3===0?setOpen3(800):setOpen3(0);}
+		if(a===1){open1===0?setOpen1(1000):setOpen1(0);}
+		if(a===2){open2===0?setOpen2(1000):setOpen2(0);}
+		if(a===3){open3===0?setOpen3(1000):setOpen3(0);}
 	}
 	return <QV pg="ETESC">
 		<Header
