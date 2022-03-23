@@ -54,7 +54,7 @@
 		"2" : {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas; se contextualiza el problema y los antecedentes; se definen los expertos."]
+					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."]
 				]],
 			"1_2":["Cómo se calificará",
 				[
@@ -279,11 +279,18 @@
 		"6": {
 			"1_1":["Lista de entregables de piso",
 				[
-	
+					["Presentación pitch final",""],
+					["Póster",""],
+					["Prototipo final",""],
+					["Trabajo escrito final",""],
+					["Evaluación de desempeño 2",""]
 				]],
 				"1_2":["Cómo se calificará",
 				[
-					
+					["Rúbrica Póster","","TODOS"],
+					["Rúbrica prototipo final","","TODOS"],
+					["Rúbrica pitch final","","TODOS"],
+					["Rúbrica trabajo escrito final","","TODOS"]
 				]],
 				"1_3":["Herramientas"],
 				"1_3_1":["_Ova",
@@ -292,6 +299,7 @@
 					]],
 				"1_3_2":["_pdf",
 					[
+						["Guía trabajo escrito final","","TODOS"],
 						["Guía participación de profesores","","TODOS"],
 						["Guía participación de estudiante","","TODOS"],
 						["Guía de presentación final pitch y prototipo","","TODOS"]
@@ -302,7 +310,9 @@
 					]],
 				"1_4":["Entrega tu actividad aqui",
 					[
-						
+						["Entrega documentación TPI+Expoideas (póster)","","TODOS"],
+						["Entrega final del trabajo escrito","","TODOS"],
+						["Formulario Evaluación de desempeño 2","","TODOS"]
 					]],
 				"2_1":["Lista de retos adicionales",
 					[
@@ -382,7 +392,7 @@
 		"2" : {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas; se contextualiza el problema y los antecedentes; se definen los expertos."]
+					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."]
 				]],
 			"1_2":["Cómo se calificará",
 				[
@@ -607,11 +617,18 @@
 		"6": {
 			"1_1":["Lista de entregables de piso",
 				[
-	
+					["Presentación pitch final",""],
+					["Póster",""],
+					["Prototipo final",""],
+					["Trabajo escrito final",""],
+					["Evaluación de desempeño 2",""]
 				]],
 				"1_2":["Cómo se calificará",
 				[
-					
+					["Rúbrica Póster","","TODOS"],
+					["Rúbrica prototipo final","","TODOS"],
+					["Rúbrica pitch final","","TODOS"],
+					["Rúbrica trabajo escrito final","","TODOS"]
 				]],
 				"1_3":["Herramientas"],
 				"1_3_1":["_Ova",
@@ -620,6 +637,7 @@
 					]],
 				"1_3_2":["_pdf",
 					[
+						["Guía trabajo escrito final","","TODOS"],
 						["Guía participación de profesores","","TODOS"],
 						["Guía participación de estudiante","","TODOS"],
 						["Guía de presentación final pitch y prototipo","","TODOS"]
@@ -630,7 +648,9 @@
 					]],
 				"1_4":["Entrega tu actividad aqui",
 					[
-						
+						["Entrega documentación TPI+Expoideas (póster)","","TODOS"],
+						["Entrega final del trabajo escrito","","TODOS"],
+						["Formulario Evaluación de desempeño 2","","TODOS"]
 					]],
 				"2_1":["Lista de retos adicionales",
 					[
@@ -661,6 +681,7 @@
 					[
 						
 					]]
+			
 			
 		}
 	}
