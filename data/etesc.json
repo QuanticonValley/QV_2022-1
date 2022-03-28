@@ -36,7 +36,9 @@
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=780367","TODOS"]
+					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=780367","TODOS"],
+					["Acta de compromiso (reevaluada)","https://micampus.unal.edu.co/mod/assign/view.php?id=793276","TODOS"]
+					
 				]],
 			"2_1":["Lista de retos adicionales",[]],
 			"2_2":["Cómo se calificará",[]],
@@ -91,8 +93,8 @@
 					["Habilidades blandas","#","CCO"],
 					["Tecnología y sociedad","#","CTO"],
 					["Economía del conocimiento","#","CFO"],
-					["Diseño","#","CEO"],
-					["Ergonomía","#","COO"],
+					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793690","CEO"],
+					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793693","COO"],
 					["Mercadeo","#","CMO"]
 				]],
 			"2_3_2":["_pdf",
@@ -376,7 +378,8 @@
 				]],
 			"1_4":["Entrega tu actividad aqui",
 				[
-					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=788023","TODOS"]
+					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=788023","TODOS"],
+					["Acta de compromiso (reevaluada)","https://micampus.unal.edu.co/mod/assign/view.php?id=793277","TODOS"]
 				]],
 			"2_1":["Lista de retos adicionales",[]],
 			"2_2":["Cómo se calificará",[]],
@@ -431,8 +434,8 @@
 					["Habilidades blandas","#","CCO"],
 					["Tecnología y sociedad","#","CTO"],
 					["Economía del conocimiento","#","CFO"],
-					["Diseño","#","CEO"],
-					["Ergonomía","#","COO"],
+					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793691","CEO"],
+					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793694","COO"],
 					["Mercadeo","#","CMO"]
 				]],
 			"2_3_2":["_pdf",
