@@ -90,12 +90,12 @@
 			"2_3":["Recursos"],
 			"2_3_1":["_Ova",
 				[
-					["Habilidades blandas","#","CCO"],
-					["Tecnología y sociedad","#","CTO"],
+					["Habilidades blandas","#","CEO"],
+					["Sociedad y tecnología","#","CTO"],
 					["Economía del conocimiento","#","CFO"],
-					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793690","CEO"],
+					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793690","CCO"],
 					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793693","COO"],
-					["Mercadeo","#","CMO"]
+					["Emprendimiento","#","CMO"]
 				]],
 			"2_3_2":["_pdf",
 				[
@@ -433,12 +433,12 @@
 			"2_3":["Recursos"],
 			"2_3_1":["_Ova",
 				[
-					["Habilidades blandas","#","CCO"],
-					["Tecnología y sociedad","#","CTO"],
+					["Habilidades blandas","#","CEO"],
+					["Sociedad y tecnología","#","CTO"],
 					["Economía del conocimiento","#","CFO"],
-					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793691","CEO"],
+					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793691","CCO"],
 					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793694","COO"],
-					["Mercadeo","#","CMO"]
+					["Emprendimiento","#","CMO"]
 				]],
 			"2_3_2":["_pdf",
 				[
