@@ -95,7 +95,7 @@
 					["Economía del conocimiento","#","CFO"],
 					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793690","CCO"],
 					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793693","COO"],
-					["Emprendimiento","#","CMO"]
+					["Emprendimiento","https://micampus.unal.edu.co/mod/page/view.php?id=794810","CMO"]
 				]],
 			"2_3_2":["_pdf",
 				[
@@ -104,11 +104,12 @@
 			"2_3_3":["_Vídeo",[]],
 			"2_4":["Entrega tus retos adicionales aquí",
 				[
-					["Preguntas conversatorio Habilidades Blandas","#","CCO"],
-					["Preguntas conversatorio Economía del conocimiento","#","CFO"],
-					["Preguntas conversatorio Tecnología y sociedad","#","CTO"],
-					["Preguntas conversatorio Ergonomía","#","COO"],
-					["Preguntas conversatorio Mercadeo","#","CMO"]
+					["Preguntas conversatorio Habilidades Blandas","https://micampus.unal.edu.co/mod/assign/view.php?id=780405","CEO"],
+					["Preguntas conversatorio Economía del conocimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=780409","CFO"],
+					["Preguntas conversatorio Sociedad y tecnología","https://micampus.unal.edu.co/mod/assign/view.php?id=780407","CTO"],
+					["Preguntas conversatorio Diseño","https://micampus.unal.edu.co/mod/assign/view.php?id=780411","CCO"],
+					["Preguntas conversatorio Ergonomía","https://micampus.unal.edu.co/mod/assign/view.php?id=794805","COO"],
+					["Preguntas conversatorio Emprendimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=794807","CMO"]
 				]],
 			"3":["Encuestas de percepción",[
 				["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780444","TODOS"]
@@ -438,7 +439,7 @@
 					["Economía del conocimiento","#","CFO"],
 					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793691","CCO"],
 					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793694","COO"],
-					["Emprendimiento","#","CMO"]
+					["Emprendimiento","https://micampus.unal.edu.co/mod/page/view.php?id=794811","CMO"]
 				]],
 			"2_3_2":["_pdf",
 				[
@@ -447,11 +448,12 @@
 			"2_3_3":["_Vídeo",[]],
 			"2_4":["Entrega tus retos adicionales aquí",
 				[
-					["Preguntas conversatorio Habilidades Blandas","#","CCO"],
-					["Preguntas conversatorio Economía del conocimiento","#","CFO"],
-					["Preguntas conversatorio Tecnología y sociedad","#","CTO"],
-					["Preguntas conversatorio Ergonomía","#","COO"],
-					["Preguntas conversatorio Mercadeo","#","CMO"]
+					["Preguntas conversatorio Habilidades Blandas","https://micampus.unal.edu.co/mod/assign/view.php?id=780751","CEO"],
+					["Preguntas conversatorio Economía del conocimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=780755","CFO"],
+					["Preguntas conversatorio Sociedad y tecnología","https://micampus.unal.edu.co/mod/assign/view.php?id=780753","CTO"],
+					["Preguntas conversatorio Diseño","https://micampus.unal.edu.co/mod/assign/view.php?id=780757","CCO"],
+					["Preguntas conversatorio Ergonomía","https://micampus.unal.edu.co/mod/assign/view.php?id=794806","COO"],
+					["Preguntas conversatorio Emprendimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=794808","CMO"]
 				]],
 			"3":["Encuestas de percepción",[
 					["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780790","TODOS"]
