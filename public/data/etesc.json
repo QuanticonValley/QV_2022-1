@@ -110,7 +110,9 @@
 					["Preguntas conversatorio Ergonomía","#","COO"],
 					["Preguntas conversatorio Mercadeo","#","CMO"]
 				]],
-			"3":["Encuestas de percepción",[]]
+			"3":["Encuestas de percepción",[
+				["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780444","TODOS"]
+			]]
 			
 		},
 		"3" : {
@@ -451,7 +453,9 @@
 					["Preguntas conversatorio Ergonomía","#","COO"],
 					["Preguntas conversatorio Mercadeo","#","CMO"]
 				]],
-			"3":["Encuestas de percepción",[]]
+			"3":["Encuestas de percepción",[
+					["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780790","TODOS"]
+			]]
 			
 		},
 		"3" : {
