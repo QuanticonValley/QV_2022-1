@@ -9,6 +9,9 @@ const imgCommon = `${prefix}/imgs/header/zones.png`
 
 const Margin = styled.div`
 	margin: 0 2px;
+	@media screen and (max-width: 800px) {
+		margin:0px;
+	}
 `
 const Option= styled.div`
     font-size:1.2rem;

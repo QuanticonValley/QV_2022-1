@@ -7,7 +7,7 @@ import AsesorContact from '../../../../UIcomponents/asesorContact'
 import styled from 'styled-components';
 
 const Cont = styled.div`
-	padding: 0px 20px;
+	padding:5px;
 	display: ${p => p.active ? 'flex' : 'none'};
 	transition: .3s ease;
 	flex-direction: column;
@@ -24,6 +24,7 @@ const AsesorCard = styled.div`
 
 	@media screen and (max-width: 620px) {
 		grid-template-columns: 1fr;
+		margin:5px 0;
 	}
 `
 const Img = styled.img`
