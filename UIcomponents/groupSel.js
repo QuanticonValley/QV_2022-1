@@ -13,8 +13,8 @@ const Group = styled.div`
 	font-weight: bold;
 	font-size: 1.2em;
 	text-align: center;
-  background-color: ${props => props.primary ? '#1920EF' : null};
-  color: ${props => props.primary ? '#fff' : "#999"};
+    background-color: ${props => props.primary ? '#1920EF' : null};
+    color: ${props => props.primary ? '#fff' : "#999"};
 	transition: 0.3s;
 
 	:hover {
@@ -22,6 +22,9 @@ const Group = styled.div`
 		cursor: pointer;
 		border: 2px solid #172bef;
 		color: #172bef;
+	}
+	@media screen and (max-width: 800px) {
+		font-size: .7em;
 	}
 `
 

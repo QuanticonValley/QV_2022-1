@@ -5,11 +5,8 @@ import { prefix } from '../utils/prefix.js';
 const ZElement = styled.div`
 	display: flex;
 	flex-direction: column;
-	grid-column: ${p => (p.type === 'twohor') ? 'span 2' : null};
-	grid-row: ${p => (p.type === 'twover') ? 'span 2' : null};
-	align-items: ${p => (p.type === 'twover') ? 'center' : 'flex-start'};
-	justify-content: ${p => (p.type === 'twover') ? 'center' : 'flex-end'};
-	text-align: ${p => (p.type === 'twover') ? 'center' : null};
+	align-items: flex-start;
+	justify-content: flex-end;
 	background: #FFFFFF;
 	padding: 10px 10px 5px 20px;
 	border-radius: 20px;
@@ -25,18 +22,18 @@ const ZElement = styled.div`
 	:active {
 		background-color: #ddd;
 	}
-
-	@media screen and (max-width: 1350px) {
-		grid-column: span 1;
-		grid-row: span 1;
-		align-items: flex-start;
-		justify-content: flex-end;
-		text-align: left;
+	@media screen and (max-width: 800px) {
+		flex-direction: row;
+		justify-content: flex-start;
 	}
 `
 const Img = styled.img`
-	height: ${p => p.name === 'ASESORES' ? '35%' : '45%'};
+	height: 45%;
 	margin: 0px 0px 10px 10px;
+	@media screen and (max-width: 800px) {
+		margin:0;
+		margin-right: 14px;
+	}
 `
 const Text = styled.div`
 	display: flex; 
@@ -46,6 +43,9 @@ const Text = styled.div`
 const Title = styled.span`
 	font-size: 1.5rem;
 	color: #172BEF;
+	@media screen and (max-width: 800px) {
+		font-size: 1.2rem;
+	}
 `
 const Desc = styled.span`
 	font-size: 0.8rem;

@@ -1,14 +1,11 @@
 import styled from 'styled-components'
-// import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
 import ReactTooltip from 'react-tooltip'
 import { useState, useEffect } from 'react';
 import { statePiso } from '../../public/data/index.js';
 import { useMainState } from '../../libs/stateHooks'
-
 import NotiWidget from '../notiWidget'
 import Calendar from '../calendar/index'
-// import GroupSel from '../groupSel'
 import Miniprofile from '../miniprofile.js';
 
 const Container = styled.div`
@@ -23,7 +20,7 @@ const Container = styled.div`
 	height: 98vh;
 	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
 	transition: all .3s ease-in;
-
+	grid-column-gap: 50px;
 	@media screen and (max-width: 800px) {
 		position: absolute;
 		z-index: 3;
@@ -32,27 +29,35 @@ const Container = styled.div`
 		top: 0;
 		right: ${p => p.active ? '0' : '-1300px'};
 		margin: 0;
-		padding: 60px 1em .5em 1em;
+		padding: 60px 5px .5em 1em;
 	}
 `
 const ItemB = styled.div`
-  display: flex;
+  	display: flex;
 	align-items: center;
 	border-radius: 1em;
 	justify-content: center;
 	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
-  background-color:#1920EF;
-  color: white;
-  padding: .5em 1em;
-  font-weight: bold;
-  font-size: 1em;
+ 	background-color:#1920EF;
+  	color: white;
+  	padding: .5em 1em;
+  	font-weight: bold;
+  	font-size: 1em;
 	text-align: end;
-  transition: 0.3s;
-
+  	transition: 0.3s;
+	margin:10px;
 	:hover {
 		transform: scale(0.98);
 		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 		cursor: pointer;
+	}
+	@media screen and (max-width: 800px) {
+		height:50px;
+		font-size: .8em;
+		font-weight:400;
+		img{
+			width:30px;
+		}
 	}
 `
 const Header = styled.div`
@@ -84,8 +89,8 @@ const HallFame = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 60px;
-
+	min-height: 50px;
+	margin:10px;
 	font-weight: bold;
 	background: #FFC024;
 	box-sizing: border-box;
@@ -97,6 +102,14 @@ const HallFame = styled.div`
 		transform: scale(1.03);
 		cursor: pointer;
 	}
+	@media screen and (max-width: 800px) {
+		height:50px;
+		font-size: .8em;
+		font-weight:400;
+		img{
+			width:30px;
+		}
+	}
 `
 const Pis=styled.h2`
 	text-align:center;
@@ -104,9 +117,16 @@ const Pis=styled.h2`
 	padding: 2px;
 	border-bottom: 2px solid #1920EF;
 	border-top: 2px solid #1920EF;
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+		margin-top: 20px;
+	}
 `
 const Image = styled.img`
 	margin-right: 1em;
+`
+const Contenedor= styled.div`
+	overflow: auto;
 `
 
 const RightBar = ({active, close}) => {
@@ -125,11 +145,8 @@ const RightBar = ({active, close}) => {
 						src={`${prefix}/imgs/exit.png`}
 					/>
 			</Header>
-			<div style={{fontSize: '.9em'}}>
-			{/* <GroupSel/> */}
-			</div>
+			<Contenedor>
 			<Pis>¡Estamos en el piso número {piso}!</Pis>
-			{/* <Miniprofile></Miniprofile> */}
 			<Calendar/>
 			
 			<NotiWidget open={()=>openModal('Noticiero')}/>
@@ -151,6 +168,7 @@ const RightBar = ({active, close}) => {
 			{isMounted &&<ReactTooltip id="dscTooltipHF" place='left' type='info'>
 				Tabla de Clasificación 
 			</ReactTooltip>}
+			</Contenedor>
 		</Container>
 	);
 }

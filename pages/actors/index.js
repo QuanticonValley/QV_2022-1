@@ -8,7 +8,7 @@ import Virt from '../zones/[type]/asesor/virt.js';
 const imgCommon = `${prefix}/imgs/header/zones.png`
 
 const Margin = styled.div`
-	margin: 0 20px;
+	margin: 0 2px;
 `
 const Option= styled.div`
     font-size:1.2rem;
@@ -27,6 +27,7 @@ const Option= styled.div`
 const Opciones= styled.div`
 	display: flex;
 	margin-bottom: 20px;
+	margin-left:10px;
 `
 const Actors = () => {
 	const [selected,setSelected]= useState(true);

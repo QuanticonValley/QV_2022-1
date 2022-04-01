@@ -11,6 +11,9 @@ const ExtLink= styled.div`
 	font-weight: 500;
 	text-align: right;
 	margin-right: 8%;
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+	}
 `
 
 const Guide = () => {

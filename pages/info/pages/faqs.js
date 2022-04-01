@@ -18,7 +18,7 @@ const Item = styled.div`
 	border: 1.5px solid #AEBCD9;
 	box-sizing: border-box;
 	border-radius: 7px;
-	padding: 20px 20px;
+	padding: 10px 10px;
 	margin: 15px 25px 15px 20px;
 	width: 90%;
 	text-align: justify;
@@ -27,14 +27,20 @@ const Item = styled.div`
 		'0px 6px 8px rgba(0, 0, 0, 0.3)' : null};
 
 	p {
-			overflow: hidden;
-			max-height: ${p => !p.active ? '0px' : '120px' };
-			font-size: 14px;
-			line-height: 19px;
-			color: #4F4F4F;
-			padding: ${p => !p.active ? '0px' : '5px 10px' };
-			margin: 0px;
-			transition: all 0.2s ease-in-out;
+			
+	}
+`
+const Parrafo=styled.p`
+	overflow: hidden;
+	max-height: ${p => !p.active ? '0px' : '120px' };
+	font-size: 14px;
+	line-height: 19px;
+	color: #4F4F4F;
+	padding: ${p => !p.active ? '0px' : '5px 10px' };
+	margin: 0px;
+	transition: all 0.2s ease-in-out;
+	@media screen and (max-width: 800px) {
+		font-size:12px;
 	}
 `
 const ItemTitle = styled.div`
@@ -46,6 +52,9 @@ const ItemTitle = styled.div`
 	transition: all 0.2s ease;
 	:hover {
 			transform: scale(1.01);
+	}
+	@media screen and (max-width: 800px) {
+		font-size:14px;
 	}
 `
 
@@ -59,11 +68,11 @@ const Faqs = () => {
 	return <Cont>
 		<Title>_Lo que más nos preguntan</Title>
 		{data.map(i =>
-		<Item key={i.menu} id={i.menu} active={i.menu === sel}>
+		<Item key={i.menu} id={i.menu} >
 			<ItemTitle onClick={() => handleSel(i.menu)}>
 				{i.name}
 			</ItemTitle>
-			<p>{i.desc}</p>
+			<Parrafo active={i.menu === sel}>{i.desc}</Parrafo>
 		</Item>
 		)}	
 	</Cont>

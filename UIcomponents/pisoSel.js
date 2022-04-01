@@ -18,6 +18,9 @@ const Selector = styled.div`
 	@media screen and (max-width: 1000px) {
 		padding: 5px 15%;
 	}
+	@media screen and (max-width: 800px) {
+		font-size:.8em;
+	}
 `
 const SelItem = styled.div`
 	border-radius: 20px;
@@ -25,8 +28,8 @@ const SelItem = styled.div`
 	margin: 5px 0px;
 	white-space: nowrap;
 	transition: 0.5s;
-  background-color: ${props => props.primary ? '#1920EF' : null};
-  color: ${props => props.primary ? '#fff' : null};
+    background-color: ${props => props.primary ? '#1920EF' : null};
+    color: ${props => props.primary ? '#fff' : null};
 
 	:hover {
 		transform: scale(1.2);

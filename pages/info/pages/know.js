@@ -45,6 +45,10 @@ const Box = styled.div`
 		border: 2px solid #172BEF;
 		cursor: pointer;
 	}
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+		height:45px;
+	}
 `
 const SubTitle = styled.h4`
 	padding: .5em 0;
@@ -55,6 +59,9 @@ const SubTitle = styled.h4`
 		color: #172BEF;
 		cursor: pointer;
 	}
+	@media screen and (max-width: 800px) {
+		font-size:14px;
+	}
 `
 const Text = styled.p`
 	margin: 0 0 1em .5em;
@@ -64,6 +71,9 @@ const Text = styled.p`
 	height: ${p=>p.act?'auto':'0'};
 	color: #4F4F4F;
 	transition: .3s ease;
+	@media screen and (max-width: 800px) {
+		font-size: ${p=>p.act?'.7em':'0'};
+	}
 `
 const Image = styled.img`
 	margin-right: 1em;
@@ -82,6 +92,9 @@ const Button = styled.button`
 		background: #172BEF;
 		cursor: pointer;
 		color: white;
+	}
+	@media screen and (max-width: 800px) {
+		font-size:12px;
 	}
 `
 

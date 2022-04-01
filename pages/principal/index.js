@@ -21,10 +21,12 @@ const Title = styled.h3`
 `
 const Descr= styled.h3`
 	text-align:center;
+	@media screen and (max-width: 800px) {
+		font-size: 16px;
+	}
 `
 const Grid = styled.div`
 	display: grid;
-	margin: 0 3em;
 	grid-template-columns: repeat(2, 1fr);
 	align-content:center;
 	grid-gap: 1em;
@@ -40,38 +42,8 @@ const GridB = styled.div`
 	@media screen and (max-width: 1200px) {
 		grid-template-columns: 1fr
 	}
-`
-const Entrega = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 60px;
-	padding: .5em;
-	grid-column: span 2;
-
-	font-weight: bold;
-	background: #FFFFFF;
-	color: #172BEF;
-	border: 1.5px solid #172BEF;
-	box-sizing: border-box;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
-	border-radius: 10px;
-
-	transition: .3s ease;
-	:hover {
-		border: 2px solid #172BEF;
-		transform: scale(1.03);
-		cursor: pointer;
-	}
-	div {
-		margin: .2em 1em;
-	}
-	p {
-		margin: 0;
-		color: black;
-	}
-	@media screen and (max-width: 900px) {
-		flex-direction: column;
+	@media screen and (max-width: 500px) {
+		margin:0;
 	}
 `
 
@@ -94,6 +66,10 @@ const LogoExt= styled.div`
 `
 const Logo = styled.img`
 	border-radius: 1em;
+	@media screen and (max-width: 800px) {
+		width:60%;
+		max-width:240px;
+	}
 `
 const MejoresProyectos = styled.a`
 	display: flex;
@@ -103,22 +79,22 @@ const MejoresProyectos = styled.a`
 	grid-row: span 2;
 	min-height: 60px;
 	font-weight: bold;
-	font-size:40px;
+	font-size:30px;
 	background: #FFC024;
 	box-sizing: border-box;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
 	border-radius: 10px;
-
+	padding:5px;
 	transition: .3s ease;
 	:hover {
 		transform: scale(1.03);
 		cursor: pointer;
 	}
 	@media screen and (max-width: 1500px) {
-		font-size: 30px;
-	}
-	@media screen and (max-width: 900px) {
 		font-size: 20px;
+	}
+	@media screen and (max-width: 500px) {
+		font-size: 16px;
 	}
 `
 
@@ -133,13 +109,18 @@ const TextBox = styled.div`
 	color: black;
 	font-weight: normal;
 	text-align: center;
+	@media screen and (max-width: 500px) {
+		font-size:12px;
+	}
 `
 const Flex = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1em;
-	
+	@media screen and (max-width: 500px) {
+		margin-bottom: 0;
+	}
 `
 const Flex2 = styled.div`
 	display: flex;
@@ -168,11 +149,18 @@ const Box = styled.div`
 		border: 2px solid #172BEF;
 		cursor: pointer;
 	}
+
 `
 const Imagen= styled.img`
 	height: 60px;
-	margin:8px;
+	margin:10px;
 	border-radius:10px;
+	@media screen and (max-width: 1200px) {
+		height:50px;
+	}
+	@media screen and (max-width: 800px) {
+		height:40px;
+	}
 `
 const Principal = () => {
   const [mState, setMainState] = useMainState()

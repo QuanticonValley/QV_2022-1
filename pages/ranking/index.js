@@ -30,7 +30,7 @@ const BarProg = styled.div`
 	height: 2.4em;
 	width: 80%;
 	@media screen and (max-width: 800px) {
-		width: 100%;
+		width: 90%;
 	}
 `
 const Prog = styled.div`
@@ -44,17 +44,31 @@ const Prog = styled.div`
 	color: white;
 	height: 100%;
 	width: ${p => p.width};
+	@media screen and (max-width: 800px) {
+		font-size:16px;
+	}
 `
 const SubTitle = styled.h2`
 	margin: 0;
 	margin-left:10%;
 	margin-top: 1em;
+	@media screen and (max-width: 800px) {
+		margin-left:10px;
+		font-size:18px;
+		text-align:center;
+	}
 `
 const Desc = styled.h3`
 	margin: 0;
 	margin-left:10%;
 	font-weight: normal;
 	text-align: center;
+	@media screen and (max-width: 800px) {
+		margin-left:10px;
+		margin-right:10px;
+		font-size:14px;
+		text-align:center;
+	}
 `
 const Margin=styled.div`
     margin-left:10%;
@@ -122,7 +136,7 @@ const Ranking = () => {
 		</TitleBox>
 		<Margin>
 			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
-				<Image src={`${prefix}/imgs/principal/hallfame.png`}/>
+				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt="Hall Fame"/>
 				Salon de la Fama
 			</HallFame>
 		</Margin>

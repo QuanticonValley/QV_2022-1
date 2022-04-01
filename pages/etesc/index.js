@@ -10,17 +10,36 @@ import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 import PisosSel from '../../UIcomponents/pisoSel'
 import GroupSel from '../../UIcomponents/groupSel'
-import TitleCont from "../common/TitleCont";
-const imgEtesc = `${prefix}/imgs/header/etesc.png`
 
-const Title = styled.h2`
+const TitleCont = styled.h2`
 	font-weight: 600;
-	font-size: 35px;
+	font-size: 24px;
+	@media screen and (max-width: 824px) {
+		font-size: 18px;
+	}
 	line-height: 52px;
 	letter-spacing: -0.03em;
 	color: #272835;
-	margin: 0;
+	margin: 0px;
+	display: inline;
+	z-index: 2
+	
+	`
+const imgEtesc = `${prefix}/imgs/header/etesc.png`
+
+const Title = styled.h2`
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 42px;
+	letter-spacing: -0.03em;
+	color: #272835;
+	margin-bottom: 20px;
 	z-index: 2;
+	@media screen and (max-width: 1200px) {
+		font-size: 22px;
+		font-weight:700;
+		line-height:28px;
+	}
 `
 const Margin = styled.div`
 	margin: 0 20px;
@@ -30,7 +49,6 @@ const Card=styled.div`
 `
 const Head=styled.div`
 	background-color: #e0e5ed;
-	padding:5px;
 	padding-left: 10px;
 	border-radius:10px;
 	cursor:pointer;
@@ -49,6 +67,11 @@ const Content= styled.div`
 		max-height:${p => 2*p.alt}px;
 	}
 `
+const Parrafo=styled.p`
+	@media screen and (max-width: 800px) {
+		font-size:13px;
+	}
+`
 
 
 const Etesc = () => {
@@ -62,21 +85,6 @@ const Etesc = () => {
 		setPisoCont(getPisoData(group, piso))
 	}, [group, piso])
 	
-	// const [dataEntr,setDataEntr]= useState({})
-	// useEffect(() => {
-	// 	setDataEntr(getEtesc(group, piso))
-	// }, [group, piso])
-
-	// const [dataLobby, setDataLobby] = useState({})
-	// useEffect(() => {
-	// 	setDataLobby(getLobbyData(group, piso))
-	// }, [group, piso])
-
-	// const [dataAsrc, setDataAsrc] = useState({})
-	// useEffect(() => {
-	// 	setDataAsrc(getAsesorSrc(group, piso))
-	// }, [group, piso])
-
 	const [open1,setOpen1]=useState(0);
 	const [open2,setOpen2]=useState(0);
 	const [open3,setOpen3]=useState(0);
@@ -92,13 +100,13 @@ const Etesc = () => {
 			imgH={imgEtesc}
 		/>
 		<Margin>
-			<p>
+			<Parrafo>
 				En esta sección podras realizar los entregables más importantes en el desarrollo de tu proyecto los cuales te permitiran avanzar al proximo piso. 
 				Con estos y otros retos podras ganar Innocoins y Puntos de Victoria .
-			</p>
-			<p>
+			</Parrafo>
+			<Parrafo>
 				Por favor selecciona tu grupo, ¡ten en cuenta que el contenido varía según el grupo que escojas!
-			</p>	
+			</Parrafo>	
 			<GroupSel/>
 			<PisosSel/>
 			<Title>{pisoTitle}</Title>

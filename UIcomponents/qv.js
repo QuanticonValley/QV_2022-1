@@ -34,7 +34,9 @@ const Content = styled.div`
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-
+	@media screen and (max-width: 800px) {
+		padding: 0 0 150px 0;
+	}
 	::-webkit-scrollbar-track {
 		border: none;
 		padding: 10px 0;

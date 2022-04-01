@@ -13,12 +13,18 @@ const imgOffice = `${prefix}/imgs/header/office.png`
 const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	grid-auto-rows: 150px;
+	grid-auto-rows: 100px;
 	grid-gap: 3em;
-	margin: 10px 8%;
+	margin: 1px 6%;
+	@media screen and (max-width: 800px) {
+		grid-auto-rows: 40px;
+	}
 `
 const Margin = styled.div`
 	margin: 0 20px;
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+	}
 `
 
 const Office = () => {

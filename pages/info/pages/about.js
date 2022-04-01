@@ -26,10 +26,7 @@ const GridInfo = styled.div`
 		font-size: 1em;
 		text-align: justify;
 	}
-	img {
-		width: 200px;
-		margin: auto;
-	}
+
 `
 const GridImg = styled.div`
 	display: grid;
@@ -46,7 +43,21 @@ const Img = styled.img`
 		cursor: pointer;
 	}
 `
-
+const Parrafo = styled.div`
+	margin:5px;
+	@media screen and (max-width: 800px) {
+		font-size: 14px;
+	}
+`
+const Logo=styled.div`
+	text-align: center;
+`
+const Logo2=styled.img`
+	width:200px;
+	@media screen and (max-width: 450px) {
+		width:150px;
+	}
+`
 const About = () => {
 	const data = getInfo()
 	const {infoA, infoB} = data
@@ -57,21 +68,21 @@ const About = () => {
 		<div>
 			<Title>_Acerca de Quanticon Valley</Title>
 			<GridInfo>
-				<div>
+				<Parrafo>
 					<p>{data.qv[0]}</p>
 					<p>{data.qv[1]}</p>
-				</div>
-				<img src={`${prefix}/imgs/info/QV.png`}/>
+				</Parrafo>
+				<Logo><Logo2 src={`${prefix}/imgs/info/QV.png`} alt="QV"/></Logo>
 			</GridInfo>
 			<Subtitle>Organiza</Subtitle>
 			<GridImg>
 				{infoA.map((i) => 
-				<img key={i} src={`${prefix}/imgs/info/${i}.png`}/>)}
+				<img key={i} src={`${prefix}/imgs/info/${i}.png`} alt="Organizador"/>)}
 			</GridImg>
 			<Subtitle>Apoya</Subtitle>
 			<GridImg>
 				{infoB.map((i) => 
-				<img key={i} src={`${prefix}/imgs/info/${i}.png`}/>)}
+				<img key={i} src={`${prefix}/imgs/info/${i}.png`} alt="Apoyador"/>)}
 				<Img 
 					onClick={openEgg} 
 					width="150px" 

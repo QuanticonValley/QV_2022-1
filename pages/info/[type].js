@@ -16,6 +16,9 @@ import Guide from './pages/guide'
 const imgInfo = `${prefix}/imgs/header/info.png`
 const Cont = styled.div`
 	padding: 0px 30px;
+	@media screen and (max-width: 800px) {
+		padding:0;
+	}
 `
 const Selector = styled.div`
 	display: flex;
@@ -29,8 +32,9 @@ const SelItem = styled.div`
 	:hover {
 		cursor: pointer;
 	}
-	@media screen and (max-width: 800px) {
-		font-size: .8em;
+	@media screen and (max-width: 510px) {
+		font-size: .7em;
+		margin: 0 5px;
 	}
 `
 const SelBar = styled.div`

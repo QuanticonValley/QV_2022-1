@@ -7,6 +7,7 @@ import { getNoti } from '../public/data'
 const Container = styled.div`
 	position: relative;
 	width: 100%;
+
 `
 const Img = styled.img`
 	width: 100%;

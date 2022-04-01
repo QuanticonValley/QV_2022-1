@@ -17,6 +17,9 @@ const Objeto=styled.div`
 const Subtitle=styled.h3`
 	margin-left:10px;
 	color:${p=>p.tipo===1 ?"black":"#172bef"};
+	@media screen and (max-width: 800px) {
+		font-size:17px;
+	}
 `
 const Content=styled.p`
 	margin-left:20px;
@@ -24,9 +27,21 @@ const Content=styled.p`
 	:hover {
 		margin-left:25px;
 	}
+	@media screen and (max-width: 800px) {
+		font-size:14px;
+	}
 `
 const Content2=styled.p`
 	margin-left:20px;
+	@media screen and (max-width: 800px) {
+		font-size:14px;
+	}
+`
+const Logo=styled.img`
+	width: 44px;
+	@media screen and (max-width: 800px) {
+		width:35px;
+	}
 `
 const TituloDescr=({data})=>{
 	if(data[1].length==0)return null;
@@ -35,7 +50,7 @@ const TituloDescr=({data})=>{
 		{data[1].map(i=>
 		<Content2 key={i}>
 			
-			<p><b><img src={`${prefix}/imgs/roles/TODOS.png`}></img> {i[0]} </b>{i[1]}</p>
+			<p><b><Logo src={`${prefix}/imgs/roles/TODOS.png`}></Logo> {i[0]} </b>{i[1]}</p>
 		</Content2>
 		)}
 	</Objeto>)
@@ -47,8 +62,8 @@ const TituloEnlaces=({data, tipo=0})=>{
 		{data[1].map(i=>
 		<Content key={i}>
 			<a href={i[1]} target="_blank" rel="noreferrer">
-				{i[2]===""?<img src={`${prefix}/imgs/roles/TODOS.png`}></img>:
-				<img src={`${prefix}/imgs/roles/${i[2]}.png`}></img>} 
+				{i[2]===""?<Logo src={`${prefix}/imgs/roles/TODOS.png`}></Logo>:
+				<Logo src={`${prefix}/imgs/roles/${i[2]}.png`}></Logo>} 
 				{i[0]}
 			</a>
 		</Content>
