@@ -3,7 +3,7 @@ import { prefix } from '../../utils/prefix.js';
 import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
-import { statePisoA, getDataProg } from '../../public/data'
+import { statePiso,statePisoA, getDataProg } from '../../public/data'
 import { useMainState } from '../../libs/stateHooks'
 
 const imgCommon = `${prefix}/imgs/header/info.png`
@@ -102,6 +102,9 @@ const Image = styled.img`
 `
 const Ranking = () => {
 	const [mState, setMainState] = useMainState()
+	const piso = statePiso()
+	const pisoMax = statePisoA()
+	const w=(piso*100)/pisoMax;
 	const openModal = (type) => {
 		setMainState({
 		  ...mState,
@@ -124,8 +127,8 @@ const Ranking = () => {
 		</TitleBox>
 		<ContProg>
 			<BarProg>
-				<Prog width={prog.num}>
-					{prog.piso}
+				<Prog width={w+'%'}>
+					{piso!=0?<p>Piso {piso}</p>:null}
 				</Prog>
 			</BarProg>
 			<SubTitle>{prog.title}</SubTitle>

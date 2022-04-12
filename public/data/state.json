@@ -1,41 +1,13 @@
 {
 	"pisoMax": 6,
-	"piso": 2,
+	"piso": 3,
 	"group": "dos",
 	"prog" : {
-		"num": "33%",
-		"piso": "2do Piso",
-		"title": "¡Tenemos el problema con una pregunta esencial!",
-		"desc": "Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes.",
-		"entrega": "Pitch Piso 2- Contextualización y actores"
+		"title": "¡Construimos la solución!",
+		"desc": "Infografía"
 	},
 	"modal": {
 		"visibility": false,
 		"type": "none"
-	},
-	"lastUpdates": {
-		"general": [
-			"El piso 4 ya se encuentra habilitado para que revises todos los contenidos de este.",
-			"No olvides revisar los contenidos del calendario, el 12 de Enero es la entrega del primer trabajo escrito"
-		],
-		"etesc": [
-			"El entregable del Diseño y Prototipo",
-			"El entregable del avance de trabajo escrito",
-			"El entregable de la evaluacion de desempeños",
-			"4 retos nuevos para resolver"
-		],
-		"lobby": [
-			"El protocolo y la rubrica del Pitch - piso 4"
-		],
-		"asesor": [
-			"Los videos de los conversatorios del 6 de Diciembre: Prototipado, Laboratorio, Mercadeo",
-			"Encuesta de percepcion de los conversatorios"
-		],
-		"news": [
-			"17 de Diciembre - La experiencia: Banco de Herramientas"
-		],
-		"webbinars": [
-			"Pasos clave para emprender con Luis Felipe Batero"
-		]
 	}
 }

@@ -3,13 +3,11 @@ import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
-import { statePisoA, getDataProg, getLogosExt } from '../../public/data'
+import { getLogosExt } from '../../public/data'
 
 import QV from '../../UIcomponents/qv';
 
 import Header from '../../UIcomponents/header'
-
-import { getNoti } from '../../public/data'
 
 const imgPrin = `${prefix}/imgs/header/principal.png`
 
@@ -165,10 +163,6 @@ const Imagen= styled.img`
 const Principal = () => {
   const [mState, setMainState] = useMainState()
 	const logos=getLogosExt()
-
- 	const noti = getNoti() 
-	const video = noti[0] 
-		? noti[0] : null
 
 	const openModal = (type) => {
     setMainState({

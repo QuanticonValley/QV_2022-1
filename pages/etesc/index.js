@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import { prefix } from '../../utils/prefix.js';
-import { getEtesc, getPisoTitle } from '../../public/data'
+import { getPisoTitle } from '../../public/data'
 import { useMainState } from '../../libs/stateHooks'
-import { getAsesorSrc, getLobbyData, statePiso, getPisoData } from "../../public/data";
+import { statePiso, getPisoData } from "../../public/data";
 import ListItems from './components/listItems'
 import styled from 'styled-components'
-import ItemList from '../../UIcomponents/SrcItemList'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 import PisosSel from '../../UIcomponents/pisoSel'

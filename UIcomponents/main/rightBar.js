@@ -16,7 +16,6 @@ const Container = styled.div`
 	background-color: #fff;
 	padding: 0px .5em;
 	margin: 5px 2px;
-	top: 5px;
 	height: 98vh;
 	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
 	transition: all .3s ease-in;
@@ -135,7 +134,16 @@ const RightBar = ({active, close}) => {
     useEffect(() => {
         setIsMounted(true);
     },[]);
-  	const [mState, setMainState] = useMainState()
+	const [mState, setMainState] = useMainState()
+	const openModal = (type) => {
+		setMainState({
+		  ...mState,
+		  modal: {
+			visibility: true,
+			type: type
+		  }
+		})
+	}
   	const piso = statePiso()
 	return (
 		<Container active={active}>

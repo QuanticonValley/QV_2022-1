@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 import Mentores from './components/mentores.js';
-import Virt from '../zones/[type]/asesor/virt.js';
+import Virt from './asesor/virt.js';
 const imgCommon = `${prefix}/imgs/header/zones.png`
 
 const Margin = styled.div`
