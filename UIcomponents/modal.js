@@ -22,9 +22,9 @@ const Content = styled.div`
 	flex-direction: column;
   background-color: rgba(227, 227, 227, .9);;
 	border-radius: 20px;
-	height: 90%;
+	height: 100%;
 	width: 90%;
-	max-height: 600px;
+	max-height: 800px;
 	max-width: 1200px;
 	z-index: 6;
   transition-delay: .6s;
