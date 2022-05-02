@@ -132,12 +132,15 @@
 				"1_3":["Herramientas"],
 				"1_3_1":["_Ova",
 					[
-						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780631","CTO"],
-						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797983","TODOS"],
+						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780631","CTO"],						
 						["Grabaciones Pitch piso 3","https://micampus.unal.edu.co/mod/book/view.php?id=800212","TODOS"],
-						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797985","TODOS"]
+						
 					]],
-				"1_3_2":["_pdf",[]],
+				"1_3_2":["_pdf",
+					[
+						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797983","TODOS"],
+						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797985","TODOS"],
+					]],
 				"1_3_3":["_Vídeo",[]],
 				"1_4":["Entrega tu actividad aqui",
 					[
@@ -176,7 +179,7 @@
 					]],
 				"1_3_2":["_pdf",
 					[
-						
+						["Guía metodológica Pitch de piso 4","#","TODOS"],
 					]],
 				"1_3_3":["_Vídeo",
 					[
@@ -479,12 +482,15 @@
 				"1_3":["Herramientas"],
 				"1_3_1":["_Ova",
 					[
-						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780973","CTO"],
-						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797982","TODOS"],
+						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780973","CTO"],						
 						["Grabaciones Pitch piso 3","https://micampus.unal.edu.co/mod/book/view.php?id=800213","TODOS"],
-						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797987","TODOS"]
+						
 					]],
-				"1_3_2":["_pdf",[]],
+				"1_3_2":["_pdf",
+					[
+						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797982","TODOS"],
+						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797987","TODOS"],
+					]],
 				"1_3_3":["_Vídeo",[]],
 				"1_4":["Entrega tu actividad aqui",
 					[
@@ -523,7 +529,7 @@
 					]],
 				"1_3_2":["_pdf",
 					[
-						
+						["Guía metodológica Pitch de piso 4","#","TODOS"],
 					]],
 				"1_3_3":["_Vídeo",
 					[
