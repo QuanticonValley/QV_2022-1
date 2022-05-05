@@ -1,10 +1,10 @@
 {
 	"pisoMax": 6,
-	"piso": 3,
+	"piso": 4,
 	"group": "dos",
 	"prog" : {
-		"title": "¡Construimos la solución!",
-		"desc": "Infografía"
+		"title": "¡Definimos el valor a entregar!",
+		"desc": "Problema/Diseño y Prototipo"
 	},
 	"modal": {
 		"visibility": false,
