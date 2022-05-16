@@ -16,7 +16,7 @@ const events = [
   {d:4, m: 5, y: 2022, event: 'Mentoria'},
   {d:9, m: 5, y: 2022, event: 'Conversatorio alternativas de prototipado'},
   {d:11, m: 5, y: 2022, event: 'Mentoria y Entrega primer trabajo escrito'},
-  {d:16, m: 5, y: 2022, event: 'Laboratorios'},
+  {d:16, m: 5, y: 2022, event: 'Segundo Conversatorio alternativas de prototipado'},
   {d:18, m: 5, y: 2022, event: 'Mentoria (evaluación trabajo en equipo y evaluación de desempeños)'},
   {d:23, m: 5, y: 2022, event: 'Mentoria'},
   {d:25, m: 5, y: 2022, event: 'Mentoria formativa (pitch de piso 4)'},
