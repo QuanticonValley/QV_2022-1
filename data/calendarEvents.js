@@ -21,7 +21,7 @@ const events = [
   {d:23, m: 5, y: 2022, event: 'Mentoria'},
   {d:25, m: 5, y: 2022, event: 'Mentoria formativa (pitch de piso 4)'},
   {d:1, m: 6, y: 2022, event: 'Mentoria'},
-  {d:6, m: 6, y: 2022, event: 'Mentoria'},
+  {d:6, m: 6, y: 2022, event: 'Mejores Experiencias Roles'},
   {d:8, m: 6, y: 2022, event: 'Mentoria'},
   {d:13, m: 6, y: 2022, event: 'Evaluación de desempeño 2'},
   {d:15, m: 6, y: 2022, event: 'Mentoria formativa (pitch de piso 5)'},
