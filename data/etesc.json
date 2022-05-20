@@ -287,17 +287,17 @@
 		"6": {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Presentación pitch final",""],
-					["Póster",""],
+					["Página Wix",""],
+					["Presentación en Expoideas",""],
 					["Prototipo final",""],
 					["Trabajo escrito final",""],
 					["Evaluación de desempeño 2",""]
 				]],
 				"1_2":["Cómo se calificará",
 				[
-					["Rúbrica Póster","","TODOS"],
+					["Rúbrica Presentación en Expoideas","","TODOS"],
 					["Rúbrica prototipo final","","TODOS"],
-					["Rúbrica pitch final","","TODOS"],
+					["Rúbrica Página Wix","","TODOS"],
 					["Rúbrica trabajo escrito final","","TODOS"]
 				]],
 				"1_3":["Herramientas"],
@@ -310,7 +310,7 @@
 						["Guía trabajo escrito final","","TODOS"],
 						["Guía participación de profesores","","TODOS"],
 						["Guía participación de estudiante","","TODOS"],
-						["Guía de presentación final pitch y prototipo","","TODOS"]
+						["Guía de prototipo","","TODOS"]
 					]],
 				"1_3_3":["_Vídeo",
 					[
@@ -318,7 +318,7 @@
 					]],
 				"1_4":["Entrega tu actividad aqui",
 					[
-						["Entrega documentación TPI+Expoideas (póster)","","TODOS"],
+						["Entrega documentación TPI+Expoideas (Página Wix y Video)","","TODOS"],
 						["Entrega final del trabajo escrito","","TODOS"],
 						["Formulario Evaluación de desempeño 2","","TODOS"]
 					]],
