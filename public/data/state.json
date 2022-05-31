@@ -1,10 +1,10 @@
 {
 	"pisoMax": 6,
-	"piso": 4,
+	"piso": 5,
 	"group": "dos",
 	"prog" : {
-		"title": "¡Definimos el valor a entregar!",
-		"desc": "Problema/Diseño y Prototipo"
+		"title": "¡Tenemos el valor probado y garantizada la viabilidad!",
+		"desc": "Pitch Final"
 	},
 	"modal": {
 		"visibility": false,
