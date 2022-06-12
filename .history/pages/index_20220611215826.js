@@ -6,7 +6,9 @@ import { getLogosExt } from '../public/data/index.js';
 import { useMainState } from '../libs/stateHooks.js';
 import googleOneTap from "google-one-tap";
 import { useEffect } from 'react';
+
 import QV from '../UIcomponents/qv.js';
+
 import Header from '../UIcomponents/header.js';
 
 const imgPrin = `${prefix}/imgs/header/principal.png`

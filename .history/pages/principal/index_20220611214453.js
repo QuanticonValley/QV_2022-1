@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { prefix } from '../utils/prefix.js';
+import { useMainState } from '../../libs/stateHooks'
 import ReactPlayer from 'react-player'
+import styled from 'styled-components'
 import Link from 'next/link'
-import { getLogosExt } from '../public/data/index.js';
-import { useMainState } from '../libs/stateHooks.js';
-import googleOneTap from "google-one-tap";
-import { useEffect } from 'react';
-import QV from '../UIcomponents/qv.js';
-import Header from '../UIcomponents/header.js';
+import { prefix } from '../../utils/prefix.js';
+import { getLogosExt } from '../../public/data'
+
+import QV from '../../UIcomponents/qv';
+
+import Header from '../../UIcomponents/header'
 
 const imgPrin = `${prefix}/imgs/header/principal.png`
 
@@ -160,50 +160,9 @@ const Imagen= styled.img`
 		height:40px;
 	}
 `
-
-const Container = styled.div`
-	background-image: url('${prefix}/imgs/Rectangle 1.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  height: 100vh;
-`
-
-
-const Imgn = styled.img`
-	margin: 30px;
-`
-const Intro = styled.p`
-	font-size: 1em;
-	font-weight: bold;
-	color: #fff;
-	margin: 0px;
-`
-
-const Login = () => {
-	
-	const [mState, setMainState] = useMainState()
+const Principal = () => {
+  const [mState, setMainState] = useMainState()
 	const logos=getLogosExt()
-	  // options
-	  const opts = {
-		client_id:
-		  "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
-		auto_select: false, // optional
-		cancel_on_tap_outside: false, // optional
-		context: "signin", // optional
-	 };
-  
-	 useEffect(() => {
-		console.log("init");
-		googleOneTap(opts, (response) => {
-		  // Send response to server
-		  console.log("Encoded JWT ID token: " + response.credential);
-		});
-	 }, []);
 
 	const openModal = (type) => {
     setMainState({
@@ -215,7 +174,7 @@ const Login = () => {
     })
 	}
 
-	return <QV pg="Principal">
+  return <QV pg="Principal">
 		<Header
 			title="Quanticon Valley"
 			desc="Bienvenidos/as"
@@ -232,12 +191,12 @@ const Login = () => {
 			></Logo>
 			</LogoExt>
 			<ReactPlayer
-				url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
-				className='react-player'
-				width='100%'
-				height='400px'
-				controls
-				></ReactPlayer>
+            url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
+            className='react-player'
+            width='100%'
+            height='400px'
+            controls
+            ></ReactPlayer>
 		</Grid>
 
 		<TitleBox>
@@ -287,5 +246,5 @@ const Login = () => {
 		</Flex2>
 
 	</QV>
-	}
-export default Login
+}
+export default Principal

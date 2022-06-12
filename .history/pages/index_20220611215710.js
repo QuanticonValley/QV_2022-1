@@ -4,9 +4,10 @@ import ReactPlayer from 'react-player'
 import Link from 'next/link'
 import { getLogosExt } from '../public/data/index.js';
 import { useMainState } from '../libs/stateHooks.js';
-import googleOneTap from "google-one-tap";
-import { useEffect } from 'react';
+import Login from '../UIcomponents/login.js';
+
 import QV from '../UIcomponents/qv.js';
+
 import Header from '../UIcomponents/header.js';
 
 const imgPrin = `${prefix}/imgs/header/principal.png`
@@ -185,25 +186,9 @@ const Intro = styled.p`
 `
 
 const Login = () => {
-	
+
 	const [mState, setMainState] = useMainState()
 	const logos=getLogosExt()
-	  // options
-	  const opts = {
-		client_id:
-		  "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
-		auto_select: false, // optional
-		cancel_on_tap_outside: false, // optional
-		context: "signin", // optional
-	 };
-  
-	 useEffect(() => {
-		console.log("init");
-		googleOneTap(opts, (response) => {
-		  // Send response to server
-		  console.log("Encoded JWT ID token: " + response.credential);
-		});
-	 }, []);
 
 	const openModal = (type) => {
     setMainState({

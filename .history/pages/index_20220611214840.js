@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 import { prefix } from '../utils/prefix.js';
+import Register from '../UIcomponents/login'
+import { useMainState } from '../../libs/stateHooks'
 import ReactPlayer from 'react-player'
+import styled from 'styled-components'
 import Link from 'next/link'
-import { getLogosExt } from '../public/data/index.js';
-import { useMainState } from '../libs/stateHooks.js';
-import googleOneTap from "google-one-tap";
-import { useEffect } from 'react';
-import QV from '../UIcomponents/qv.js';
-import Header from '../UIcomponents/header.js';
+import { prefix } from '../../utils/prefix.js';
+import { getLogosExt } from '../../public/data'
+
+import QV from '../../UIcomponents/qv';
+
+import Header from '../../UIcomponents/header'
 
 const imgPrin = `${prefix}/imgs/header/principal.png`
 
@@ -185,107 +188,78 @@ const Intro = styled.p`
 `
 
 const Login = () => {
+  return (
+	<Header
+	title="Quanticon Valley"
+	desc="Bienvenidos/as"
+	imgH={imgPrin}
+	primary
+/>
+<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
+<TitleBox>
+	<Title>Conoce Quanticon Valley</Title>
+</TitleBox>
+<Grid>
+	<LogoExt><Logo
+		src={`${prefix}/imgs/info/QV.png`}
+	></Logo>
+	</LogoExt>
+	<ReactPlayer
+		url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
+		className='react-player'
+		width='100%'
+		height='400px'
+		controls
+		></ReactPlayer>
+</Grid>
+
+<TitleBox>
+	<Title>Conoce a los ganadores de la décima edición</Title>
+</TitleBox>
+<Grid>
+	<Noti 
+		src={`${prefix}/imgs/principal/lastNoti.png`}
+		onClick={()=>openModal('Noticiero')}
+	/>
+	<MejoresProyectos href={"https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"} target="_blank" rel="noreferrer">
+		¡Conoce los proyectos desarrollados por los ganadores!
+	</MejoresProyectos>
 	
-	const [mState, setMainState] = useMainState()
-	const logos=getLogosExt()
-	  // options
-	  const opts = {
-		client_id:
-		  "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
-		auto_select: false, // optional
-		cancel_on_tap_outside: false, // optional
-		context: "signin", // optional
-	 };
-  
-	 useEffect(() => {
-		console.log("init");
-		googleOneTap(opts, (response) => {
-		  // Send response to server
-		  console.log("Encoded JWT ID token: " + response.credential);
-		});
-	 }, []);
-
-	const openModal = (type) => {
-    setMainState({
-      ...mState,
-      modal: {
-        visibility: true,
-        type: type
-      }
-    })
-	}
-
-	return <QV pg="Principal">
-		<Header
-			title="Quanticon Valley"
-			desc="Bienvenidos/as"
-			imgH={imgPrin}
-			primary
-		/>
-		<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
-		<TitleBox>
-			<Title>Conoce Quanticon Valley</Title>
-		</TitleBox>
-		<Grid>
-			<LogoExt><Logo
-				src={`${prefix}/imgs/info/QV.png`}
-			></Logo>
-			</LogoExt>
-			<ReactPlayer
-				url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
-				className='react-player'
-				width='100%'
-				height='400px'
-				controls
-				></ReactPlayer>
-		</Grid>
-
-		<TitleBox>
-			<Title>Conoce a los ganadores de la décima edición</Title>
-		</TitleBox>
-		<Grid>
-			<Noti 
-				src={`${prefix}/imgs/principal/lastNoti.png`}
-				onClick={()=>openModal('Noticiero')}
-			/>
-			<MejoresProyectos href={"https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"} target="_blank" rel="noreferrer">
-				¡Conoce los proyectos desarrollados por los ganadores!
-			</MejoresProyectos>
-			
-		</Grid>
+</Grid>
 
 
-		<TitleBox>
-			<Title>Conoce a los actores de Quanticon Valley</Title>
-		</TitleBox>
-		<GridB>
-			<Link href='/actors' passHref>
-				<Box>
-					<Flex>
-						<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
-						Mentores
-					</Flex>
-					<TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
-				</Box>
-			</Link>
-			<Link href='/actors' passHref>
-				<Box>
-					<Flex>
-						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
-						Asesores
-					</Flex>
-					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores.</TextBox>
-				</Box>
-			</Link>
-			
-		</GridB>
-		<TitleBox>
-			<Title>Líderes de innovación abierta - participantes</Title>
-		</TitleBox>
-		<Flex2>
-		{logos.map((logo,index)=><Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>)}
-		</Flex2>
+<TitleBox>
+	<Title>Conoce a los actores de Quanticon Valley</Title>
+</TitleBox>
+<GridB>
+	<Link href='/actors' passHref>
+		<Box>
+			<Flex>
+				<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
+				Mentores
+			</Flex>
+			<TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
+		</Box>
+	</Link>
+	<Link href='/actors' passHref>
+		<Box>
+			<Flex>
+				<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
+				Asesores
+			</Flex>
+			<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores.</TextBox>
+		</Box>
+	</Link>
+	
+</GridB>
+<TitleBox>
+	<Title>Líderes de innovación abierta - participantes</Title>
+</TitleBox>
+<Flex2>
+{logos.map((logo,index)=><Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>)}
+</Flex2>
 
-	</QV>
-	}
+</QV>
+  )
+}
 export default Login
