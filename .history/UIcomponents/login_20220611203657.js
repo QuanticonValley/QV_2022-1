@@ -57,7 +57,7 @@ const Login = () => {
       // Send response to server
       console.log(response);
     });
-  }, []);
+  });
 
   const [login, setLogin] = useState(true);
   function cambio(decision) {

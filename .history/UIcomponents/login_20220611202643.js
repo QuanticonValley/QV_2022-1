@@ -42,7 +42,7 @@ const Button = styled.button`
 `;
 
 const Login = () => {
-  // options
+  // opts
   const opts = {
     client_id:
       "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
@@ -57,7 +57,7 @@ const Login = () => {
       // Send response to server
       console.log(response);
     });
-  }, []);
+  });
 
   const [login, setLogin] = useState(true);
   function cambio(decision) {
