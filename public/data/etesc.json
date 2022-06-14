@@ -622,17 +622,17 @@
 		"6": {
 			"1_1":["Lista de entregables de piso",
 				[
-					["Presentación pitch final",""],
-					["Póster",""],
+					["Página Wix",""],
+					["Presentación en Expoideas",""],
 					["Prototipo final",""],
 					["Trabajo escrito final",""],
 					["Evaluación de desempeño 2",""]
 				]],
 				"1_2":["Cómo se calificará",
 				[
-					["Rúbrica Póster","","TODOS"],
+					["Rúbrica Presentación en Expoideas","","TODOS"],
 					["Rúbrica prototipo final","https://micampus.unal.edu.co/mod/folder/view.php?id=803936","TODOS"],
-					["Rúbrica página Wix","https://micampus.unal.edu.co/mod/folder/view.php?id=805158","TODOS"],
+					["Rúbrica Página Wix","https://micampus.unal.edu.co/mod/folder/view.php?id=805158","TODOS"],
 					["Rúbrica trabajo escrito final","https://micampus.unal.edu.co/mod/folder/view.php?id=803932","TODOS"]
 				]],
 				"1_3":["Herramientas"],
@@ -644,8 +644,8 @@
 					[
 						["Guía trabajo escrito final","https://micampus.unal.edu.co/mod/page/view.php?id=803939","TODOS"],
 						["Guía participación de profesores","","TODOS"],
-						["Guía participación de estudiante","https://micampus.unal.edu.co/mod/page/view.php?id=805071&forceview=1","TODOS"],
-						["Guía de presentación final pitch y prototipo","","TODOS"]
+						["Guía participación de estudiantes","https://micampus.unal.edu.co/mod/page/view.php?id=805071&forceview=1","TODOS"],
+						["Guía de prototipo","","TODOS"]
 					]],
 				"1_3_3":["_Vídeo",
 					[
@@ -653,7 +653,7 @@
 					]],
 				"1_4":["Entrega tu actividad aqui",
 					[
-						["Entrega documentación TPI+Expoideas (póster)","https://micampus.unal.edu.co/mod/assign/view.php?id=780916","TODOS"],
+						["Entrega documentación TPI+Expoideas (Página Wix y Video)","https://micampus.unal.edu.co/mod/assign/view.php?id=780916","TODOS"],
 						["Entrega final del trabajo escrito","https://micampus.unal.edu.co/mod/assign/view.php?id=780923","TODOS"],
 						["Póster y Resumen","https://forms.gle/5jFCh1iq4bZESFfx8","TODOS"]
 					]],
