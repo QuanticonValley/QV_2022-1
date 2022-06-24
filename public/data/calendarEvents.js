@@ -29,6 +29,7 @@ const events = [
   {d:20, m: 6, y: 2022, event: 'Festivo'},
   {d:21, m: 6, y: 2022, event: 'TPI Expoideas'},
   {d:22, m: 6, y: 2022, event: 'TPI Expoideas'},
+  {d:24, m: 6, y: 2022, event: 'Encuesta de percepción final (materia y juego)'},
   {d:27, m: 6, y: 2022, event: 'Entrega apreciativa del mentor'},
   {d:29, m: 6, y: 2022, event: 'Ultima clase TPI y Gran final Expoideas'}
 ]
