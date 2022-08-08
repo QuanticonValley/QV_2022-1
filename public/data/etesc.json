@@ -1,695 +1,1721 @@
 {
-	"pisos": [
-		"Selecciona un piso",
-		"Piso 1: ¡Estamos listos!",
-		"Piso 2: ¡Tenemos el problema con una pregunta esencial!",
-		"Piso 3: ¡Construimos la solución!",
-		"Piso 4: ¡Definimos el valor a entregar!",
-		"Piso 5: ¡Tenemos el valor probado y garantizada la viabilidad!",
-		"Piso 6: ¡Demostramos resultados y habilidades ganadas!"
-	],
-	"dos": {
-		"1" : {
-			"1_1":["Lista de entregables de piso",
-			[
-				["Acta de compromiso", "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"]
-			]],
-			"1_2":["Cómo se calificará",[]],
-			"1_3":["Herramientas"],
-			"1_3_1":["_Ova",
-				[
-					["Juego Sala de escape","https://micampus.unal.edu.co/mod/lesson/view.php?id=780610","TODOS"],
-					["Cronograma interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=780612","CEO"],
-					["Roles en el equipo de trabajo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780378","TODOS"],
-					["Comunicación eficaz","https://micampus.unal.edu.co/mod/hvp/view.php?id=780620","TODOS"],
-					["Decálogo del Mentor","https://micampus.unal.edu.co/mod/hvp/view.php?id=780618","CTO"],
-					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=788027&forceview=1","CEO"]
-				]],
-			"1_3_2":["_pdf",
-				[
-					
-				]],
-			"1_3_3":["_Vídeo",
-				[
-					["Cómo hacer un pitch","https://micampus.unal.edu.co/mod/page/view.php?id=780732","TODOS"],
-					["Pregunta esencial","https://micampus.unal.edu.co/mod/page/view.php?id=780386","COO"]
-				]],
-			"1_4":["Entrega tu actividad aqui",
-				[
-					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=780367","TODOS"],
-					["Acta de compromiso (reevaluada)","https://micampus.unal.edu.co/mod/assign/view.php?id=793276","TODOS"]
-					
-				]],
-			"2_1":["Lista de retos adicionales",[]],
-			"2_2":["Cómo se calificará",[]],
-			"2_3":["Recursos"],
-			"2_3_1":["_Ova",[]],
-			"2_3_2":["_pdf",[]],
-			"2_3_3":["_Vídeo",[]],
-			"2_4":["Entrega tus retos adicionales aquí",[]],
-			"3":["Encuestas de percepción",
-				[
-					["Encuesta presentación de la materia","https://micampus.unal.edu.co/mod/feedback/view.php?id=780384","CCO"],
-					["Encuesta de conocimientos previos","https://micampus.unal.edu.co/mod/feedback/view.php?id=780388","CCO"]
-				]]
-		},
-		"2" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."]
-				]],
-			"1_2":["Cómo se calificará",
-				[
-					["Rúbrica pitch de piso 2","https://micampus.unal.edu.co/mod/folder/view.php?id=792724","TODOS"]
-				]],
-			"1_3":["Herramientas"],
-			"1_3_1":["_Ova",
-				[
-					["Metodología Véster y Árbol de problemas","https://micampus.unal.edu.co/mod/page/view.php?id=780431","TODOS"],
-					["Cómo hacer un Pestal","https://micampus.unal.edu.co/mod/page/view.php?id=780433","TODOS"],
-					["Actores","#","CEO"],
-					["Grabaciones Pitch piso 2","https://micampus.unal.edu.co/mod/book/view.php?id=797335","TODOS"]
-				]],
-			"1_3_2":["_pdf",[
-					["Guía de pitch de piso 2","https://micampus.unal.edu.co/mod/page/view.php?id=792713&forceview=1","TODOS"]
-			]],
-			"1_3_3":["_Vídeo",
-				[
-					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780435","CEO"],
-					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780435","COO"]
-				]],
-			"1_4":["Entrega tu actividad aqui",
-				[
-					["Pitch Piso 2- contextualización y actores","https://micampus.unal.edu.co/mod/assign/view.php?id=780394","CEO"]
-				]],
-			"2_1":["Lista de retos adicionales",
-				[
-					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
-					["Taller de ética","Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."]
-				]],
-			"2_2":["Cómo se calificará",[]],
-			"2_3":["Recursos"],
-			"2_3_1":["_Ova",
-				[
-					["Habilidades blandas","https://micampus.unal.edu.co/mod/book/view.php?id=795016","CEO"],
-					["Sociedad y tecnología","#","CTO"],
-					["Economía del conocimiento","https://micampus.unal.edu.co/mod/page/view.php?id=795838&forceview=1","CFO"],
-					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793690","CCO"],
-					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793693","COO"],
-					["Emprendimiento","https://micampus.unal.edu.co/mod/page/view.php?id=794810","CMO"]
-				]],
-			"2_3_2":["_pdf",
-				[
-					["Guía taller de ética","https://micampus.unal.edu.co/mod/page/view.php?id=792619","TODOS"]
-				]],
-			"2_3_3":["_Vídeo",[]],
-			"2_4":["Entrega tus retos adicionales aquí",
-				[
-					["Preguntas conversatorio Habilidades Blandas","https://micampus.unal.edu.co/mod/assign/view.php?id=780405","CEO"],
-					["Preguntas conversatorio Economía del conocimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=780409","CFO"],
-					["Preguntas conversatorio Sociedad y tecnología","https://micampus.unal.edu.co/mod/assign/view.php?id=780407","CTO"],
-					["Preguntas conversatorio Diseño","https://micampus.unal.edu.co/mod/assign/view.php?id=780411","CCO"],
-					["Preguntas conversatorio Ergonomía","https://micampus.unal.edu.co/mod/assign/view.php?id=794805","COO"],
-					["Preguntas conversatorio Emprendimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=794807","CMO"]
-				]],
-			"3":["Encuestas de percepción",[
-				["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780444","TODOS"],
-				["Encuesta de percepción conversatorios piso 2","https://micampus.unal.edu.co/mod/feedback/view.php?id=780474","TODOS"]
-			]]
-			
-		},
-		"3" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 3","Infografía"],
-					["Avance trabajo escrito",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 3","https://micampus.unal.edu.co/mod/folder/view.php?id=798236","TODOS"],
-					["Rúbrica avance trabajo escrito","https://micampus.unal.edu.co/mod/folder/view.php?id=799016","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780631","CTO"],						
-						["Grabaciones Pitch piso 3","https://micampus.unal.edu.co/mod/book/view.php?id=800212","TODOS"]
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797983","TODOS"],
-						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797985","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",[]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 3- Infografía","https://micampus.unal.edu.co/mod/assign/view.php?id=780447","TODOS"],
-						["Avance del trabajo escrito","https://micampus.unal.edu.co/mod/assign/view.php?id=780499","CEO"]
-					]],
-				"2_1":["Lista de retos adicionales",[]],
-				"2_2":["Cómo se calificará",[]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",[]],
-				"2_3_2":["_pdf",[]],
-				"2_3_3":["_Vídeo",[]],
-				"2_4":["Entrega tus retos adicionales aquí",[]],
-				"3":["Encuestas de percepción",
-					[
-						["Encuesta de percepción conversatorios piso 3","https://micampus.unal.edu.co/mod/feedback/view.php?id=798270","TODOS"]
-					]]
-		},
-		"4" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 4","Problema, Diseño y Prototipo"],
-					["Evaluación de desempeños y trabajo en equipo",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 4","https://micampus.unal.edu.co/mod/folder/view.php?id=800469&forceview=1","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						["Grabaciones Pitch piso 4","https://micampus.unal.edu.co/mod/book/view.php?id=803797","TODOS"]
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía metodológica Pitch de piso 4","https://micampus.unal.edu.co/mod/page/view.php?id=800470&forceview=1","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 4- Problema/Diseño y Prototipo","https://micampus.unal.edu.co/mod/assign/view.php?id=780494&forceview=1","TODOS"],
-						["Evaluación de desempeños","https://micampus.unal.edu.co/mod/assign/view.php?id=780501&group=0","TODOS"],
-						["Trabajo en equipo","https://micampus.unal.edu.co/mod/assign/view.php?id=804398","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						["Laboratorios de Diseño",""]
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						["Inscribete aquí a los Laboratorios de Diseño","#",""]
-					]],
-				"3":["Encuestas de percepción",
-					[
-						["Encuesta de percepción alternativas de prototipado","https://micampus.unal.edu.co/mod/feedback/view.php?id=780530","TODOS"],
-						["Encuesta de percepción alternativas de prototipado 2","https://micampus.unal.edu.co/mod/feedback/view.php?id=802228","TODOS"]
-					]]
-		},
-		"5": {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch de piso 5","Pitch final"],
-					["Evaluación de desempeños II",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/folder/view.php?id=803926","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Protocolo Pitch Piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/page/view.php?id=803928","TODOS"],
-						["Guía Mejores Experiencias por Roles","https://micampus.unal.edu.co/mod/page/view.php?id=804164&forceview=1","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/assign/view.php?id=780555","TODOS"],
-						["Evaluación de desempeños II","https://micampus.unal.edu.co/mod/assign/view.php?id=804942","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						
-					]],
-				"3":["Encuestas de percepción",
-					[
-						
-					]]
-
-		},
-		"6": {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Página Wix",""],
-					["Presentación en Expoideas",""],
-					["Prototipo final",""],
-					["Trabajo escrito final",""],
-					["Evaluación de desempeño 2",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Presentación en Expoideas","","TODOS"],
-					["Rúbrica prototipo final","https://micampus.unal.edu.co/mod/folder/view.php?id=803935","TODOS"],
-					["Rúbrica Página Wix","","TODOS"],
-					["Rúbrica trabajo escrito final","https://micampus.unal.edu.co/mod/folder/view.php?id=803933","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía trabajo escrito final","https://micampus.unal.edu.co/mod/page/view.php?id=803938","TODOS"],
-						["Guía participación de profesores","","TODOS"],
-						["Guía participación de estudiante","","TODOS"],
-						["Guía de prototipo","","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Entrega documentación TPI+Expoideas (Página Wix y Video)","","TODOS"],
-						["Entrega final del trabajo escrito","https://micampus.unal.edu.co/mod/assign/view.php?id=780580","TODOS"],
-						["Formulario Evaluación de desempeño 2","","TODOS"],
-						["Póster y Resumen","https://forms.gle/5jFCh1iq4bZESFfx8","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						
-					]],
-				"3":["Encuestas de percepción",
-					[
-						
-					]]
-			
-		}
-	},
-	"cuatro": {
-		"1" : {
-			"1_1":["Lista de entregables de piso",
-			[
-				["Acta de compromiso", "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"]
-			]],
-			"1_2":["Cómo se calificará",[]],
-			"1_3":["Herramientas"],
-			"1_3_1":["_Ova",
-				[
-					["Juego Sala de escape","https://micampus.unal.edu.co/mod/lesson/view.php?id=780952","TODOS"],
-					["Cronograma interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=780954","CEO"],
-					["Roles en el equipo de trabajo","https://micampus.unal.edu.co/mod/hvp/view.php?id=780724","TODOS"],
-					["Comunicación eficaz","https://micampus.unal.edu.co/mod/hvp/view.php?id=780962","TODOS"],
-					["Decálogo del Mentor","https://micampus.unal.edu.co/mod/hvp/view.php?id=780960","CTO"],
-					["Syllabus libro interactivo","https://micampus.unal.edu.co/mod/page/view.php?id=788026&forceview=1","CEO"]
-				]],
-			"1_3_2":["_pdf",
-				[
-					
-				]],
-			"1_3_3":["_Vídeo",
-				[
-					["Cómo hacer un pitch","https://micampus.unal.edu.co/mod/hvp/view.php?id=780722","COO"],
-					["Pregunta esencial","https://micampus.unal.edu.co/mod/page/view.php?id=780732","COO"]
-				]],
-			"1_4":["Entrega tu actividad aqui",
-				[
-					["Acta de compromiso","https://micampus.unal.edu.co/mod/assign/view.php?id=788023","TODOS"],
-					["Acta de compromiso (reevaluada)","https://micampus.unal.edu.co/mod/assign/view.php?id=793277","TODOS"]
-				]],
-			"2_1":["Lista de retos adicionales",[]],
-			"2_2":["Cómo se calificará",[]],
-			"2_3":["Recursos"],
-			"2_3_1":["_Ova",[]],
-			"2_3_2":["_pdf",[]],
-			"2_3_3":["_Vídeo",[]],
-			"2_4":["Entrega tus retos adicionales aquí",[]],
-			"3":["Encuestas de percepción",
-				[
-					["Encuesta presentación de la materia","https://micampus.unal.edu.co/mod/feedback/view.php?id=780730",""],
-					["Encuesta de conocimientos previos","https://micampus.unal.edu.co/mod/feedback/view.php?id=780734",""]
-				]]
-		},
-		"2" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 2 - Contextualización y actores","Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."]
-				]],
-			"1_2":["Cómo se calificará",
-				[
-					["Rúbrica pitch de piso 2","https://micampus.unal.edu.co/mod/folder/view.php?id=792725","TODOS"]
-				]],
-			"1_3":["Herramientas"],
-			"1_3_1":["_Ova",
-				[
-					["Metodología Véster y Árbol de problemas","https://micampus.unal.edu.co/mod/page/view.php?id=780777","TODOS"],
-					["Cómo hacer un Pestal","https://micampus.unal.edu.co/mod/page/view.php?id=780779","TODOS"],
-					["Actores","#","CEO"],
-					["Grabaciones Pitch piso 2","https://micampus.unal.edu.co/mod/book/view.php?id=797336","TODOS"]
-				]],
-			"1_3_2":["_pdf",[
-				["Guía de pitch de piso 2","https://micampus.unal.edu.co/mod/page/view.php?id=792712&forceview=1","TODOS"]
-			]],
-			"1_3_3":["_Vídeo",
-				[
-					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780781","CEO"],
-					["Mapa de Empatía","https://micampus.unal.edu.co/mod/page/view.php?id=780781","COO"]
-				]],
-			"1_4":["Entrega tu actividad aqui",
-				[
-					["Pitch Piso 2- contextualización y actores","https://micampus.unal.edu.co/mod/assign/view.php?id=780740","CEO"]
-				]],
-			"2_1":["Lista de retos adicionales",
-				[
-					["Conversatorios 1","Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"],
-					["Taller de ética","Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."]
-				]],
-			"2_2":["Cómo se calificará",[]],
-			"2_3":["Recursos"],
-			"2_3_1":["_Ova",
-				[
-					["Habilidades blandas","https://micampus.unal.edu.co/mod/book/view.php?id=795017","CEO"],
-					["Sociedad y tecnología","#","CTO"],
-					["Economía del conocimiento","https://micampus.unal.edu.co/mod/page/view.php?id=795839&forceview=1","CFO"],
-					["Diseño","https://micampus.unal.edu.co/mod/page/view.php?id=793691","CCO"],
-					["Ergonomía","https://micampus.unal.edu.co/mod/page/view.php?id=793694","COO"],
-					["Emprendimiento","https://micampus.unal.edu.co/mod/page/view.php?id=794811","CMO"]
-				]],
-			"2_3_2":["_pdf",
-				[
-					["Guía taller de ética","https://micampus.unal.edu.co/mod/page/view.php?id=792620&forceview=1","TODOS"]
-				]],
-			"2_3_3":["_Vídeo",[]],
-			"2_4":["Entrega tus retos adicionales aquí",
-				[
-					["Preguntas conversatorio Habilidades Blandas","https://micampus.unal.edu.co/mod/assign/view.php?id=780751","CEO"],
-					["Preguntas conversatorio Economía del conocimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=780755","CFO"],
-					["Preguntas conversatorio Sociedad y tecnología","https://micampus.unal.edu.co/mod/assign/view.php?id=780753","CTO"],
-					["Preguntas conversatorio Diseño","https://micampus.unal.edu.co/mod/assign/view.php?id=780757","CCO"],
-					["Preguntas conversatorio Ergonomía","https://micampus.unal.edu.co/mod/assign/view.php?id=794806","COO"],
-					["Preguntas conversatorio Emprendimiento","https://micampus.unal.edu.co/mod/assign/view.php?id=794808","CMO"]
-				]],
-			"3":["Encuestas de percepción",[
-					["Encuesta percepción taller de ética","https://micampus.unal.edu.co/mod/feedback/view.php?id=780790","TODOS"],
-					["Encuesta de percepción conversatorios piso 2","https://micampus.unal.edu.co/mod/feedback/view.php?id=780818","TODOS"]
-			]]
-			
-		},
-		"3" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 3","Infografía"],
-					["Avance trabajo escrito",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 3","https://micampus.unal.edu.co/mod/folder/view.php?id=798237","TODOS"],
-					["Rúbrica avance trabajo escrito","https://micampus.unal.edu.co/mod/folder/view.php?id=799017","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						["Infografía interactiva de ejemplo","https://micampus.unal.edu.co/mod/page/view.php?id=780973","CTO"],						
-						["Grabaciones Pitch piso 3","https://micampus.unal.edu.co/mod/book/view.php?id=800213","TODOS"]
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía metodológica Pitch de piso- Infografía","https://micampus.unal.edu.co/mod/page/view.php?id=797982","TODOS"],
-						["Guía avance trabajo escrito","https://micampus.unal.edu.co/mod/page/view.php?id=797987","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",[]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 3- Infografía","https://micampus.unal.edu.co/mod/assign/view.php?id=780793","TODOS"],
-						["Avance del trabajo escrito","https://micampus.unal.edu.co/mod/assign/view.php?id=780842","CEO"]
-					]],
-				"2_1":["Lista de retos adicionales",[]],
-				"2_2":["Cómo se calificará",[]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",[]],
-				"2_3_2":["_pdf",[]],
-				"2_3_3":["_Vídeo",[]],
-				"2_4":["Entrega tus retos adicionales aquí",[]],
-				"3":["Encuestas de percepción",
-					[
-						["Encuesta de percepción conversatorios piso 3","https://micampus.unal.edu.co/mod/feedback/view.php?id=798271","TODOS"]
-					]]
-		},
-		"4" : {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch Piso 4","Problema, Diseño y Prototipo"],
-					["Evaluación de desempeños y trabajo en equipo",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 4","https://micampus.unal.edu.co/mod/folder/view.php?id=800487&forceview=1","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						["Grabaciones Pitch piso 4","https://micampus.unal.edu.co/mod/book/view.php?id=803798","TODOS"]	
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía metodológica Pitch de piso 4","https://micampus.unal.edu.co/mod/page/view.php?id=800486&forceview=1","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 4- Problema/Diseño y Prototipo","https://micampus.unal.edu.co/mod/assign/view.php?id=780837&forceview=1","TODOS"],
-						["Evaluación de desempeños","https://micampus.unal.edu.co/mod/assign/view.php?id=780844&group=0","TODOS"],
-						["Trabajo en equipo","https://micampus.unal.edu.co/mod/assign/view.php?id=804399","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						["Laboratorios de Diseño",""]
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						["Inscribete aquí a los Laboratorios de Diseño","#","TODOS"]
-					]],
-				"3":["Encuestas de percepción",
-					[
-						["Encuesta de percepción alternativas de prototipado","https://micampus.unal.edu.co/mod/feedback/view.php?id=780873","TODOS"],
-						["Encuesta de percepción alternativas de prototipado 2","https://micampus.unal.edu.co/mod/feedback/view.php?id=802229","TODOS"]
-					]]
-		},
-		"5": {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Pitch de piso 5","Pitch final"],
-					["Evaluación de desempeños II",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Pitch de piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/folder/view.php?id=803927","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Protocolo Pitch Piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/page/view.php?id=803929","TODOS"],
-						["Guía Mejores Experiencias por Roles","https://micampus.unal.edu.co/mod/page/view.php?id=804165&forceview=1","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Pitch de piso 5 (Pitch final)","https://micampus.unal.edu.co/mod/assign/view.php?id=780898","TODOS"],
-						["Evaluación de desempeños II","https://micampus.unal.edu.co/mod/assign/view.php?id=804943","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						
-					]],
-				"3":["Encuestas de percepción",
-					[
-						
-					]]
-
-		},
-		"6": {
-			"1_1":["Lista de entregables de piso",
-				[
-					["Presentación pitch final",""],
-					["Póster",""],
-					["Prototipo final",""],
-					["Trabajo escrito final",""],
-					["Evaluación de desempeño 2",""]
-				]],
-				"1_2":["Cómo se calificará",
-				[
-					["Rúbrica Póster","","TODOS"],
-					["Rúbrica prototipo final","https://micampus.unal.edu.co/mod/folder/view.php?id=803936","TODOS"],
-					["Rúbrica pitch final","","TODOS"],
-					["Rúbrica trabajo escrito final","https://micampus.unal.edu.co/mod/folder/view.php?id=803932","TODOS"]
-				]],
-				"1_3":["Herramientas"],
-				"1_3_1":["_Ova",
-					[
-						
-					]],
-				"1_3_2":["_pdf",
-					[
-						["Guía trabajo escrito final","https://micampus.unal.edu.co/mod/page/view.php?id=803939","TODOS"],
-						["Guía participación de profesores","","TODOS"],
-						["Guía participación de estudiante","","TODOS"],
-						["Guía de presentación final pitch y prototipo","","TODOS"]
-					]],
-				"1_3_3":["_Vídeo",
-					[
-						
-					]],
-				"1_4":["Entrega tu actividad aqui",
-					[
-						["Entrega documentación TPI+Expoideas (póster)","","TODOS"],
-						["Entrega final del trabajo escrito","https://micampus.unal.edu.co/mod/assign/view.php?id=780923","TODOS"],
-						["Formulario Evaluación de desempeño 2","","TODOS"],
-						["Póster y Resumen","https://forms.gle/5jFCh1iq4bZESFfx8","TODOS"]
-					]],
-				"2_1":["Lista de retos adicionales",
-					[
-						
-					]],
-				"2_2":["Cómo se calificará",
-					[
-						
-					]],
-				"2_3":["Recursos"],
-				"2_3_1":["_Ova",
-					[
-						
-					]],
-				"2_3_2":["_pdf",
-					[
-						
-					]],
-				"2_3_3":["_Vídeo",
-					[
-						
-					]],
-				"2_4":["Entrega tus retos adicionales aquí",
-					[
-						
-					]],
-				"3":["Encuestas de percepción",
-					[
-						
-					]]
-			
-			
-		}
-	}
+   "titulos": {
+      "dos": [
+         "Selecciona un piso",
+         "Edificio 1: Ambientación e Inspiración",
+         "Edificio 2: Formulación y ejecución",
+         "Edificio 3: Presentación"
+      ],
+      "cuatro": [
+         "Selecciona un piso",
+         "Piso 1: ",
+         "Piso 2: ",
+         "Piso 3: ",
+         "Piso 4: ",
+         "Piso 5: ",
+         "Piso 6: "
+      ]
+   },
+   "dos": {
+      "1": {
+         "1_1": [
+            "Lista de entregables de edificio",
+            [
+               [
+                  "Formulario ideas de emprendimiento",
+                  "Formulario charla roles de personalidad",
+                  "Acta de compromiso:",
+                  "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto",
+                  "Pitch edificio 1 (Infografía) formativa",
+                  "Pitch edificio 1 (Infografía) sumativa",
+                  "Avance del trabajo escrito",
+                  "Formulario charla 7 tipos de innovación",
+                  "Formulario charla 6 roles de compañia",
+                  "Formulario charla bases de un pitch",
+                  "Formulario charla de Marketing",
+                  "Formulario charla diseño de proyecto",
+                  "Formulario charla prototipado y TRL"
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica pitch edificio 1 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=812910",
+                  ""
+               ],
+               [
+                  "Rúbrica avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=812911",
+                  ""
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas",
+            [
+               [
+                  "Guía de pitch de edificio 1 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812912",
+                  ""
+               ],
+               [
+                  "Guía avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812913",
+                  ""
+               ]
+            ]
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "SYLLABUS 2022-3",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812908",
+                  ""
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            []
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            [
+               [
+                  "Charla: ¿Cómo se tiene una idea de emprendimiento?",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812896",
+                  ""
+               ],
+               [
+                  "Charla: roles de personalidad",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812897",
+                  ""
+               ],
+               [
+                  "PREGUNTA ESENCIAL",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812903",
+                  ""
+               ]
+            ]
+         ],
+         "1_4": [
+            "Entrega tu actividad aquí",
+            [
+               [
+                  "Formulario ¿Cómo se tiene una idea de emprendimiento?",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812894",
+                  ""
+               ],
+               [
+                  "Formulario charla roles de personalidad",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812895",
+                  ""
+               ],
+               [
+                  "Acta de compromiso",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=812914",
+                  ""
+               ],
+               [
+                  "Pitch edificio 1 (Infografía) formativa",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=812919",
+                  ""
+               ],
+               [
+                  "Pitch edificio 1 (Infografía) sumativa",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=812920",
+                  ""
+               ],
+               [
+                  "Avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=812921",
+                  ""
+               ],
+               [
+                  "Formulario charla 7 tipos de innovación",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812922",
+                  ""
+               ],
+               [
+                  "Formulario charla 6 roles de compañia",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812923",
+                  ""
+               ],
+               [
+                  "Formulario charla bases de un pitch",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812924",
+                  ""
+               ],
+               [
+                  "Formulario charla de Marketing",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812925",
+                  ""
+               ],
+               [
+                  "Formulario charla diseño de proyecto",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812927",
+                  ""
+               ],
+               [
+                  "Formulario charla prototipado y TRL",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=812928",
+                  ""
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta presentación de la materia",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=812962",
+                  ""
+               ],
+               [
+                  "Encuesta de conocimientos previos",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=812909",
+                  ""
+               ]
+            ]
+         ]
+      },
+      "2": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 2 - Contextualización y actores",
+                  "Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica pitch de piso 2",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=792724",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Metodología Véster y Árbol de problemas",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780431",
+                  "TODOS"
+               ],
+               [
+                  "Cómo hacer un Pestal",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780433",
+                  "TODOS"
+               ],
+               [
+                  "Actores",
+                  "#",
+                  "CEO"
+               ],
+               [
+                  "Grabaciones Pitch piso 2",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=797335",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía de pitch de piso 2",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=792713&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            [
+               [
+                  "Mapa de Empatía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780435",
+                  "CEO"
+               ],
+               [
+                  "Mapa de Empatía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780435",
+                  "COO"
+               ]
+            ]
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch Piso 2- contextualización y actores",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780394",
+                  "CEO"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            [
+               [
+                  "Conversatorios 1",
+                  "Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"
+               ],
+               [
+                  "Taller de ética",
+                  "Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."
+               ]
+            ]
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            [
+               [
+                  "Habilidades blandas",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=795016",
+                  "CEO"
+               ],
+               [
+                  "Sociedad y tecnología",
+                  "#",
+                  "CTO"
+               ],
+               [
+                  "Economía del conocimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=795838&forceview=1",
+                  "CFO"
+               ],
+               [
+                  "Diseño",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=793690",
+                  "CCO"
+               ],
+               [
+                  "Ergonomía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=793693",
+                  "COO"
+               ],
+               [
+                  "Emprendimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=794810",
+                  "CMO"
+               ]
+            ]
+         ],
+         "2_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía taller de ética",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=792619",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            [
+               [
+                  "Preguntas conversatorio Habilidades Blandas",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780405",
+                  "CEO"
+               ],
+               [
+                  "Preguntas conversatorio Economía del conocimiento",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780409",
+                  "CFO"
+               ],
+               [
+                  "Preguntas conversatorio Sociedad y tecnología",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780407",
+                  "CTO"
+               ],
+               [
+                  "Preguntas conversatorio Diseño",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780411",
+                  "CCO"
+               ],
+               [
+                  "Preguntas conversatorio Ergonomía",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=794805",
+                  "COO"
+               ],
+               [
+                  "Preguntas conversatorio Emprendimiento",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=794807",
+                  "CMO"
+               ]
+            ]
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta percepción taller de ética",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780444",
+                  "TODOS"
+               ],
+               [
+                  "Encuesta de percepción conversatorios piso 2",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780474",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "3": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 3",
+                  "Infografía"
+               ],
+               [
+                  "Avance trabajo escrito",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 3",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=798236",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica avance trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=799016",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Infografía interactiva de ejemplo",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780631",
+                  "CTO"
+               ],
+               [
+                  "Grabaciones Pitch piso 3",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=800212",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía metodológica Pitch de piso- Infografía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=797983",
+                  "TODOS"
+               ],
+               [
+                  "Guía avance trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=797985",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 3- Infografía",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780447",
+                  "TODOS"
+               ],
+               [
+                  "Avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780499",
+                  "CEO"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta de percepción conversatorios piso 3",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=798270",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "4": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 4",
+                  "Problema, Diseño y Prototipo"
+               ],
+               [
+                  "Evaluación de desempeños y trabajo en equipo",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 4",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=800469&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Grabaciones Pitch piso 4",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=803797",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía metodológica Pitch de piso 4",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=800470&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 4- Problema/Diseño y Prototipo",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780494&forceview=1",
+                  "TODOS"
+               ],
+               [
+                  "Evaluación de desempeños",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780501&group=0",
+                  "TODOS"
+               ],
+               [
+                  "Trabajo en equipo",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=804398",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            [
+               [
+                  "Laboratorios de Diseño",
+                  ""
+               ]
+            ]
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            [
+               [
+                  "Inscribete aquí a los Laboratorios de Diseño",
+                  "#",
+                  ""
+               ]
+            ]
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta de percepción alternativas de prototipado",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780530",
+                  "TODOS"
+               ],
+               [
+                  "Encuesta de percepción alternativas de prototipado 2",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=802228",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "5": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch de piso 5",
+                  "Pitch final"
+               ],
+               [
+                  "Evaluación de desempeños II",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803926",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            []
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Protocolo Pitch Piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=803928",
+                  "TODOS"
+               ],
+               [
+                  "Guía Mejores Experiencias por Roles",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=804164&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780555",
+                  "TODOS"
+               ],
+               [
+                  "Evaluación de desempeños II",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=804942",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            []
+         ]
+      },
+      "6": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Página Wix",
+                  ""
+               ],
+               [
+                  "Presentación en Expoideas",
+                  ""
+               ],
+               [
+                  "Prototipo final",
+                  ""
+               ],
+               [
+                  "Trabajo escrito final",
+                  ""
+               ],
+               [
+                  "Evaluación de desempeño 2",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Presentación en Expoideas",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica prototipo final",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803935",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica Página Wix",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica trabajo escrito final",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803933",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            []
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía trabajo escrito final",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=803938",
+                  "TODOS"
+               ],
+               [
+                  "Guía participación de profesores",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Guía participación de estudiante",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Guía de prototipo",
+                  "",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Entrega documentación TPI+Expoideas (Página Wix y Video)",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Entrega final del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780580",
+                  "TODOS"
+               ],
+               [
+                  "Formulario Evaluación de desempeño 2",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Póster y Resumen",
+                  "https://forms.gle/5jFCh1iq4bZESFfx8",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            []
+         ]
+      }
+   },
+   "cuatro": {
+      "1": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Acta de compromiso",
+                  "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Juego Sala de escape",
+                  "https://micampus.unal.edu.co/mod/lesson/view.php?id=780952",
+                  "TODOS"
+               ],
+               [
+                  "Cronograma interactivo",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780954",
+                  "CEO"
+               ],
+               [
+                  "Roles en el equipo de trabajo",
+                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780724",
+                  "TODOS"
+               ],
+               [
+                  "Comunicación eficaz",
+                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780962",
+                  "TODOS"
+               ],
+               [
+                  "Decálogo del Mentor",
+                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780960",
+                  "CTO"
+               ],
+               [
+                  "Syllabus libro interactivo",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=788026&forceview=1",
+                  "CEO"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            []
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            [
+               [
+                  "Cómo hacer un pitch",
+                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780722",
+                  "COO"
+               ],
+               [
+                  "Pregunta esencial",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780732",
+                  "COO"
+               ]
+            ]
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Acta de compromiso",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=788023",
+                  "TODOS"
+               ],
+               [
+                  "Acta de compromiso (reevaluada)",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=793277",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta presentación de la materia",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780730",
+                  ""
+               ],
+               [
+                  "Encuesta de conocimientos previos",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780734",
+                  ""
+               ]
+            ]
+         ]
+      },
+      "2": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 2 - Contextualización y actores",
+                  "Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica pitch de piso 2",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=792725",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Metodología Véster y Árbol de problemas",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780777",
+                  "TODOS"
+               ],
+               [
+                  "Cómo hacer un Pestal",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780779",
+                  "TODOS"
+               ],
+               [
+                  "Actores",
+                  "#",
+                  "CEO"
+               ],
+               [
+                  "Grabaciones Pitch piso 2",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=797336",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía de pitch de piso 2",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=792712&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            [
+               [
+                  "Mapa de Empatía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780781",
+                  "CEO"
+               ],
+               [
+                  "Mapa de Empatía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780781",
+                  "COO"
+               ]
+            ]
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch Piso 2- contextualización y actores",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780740",
+                  "CEO"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            [
+               [
+                  "Conversatorios 1",
+                  "Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"
+               ],
+               [
+                  "Taller de ética",
+                  "Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."
+               ]
+            ]
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            [
+               [
+                  "Habilidades blandas",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=795017",
+                  "CEO"
+               ],
+               [
+                  "Sociedad y tecnología",
+                  "#",
+                  "CTO"
+               ],
+               [
+                  "Economía del conocimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=795839&forceview=1",
+                  "CFO"
+               ],
+               [
+                  "Diseño",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=793691",
+                  "CCO"
+               ],
+               [
+                  "Ergonomía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=793694",
+                  "COO"
+               ],
+               [
+                  "Emprendimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=794811",
+                  "CMO"
+               ]
+            ]
+         ],
+         "2_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía taller de ética",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=792620&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            [
+               [
+                  "Preguntas conversatorio Habilidades Blandas",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780751",
+                  "CEO"
+               ],
+               [
+                  "Preguntas conversatorio Economía del conocimiento",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780755",
+                  "CFO"
+               ],
+               [
+                  "Preguntas conversatorio Sociedad y tecnología",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780753",
+                  "CTO"
+               ],
+               [
+                  "Preguntas conversatorio Diseño",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780757",
+                  "CCO"
+               ],
+               [
+                  "Preguntas conversatorio Ergonomía",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=794806",
+                  "COO"
+               ],
+               [
+                  "Preguntas conversatorio Emprendimiento",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=794808",
+                  "CMO"
+               ]
+            ]
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta percepción taller de ética",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780790",
+                  "TODOS"
+               ],
+               [
+                  "Encuesta de percepción conversatorios piso 2",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780818",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "3": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 3",
+                  "Infografía"
+               ],
+               [
+                  "Avance trabajo escrito",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 3",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=798237",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica avance trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=799017",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Infografía interactiva de ejemplo",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=780973",
+                  "CTO"
+               ],
+               [
+                  "Grabaciones Pitch piso 3",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=800213",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía metodológica Pitch de piso- Infografía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=797982",
+                  "TODOS"
+               ],
+               [
+                  "Guía avance trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=797987",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 3- Infografía",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780793",
+                  "TODOS"
+               ],
+               [
+                  "Avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780842",
+                  "CEO"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta de percepción conversatorios piso 3",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=798271",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "4": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch Piso 4",
+                  "Problema, Diseño y Prototipo"
+               ],
+               [
+                  "Evaluación de desempeños y trabajo en equipo",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 4",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=800487&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            [
+               [
+                  "Grabaciones Pitch piso 4",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=803798",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía metodológica Pitch de piso 4",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=800486&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 4- Problema/Diseño y Prototipo",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780837&forceview=1",
+                  "TODOS"
+               ],
+               [
+                  "Evaluación de desempeños",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780844&group=0",
+                  "TODOS"
+               ],
+               [
+                  "Trabajo en equipo",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=804399",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            [
+               [
+                  "Laboratorios de Diseño",
+                  ""
+               ]
+            ]
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            [
+               [
+                  "Inscribete aquí a los Laboratorios de Diseño",
+                  "#",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "3": [
+            "Encuestas de percepción",
+            [
+               [
+                  "Encuesta de percepción alternativas de prototipado",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780873",
+                  "TODOS"
+               ],
+               [
+                  "Encuesta de percepción alternativas de prototipado 2",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=802229",
+                  "TODOS"
+               ]
+            ]
+         ]
+      },
+      "5": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Pitch de piso 5",
+                  "Pitch final"
+               ],
+               [
+                  "Evaluación de desempeños II",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Pitch de piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803927",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            []
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Protocolo Pitch Piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=803929",
+                  "TODOS"
+               ],
+               [
+                  "Guía Mejores Experiencias por Roles",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=804165&forceview=1",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Pitch de piso 5 (Pitch final)",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780898",
+                  "TODOS"
+               ],
+               [
+                  "Evaluación de desempeños II",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=804943",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            []
+         ]
+      },
+      "6": {
+         "1_1": [
+            "Lista de entregables de piso",
+            [
+               [
+                  "Presentación pitch final",
+                  ""
+               ],
+               [
+                  "Póster",
+                  ""
+               ],
+               [
+                  "Prototipo final",
+                  ""
+               ],
+               [
+                  "Trabajo escrito final",
+                  ""
+               ],
+               [
+                  "Evaluación de desempeño 2",
+                  ""
+               ]
+            ]
+         ],
+         "1_2": [
+            "Cómo se calificará",
+            [
+               [
+                  "Rúbrica Póster",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica prototipo final",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803936",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica pitch final",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Rúbrica trabajo escrito final",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=803932",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3": [
+            "Herramientas"
+         ],
+         "1_3_1": [
+            "_Ova",
+            []
+         ],
+         "1_3_2": [
+            "_pdf",
+            [
+               [
+                  "Guía trabajo escrito final",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=803939",
+                  "TODOS"
+               ],
+               [
+                  "Guía participación de profesores",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Guía participación de estudiante",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Guía de presentación final pitch y prototipo",
+                  "",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "1_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "1_4": [
+            "Entrega tu actividad aqui",
+            [
+               [
+                  "Entrega documentación TPI+Expoideas (póster)",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Entrega final del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780923",
+                  "TODOS"
+               ],
+               [
+                  "Formulario Evaluación de desempeño 2",
+                  "",
+                  "TODOS"
+               ],
+               [
+                  "Póster y Resumen",
+                  "https://forms.gle/5jFCh1iq4bZESFfx8",
+                  "TODOS"
+               ]
+            ]
+         ],
+         "2_1": [
+            "Lista de retos adicionales",
+            []
+         ],
+         "2_2": [
+            "Cómo se calificará",
+            []
+         ],
+         "2_3": [
+            "Recursos"
+         ],
+         "2_3_1": [
+            "_Ova",
+            []
+         ],
+         "2_3_2": [
+            "_pdf",
+            []
+         ],
+         "2_3_3": [
+            "_Vídeo",
+            []
+         ],
+         "2_4": [
+            "Entrega tus retos adicionales aquí",
+            []
+         ],
+         "3": [
+            "Encuestas de percepción",
+            []
+         ]
+      }
+   }
 }

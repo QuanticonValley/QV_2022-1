@@ -6,6 +6,7 @@ import { statePiso } from '../../public/data/index.js';
 import { useMainState } from '../../libs/stateHooks'
 import NotiWidget from '../notiWidget'
 import Calendar from '../calendar/index'
+import GroupSel from '../../UIcomponents/groupSel'
 import Miniprofile from '../miniprofile.js';
 
 const Container = styled.div`
@@ -145,6 +146,9 @@ const RightBar = ({active, close}) => {
 		})
 	}
   	const piso = statePiso()
+   let currentSection = `¡Estamos en el piso número ${piso}!`
+   if (mState.group == 'dos') { currentSection = `¡Estamos en el edificio número ${piso}!`}
+
 	return (
 		<Container active={active}>
 			<Header>
@@ -154,7 +158,8 @@ const RightBar = ({active, close}) => {
 					/>
 			</Header>
 			<Contenedor>
-			<Pis>¡Estamos en el piso número {piso}!</Pis>
+			<Pis>{currentSection}</Pis>
+         <GroupSel/>
 			<Calendar/>
 			
 			<NotiWidget open={()=>openModal('Noticiero')}/>

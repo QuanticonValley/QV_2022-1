@@ -55,6 +55,7 @@ const TituloDescr=({data})=>{
 		)}
 	</Objeto>)
 }
+
 const TituloEnlaces=({data, tipo=0})=>{
 	if(data[1].length==0)return null;
 	return(<Objeto>
@@ -70,6 +71,7 @@ const TituloEnlaces=({data, tipo=0})=>{
 		)}
 	</Objeto>)
 }
+
 const Minicard=({data0,data1,data2,data3})=>{
 	if(data1[1].length==0&&data2[1].length==0&&data3[1].length==0)return null;
 	return(<Objeto>
@@ -80,6 +82,7 @@ const Minicard=({data0,data1,data2,data3})=>{
 	</Objeto>)
 
 }
+
 const Resources = ({tipo, data}) => {
 	const [Mounted, IsMounted]=useState(false)
 	useEffect(()=>{

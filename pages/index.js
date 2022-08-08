@@ -6,6 +6,7 @@ import { getLogosExt } from '../public/data/index.js';
 import { useMainState } from '../libs/stateHooks.js';
 import googleOneTap from "google-one-tap";
 import { useEffect } from 'react';
+import Gallery from '../UIcomponents/banner'
 import QV from '../UIcomponents/qv.js';
 import Header from '../UIcomponents/header.js';
 
@@ -173,7 +174,6 @@ const Container = styled.div`
   height: 100vh;
 `
 
-
 const Imgn = styled.img`
 	margin: 30px;
 `
@@ -185,7 +185,6 @@ const Intro = styled.p`
 `
 
 const Login = () => {
-	
 	const [mState, setMainState] = useMainState()
 	const logos=getLogosExt()
 	  // options
@@ -222,6 +221,7 @@ const Login = () => {
 			imgH={imgPrin}
 			primary
 		/>
+      <Gallery />
 		<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
 		<TitleBox>
 			<Title>Conoce Quanticon Valley</Title>

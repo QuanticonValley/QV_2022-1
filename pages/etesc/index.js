@@ -77,7 +77,7 @@ const Etesc = () => {
   	const [mState, setMainState] = useMainState()
 	const group = mState.group ? mState.group : 'dos'
 	const piso = mState.piso ? mState.piso : 1
-	const pisoTitle = getPisoTitle(piso)
+	const pisoTitle = getPisoTitle(group, piso)
 	const pisoA = statePiso()
 	const [pisoCont,setPisoCont]= useState({})
 	useEffect(() => {
@@ -92,6 +92,10 @@ const Etesc = () => {
 		if(a===2){open2===0?setOpen2(1600):setOpen2(0);}
 		if(a===3){open3===0?setOpen3(1600):setOpen3(0);}
 	}
+
+   let tituloRetos = 'Retos de piso';
+   if (group == 'dos') { tituloRetos = 'Retos de edificio' }
+
 	return <QV pg="ETESC">
 		<Header
 			title="ETESC"
@@ -117,7 +121,7 @@ const Etesc = () => {
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Retos de piso</TitleCont>
+					<TitleCont>{tituloRetos}</TitleCont>
 				</Head>
 				<Content alt={open1}>
 						<ListItems data={pisoCont} tipo={1}></ListItems>

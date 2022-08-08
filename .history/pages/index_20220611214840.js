@@ -119,7 +119,7 @@ const Flex = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1em;
-	@media screen and (max-width: 500px) {
+	@ screen and (max-width: 500px) {
 		margin-bottom: 0;
 	}
 `
@@ -156,7 +156,7 @@ const Imagen= styled.img`
 	height: 60px;
 	margin:10px;
 	border-radius:10px;
-	@media screen and (max-width: 1200px) {
+	@ screen and (max-width: 1200px) {
 		height:50px;
 	}
 	@media screen and (max-width: 800px) {

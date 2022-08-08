@@ -3,7 +3,7 @@ import { prefix } from '../../utils/prefix.js';
 import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
-import { statePiso,statePisoA, getDataProg } from '../../public/data'
+import { statePiso, statePisoA, getDataProg } from '../../public/data'
 import { useMainState } from '../../libs/stateHooks'
 
 const imgCommon = `${prefix}/imgs/header/info.png`
@@ -70,7 +70,7 @@ const Desc = styled.h3`
 		text-align:center;
 	}
 `
-const Margin=styled.div`
+const Margin = styled.div`
     margin-left:10%;
 	@media screen and (max-width: 800px) {
 		margin-left:0;
@@ -101,54 +101,54 @@ const Image = styled.img`
 	margin-right: 1em;
 `
 const Ranking = () => {
-	const [mState, setMainState] = useMainState()
-	const piso = statePiso()
-	const pisoMax = statePisoA()
-	const w=(piso*100)/pisoMax;
-	const openModal = (type) => {
-		setMainState({
-		  ...mState,
-		  modal: {
-			visibility: true,
-			type: type
-		  }
-		})
-	}
-    const prog = getDataProg()
-	return (
-    <QV pg="Ranking">
-		<Header
-			title="Ranking"
-			desc="Aqui podrás ver el avance del juego y el salón de la fama"
-			imgH={imgCommon}
-		/>
-        <TitleBox>
-			<Title>Avance del Juego</Title>
-		</TitleBox>
-		<ContProg>
-			<BarProg>
-				<Prog width={w+'%'}>
-					{piso!=0?<p>Piso {piso}</p>:null}
-				</Prog>
-			</BarProg>
-			<SubTitle>{prog.title}</SubTitle>
-			<Desc>{prog.desc}</Desc>
-		</ContProg>
-        <TitleBox>
-			<Title>Salón de la fama</Title>
-		</TitleBox>
-		<Margin>
-			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
-				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt="Hall Fame"/>
-				Salon de la Fama
-			</HallFame>
-		</Margin>
-		
+   const [mState, setMainState] = useMainState()
+   const piso = statePiso()
+   const pisoMax = statePisoA()
+   const w = (piso * 100) / pisoMax;
+   const openModal = (type) => {
+      setMainState({
+         ...mState,
+         modal: {
+            visibility: true,
+            type: type
+         }
+      })
+   }
+   const prog = getDataProg()
+   return (
+      <QV pg="Ranking">
+         <Header
+            title="Ranking"
+            desc="Aqui podrás ver el avance del juego y el salón de la fama"
+            imgH={imgCommon}
+         />
+         <TitleBox>
+            <Title>Avance del Juego</Title>
+         </TitleBox>
+         <ContProg>
+            <BarProg>
+               <Prog width={w + '%'}>
+                  {piso != 0 ? <p>Piso {piso}</p> : null}
+               </Prog>
+            </BarProg>
+            <SubTitle>{prog.title}</SubTitle>
+            <Desc>{prog.desc}</Desc>
+         </ContProg>
+         <TitleBox>
+            <Title>Salón de la fama</Title>
+         </TitleBox>
+         <Margin>
+            <HallFame onClick={() => openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
+               <Image src={`${prefix}/imgs/principal/hallfame.png`} alt="Hall Fame" />
+               Salon de la Fama
+            </HallFame>
+         </Margin>
 
-        
-        
-        
-	</QV>)
+
+
+
+
+      </QV>)
 }
 
 export default Ranking;

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import { prefix } from '../../utils/prefix.js';
 import { getLogosExt } from '../../public/data'
+import Gallery from '../../UIcomponents/banner';
 
 import QV from '../../UIcomponents/qv';
 
@@ -181,6 +182,7 @@ const Principal = () => {
 			imgH={imgPrin}
 			primary
 		/>
+      <Gallery />
 		<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
 		<TitleBox>
 			<Title>Conoce Quanticon Valley</Title>
