@@ -21,7 +21,7 @@ export const getDataProg = () => state.prog
 
 // ETESC
 export const getEtesc = (grp, piso) => etesc[grp][piso]
-export const getPisoTitle = (piso) => etesc["pisos"][piso]
+export const getPisoTitle = (grp, piso) => etesc["titulos"][grp][piso]
 export const getPisoData = (grp,piso) =>etesc[grp][piso]
 
 //ACTORS
