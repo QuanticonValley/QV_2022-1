@@ -11,7 +11,7 @@ import events2 from "../../public/data/calendarEvents2";
 const Container = styled.div`
   position: relative;
   height: 240px;
-  width: 93%;
+  width: 100%;
   display: flex;
   justify-content: center;
 `;
