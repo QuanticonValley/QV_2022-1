@@ -149,6 +149,16 @@
 			"costo": 500,
 			"nombreMon": "",
 			"correoMon": ""
+		},
+      {
+			"img": "1-abt.jpg",
+			"nombre": "Fernando Bernal",
+			"rol": "",
+			"desc": "Profesional en administración de empresas, especialista en finanzas, aspirante a grado de magíster en marketing y publicidad digital, con 19 años de experiencia promoviendo la creación y el fortalecimiento de empresas, como emprendedor, docente universitario, formulador y evaluador de planes de negocio, mentor y asesor de emprendedores y empresas en etapas tempranas. Habilidad para el diseño de modelos de negocios y procesos de ideación con equipos de trabajo para desarrollar productos y ofertas de valor que lleven a la materialización de las ventajas competitivas de las empresas. Experiencia en formulación de planes de negocio, propuestas de valor y modelos de negocio para diversas industrias y tipos de emprendimientos, como los de base científica y tecnológica, emprendimientos de TIC's, y de industrias creativas digitales y culturales. En Investigación, estudiar sobre la creación de empresas de base científica y tecnológica, sobre la manera cómo este tipo de proyectos se gestan en las universidades y en las empresas como ideas innovadoras para solucionar problemas de la industria o la sociedad. Estudiar las diferentes etapas de desarrollo tecnológico y empresarial para llevar las soluciones tecnológicas al mercado. Desarrollar herramientas para gestionar este tipo de proyectos con fin de crear empresas de base científica y tecnológica.",
+			"campo": "Administración de Empresas",
+			"costo": 500,
+			"nombreMon": "",
+			"correoMon": ""
 		}
 	],
 	"faqs" : [
