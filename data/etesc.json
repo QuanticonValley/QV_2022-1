@@ -54,19 +54,7 @@
             ]
          ],
          "1_3": [
-            "Herramientas",
-            [
-               [
-                  "Guía de pitch de edificio 1 (Infografía)",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=812912",
-                  ""
-               ],
-               [
-                  "Guía avance del trabajo escrito",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=812913",
-                  ""
-               ]
-            ]
+            "Herramientas"
          ],
          "1_3_1": [
             "_Ova",
@@ -80,7 +68,18 @@
          ],
          "1_3_2": [
             "_pdf",
-            []
+            [
+               [
+                  "Guía de pitch de edificio 1 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812912",
+                  ""
+               ],
+               [
+                  "Guía avance del trabajo escrito",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=812913",
+                  ""
+               ]
+            ]
          ],
          "1_3_3": [
             "_Vídeo",
@@ -195,7 +194,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta presentación de la materia",
@@ -398,7 +397,7 @@
             ]
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta percepción taller de ética",
@@ -522,7 +521,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta de percepción conversatorios piso 3",
@@ -642,7 +641,7 @@
             ]
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta de percepción alternativas de prototipado",
@@ -750,7 +749,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             []
          ]
       },
@@ -894,7 +893,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             []
          ]
       }
@@ -904,10 +903,7 @@
          "1_1": [
             "Lista de entregables de piso",
             [
-               [
-                  "Acta de compromiso",
-                  "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"
-               ]
+               []
             ]
          ],
          "1_2": [
@@ -915,39 +911,21 @@
             []
          ],
          "1_3": [
-            "Herramientas"
+            "Herramientas",
+            [
+               [
+                  "Charla: roles de personalidad",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813018",
+                  ""
+               ]
+            ]
          ],
          "1_3_1": [
             "_Ova",
             [
                [
-                  "Juego Sala de escape",
-                  "https://micampus.unal.edu.co/mod/lesson/view.php?id=780952",
-                  "TODOS"
-               ],
-               [
-                  "Cronograma interactivo",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780954",
-                  "CEO"
-               ],
-               [
-                  "Roles en el equipo de trabajo",
-                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780724",
-                  "TODOS"
-               ],
-               [
-                  "Comunicación eficaz",
-                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780962",
-                  "TODOS"
-               ],
-               [
-                  "Decálogo del Mentor",
-                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780960",
-                  "CTO"
-               ],
-               [
-                  "Syllabus libro interactivo",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=788026&forceview=1",
+                  "SYLLABUS 2022-3",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813020",
                   "CEO"
                ]
             ]
@@ -960,30 +938,16 @@
             "_Vídeo",
             [
                [
-                  "Cómo hacer un pitch",
-                  "https://micampus.unal.edu.co/mod/hvp/view.php?id=780722",
-                  "COO"
-               ],
-               [
-                  "Pregunta esencial",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780732",
-                  "COO"
+                  "PREGUNTA ESENCIAL",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813019",
+                  ""
                ]
             ]
          ],
          "1_4": [
             "Entrega tu actividad aqui",
             [
-               [
-                  "Acta de compromiso",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=788023",
-                  "TODOS"
-               ],
-               [
-                  "Acta de compromiso (reevaluada)",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=793277",
-                  "TODOS"
-               ]
+               []
             ]
          ],
          "2_1": [
@@ -1014,16 +978,21 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta presentación de la materia",
-                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780730",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=812972",
                   ""
                ],
                [
                   "Encuesta de conocimientos previos",
-                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780734",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=812973",
+                  ""
+               ],
+               [
+                  "Formulario charla roles de personalidad",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=813017",
                   ""
                ]
             ]
@@ -1034,8 +1003,12 @@
             "Lista de entregables de piso",
             [
                [
-                  "Pitch Piso 2 - Contextualización y actores",
-                  "Pitch de cinco minutos donde se identifican las partes interesadas, se definen los expertos, se contextualiza el problema y los antecedentes."
+                  "Pitch Piso 2",
+                  ""
+               ],
+               [
+                  "Acta de compromiso:",
+                  "A través de esta acta se establecen los roles, y los integrantes del grupo se comprometen con el equipo y el proyecto"
                ]
             ]
          ],
@@ -1044,8 +1017,8 @@
             [
                [
                   "Rúbrica pitch de piso 2",
-                  "https://micampus.unal.edu.co/mod/folder/view.php?id=792725",
-                  "TODOS"
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=813021",
+                  ""
                ]
             ]
          ],
@@ -1057,23 +1030,18 @@
             [
                [
                   "Metodología Véster y Árbol de problemas",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780777",
-                  "TODOS"
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813025",
+                  ""
                ],
                [
                   "Cómo hacer un Pestal",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780779",
-                  "TODOS"
-               ],
-               [
-                  "Actores",
-                  "#",
-                  "CEO"
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813026",
+                  ""
                ],
                [
                   "Grabaciones Pitch piso 2",
-                  "https://micampus.unal.edu.co/mod/book/view.php?id=797336",
-                  "TODOS"
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=813029",
+                  ""
                ]
             ]
          ],
@@ -1082,8 +1050,8 @@
             [
                [
                   "Guía de pitch de piso 2",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=792712&forceview=1",
-                  "TODOS"
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813022",
+                  ""
                ]
             ]
          ],
@@ -1092,13 +1060,8 @@
             [
                [
                   "Mapa de Empatía",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780781",
-                  "CEO"
-               ],
-               [
-                  "Mapa de Empatía",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780781",
-                  "COO"
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813027",
+                  ""
                ]
             ]
          ],
@@ -1106,23 +1069,21 @@
             "Entrega tu actividad aqui",
             [
                [
-                  "Pitch Piso 2- contextualización y actores",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780740",
-                  "CEO"
+                  "Acta de compromiso",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=813023",
+                  ""
+               ],
+               [
+                  "Pitch piso 2",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=813024",
+                  ""
                ]
             ]
          ],
          "2_1": [
             "Lista de retos adicionales",
             [
-               [
-                  "Conversatorios 1",
-                  "Serán seis temáticas donde los participantes tendrán la posibilidad de realizar preguntas que planteen previamente"
-               ],
-               [
-                  "Taller de ética",
-                  "Sesión presencial en el aula de clase, donde a través de dinámicas grupales se reflexionará acerca de la ética laboral."
-               ]
+               []
             ]
          ],
          "2_2": [
@@ -1134,38 +1095,7 @@
          ],
          "2_3_1": [
             "_Ova",
-            [
-               [
-                  "Habilidades blandas",
-                  "https://micampus.unal.edu.co/mod/book/view.php?id=795017",
-                  "CEO"
-               ],
-               [
-                  "Sociedad y tecnología",
-                  "#",
-                  "CTO"
-               ],
-               [
-                  "Economía del conocimiento",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=795839&forceview=1",
-                  "CFO"
-               ],
-               [
-                  "Diseño",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=793691",
-                  "CCO"
-               ],
-               [
-                  "Ergonomía",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=793694",
-                  "COO"
-               ],
-               [
-                  "Emprendimiento",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=794811",
-                  "CMO"
-               ]
-            ]
+            []
          ],
          "2_3_2": [
             "_pdf",
@@ -1185,31 +1115,6 @@
             "Entrega tus retos adicionales aquí",
             [
                [
-                  "Preguntas conversatorio Habilidades Blandas",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780751",
-                  "CEO"
-               ],
-               [
-                  "Preguntas conversatorio Economía del conocimiento",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780755",
-                  "CFO"
-               ],
-               [
-                  "Preguntas conversatorio Sociedad y tecnología",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780753",
-                  "CTO"
-               ],
-               [
-                  "Preguntas conversatorio Diseño",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780757",
-                  "CCO"
-               ],
-               [
-                  "Preguntas conversatorio Ergonomía",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=794806",
-                  "COO"
-               ],
-               [
                   "Preguntas conversatorio Emprendimiento",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=794808",
                   "CMO"
@@ -1217,17 +1122,22 @@
             ]
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
-                  "Encuesta percepción taller de ética",
-                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780790",
-                  "TODOS"
+                  "Formulario charla 6 roles de compañía",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=813030",
+                  ""
                ],
                [
-                  "Encuesta de percepción conversatorios piso 2",
-                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=780818",
-                  "TODOS"
+                  "Encuesta percepción charla de ética",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=813031",
+                  ""
+               ],
+               [
+                  "Formulario charla bases de un pitch",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=813032",
+                  ""
                ]
             ]
          ]
@@ -1237,12 +1147,7 @@
             "Lista de entregables de piso",
             [
                [
-                  "Pitch Piso 3",
-                  "Infografía"
-               ],
-               [
-                  "Avance trabajo escrito",
-                  ""
+                  "Pitch  de piso 3 (Infografía)"
                ]
             ]
          ],
@@ -1250,9 +1155,9 @@
             "Cómo se calificará",
             [
                [
-                  "Rúbrica Pitch de piso 3",
-                  "https://micampus.unal.edu.co/mod/folder/view.php?id=798237",
-                  "TODOS"
+                  "Rúbrica Pitch de piso 3 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/folder/view.php?id=813034",
+                  ""
                ],
                [
                   "Rúbrica avance trabajo escrito",
@@ -1269,13 +1174,13 @@
             [
                [
                   "Infografía interactiva de ejemplo",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=780973",
-                  "CTO"
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813028",
+                  ""
                ],
                [
                   "Grabaciones Pitch piso 3",
-                  "https://micampus.unal.edu.co/mod/book/view.php?id=800213",
-                  "TODOS"
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=813036",
+                  ""
                ]
             ]
          ],
@@ -1283,14 +1188,9 @@
             "_pdf",
             [
                [
-                  "Guía metodológica Pitch de piso- Infografía",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=797982",
-                  "TODOS"
-               ],
-               [
-                  "Guía avance trabajo escrito",
-                  "https://micampus.unal.edu.co/mod/page/view.php?id=797987",
-                  "TODOS"
+                  "Guía de pitch de piso 3 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813035",
+                  ""
                ]
             ]
          ],
@@ -1302,14 +1202,9 @@
             "Entrega tu actividad aqui",
             [
                [
-                  "Pitch de piso 3- Infografía",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780793",
-                  "TODOS"
-               ],
-               [
-                  "Avance del trabajo escrito",
-                  "https://micampus.unal.edu.co/mod/assign/view.php?id=780842",
-                  "CEO"
+                  "Pitch  de piso 3 (Infografía)",
+                  "https://micampus.unal.edu.co/mod/assign/view.php?id=813033",
+                  ""
                ]
             ]
          ],
@@ -1326,7 +1221,38 @@
          ],
          "2_3_1": [
             "_Ova",
-            []
+            [
+               [
+                  "Habilidades blandas",
+                  "https://micampus.unal.edu.co/mod/book/view.php?id=813041",
+                  "CEO"
+               ],
+               [
+                  "Sociedad y tecnología",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813042",
+                  "CTO"
+               ],
+               [
+                  "Economía del conocimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813040",
+                  "CFO"
+               ],
+               [
+                  "Diseño",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813037",
+                  "CCO"
+               ],
+               [
+                  "Ergonomía",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813038",
+                  "COO"
+               ],
+               [
+                  "Emprendimiento",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=813039",
+                  "CMO"
+               ]
+            ]
          ],
          "2_3_2": [
             "_pdf",
@@ -1341,11 +1267,16 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
-                  "Encuesta de percepción conversatorios piso 3",
-                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=798271",
+                  "Formulario múltiple oferta I",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=813043",
+                  "TODOS"
+               ],
+               [
+                  "Formulario múltiple oferta II",
+                  "https://micampus.unal.edu.co/mod/feedback/view.php?id=813044",
                   "TODOS"
                ]
             ]
@@ -1461,7 +1392,7 @@
             ]
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             [
                [
                   "Encuesta de percepción alternativas de prototipado",
@@ -1569,7 +1500,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             []
          ]
       },
@@ -1713,7 +1644,7 @@
             []
          ],
          "3": [
-            "Encuestas de percepción",
+            "Encuestas",
             []
          ]
       }
