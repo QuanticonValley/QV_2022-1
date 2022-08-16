@@ -15,7 +15,7 @@ const Container = styled.div`
 	flex-direction: column;
 	justify-content: space-evenly;
 	background-color: #fff;
-	padding: 0px .5em;
+	padding: 4vh .5em 0;
 	margin: 5px 2px;
 	height: 98vh;
 	box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.15);
@@ -136,15 +136,15 @@ const RightBar = ({active, close}) => {
         setIsMounted(true);
     },[]);
 	const [mState, setMainState] = useMainState()
-	const openModal = (type) => {
-		setMainState({
-		  ...mState,
-		  modal: {
-			visibility: true,
-			type: type
-		  }
-		})
-	}
+	// const openModal = (type) => {
+	// 	setMainState({
+	// 	  ...mState,
+	// 	  modal: {
+	// 		visibility: true,
+	// 		type: type
+	// 	  }
+	// 	})
+	// }
   	const piso = statePiso()
    let currentSection = `¡Estamos en el piso número ${piso}!`
    if (mState.group == 'dos') { currentSection = `¡Estamos en el edificio número ${piso}!`}
@@ -163,16 +163,16 @@ const RightBar = ({active, close}) => {
 			<Calendar/>
 			
 			<NotiWidget open={()=>openModal('Noticiero')}/>
-			<a href="https://drive.google.com/file/d/1gjLNIgF3h0M2DEksdszSECtPe2O439b7/view?usp=sharing" target="_blank" rel="noreferrer">
+			{/* <a href="https://drive.google.com/file/d/1gjLNIgF3h0M2DEksdszSECtPe2O439b7/view?usp=sharing" target="_blank" rel="noreferrer">
 				<ItemB data-tip data-for="dscTooltipPils">
 					<img src={`${prefix}/imgs/pil2.png`}/>
 					Pildoras de la semana
 				</ItemB>
-			</a>
-			<HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
+			</a> */}
+			{/* <HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
 				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt=""/>
 				Salon de la Fama
-			</HallFame>
+			</HallFame> */}
 
 			{isMounted &&<ReactTooltip id="dscTooltipPils" place='left' type='info'>
 				Informacion para la Semana

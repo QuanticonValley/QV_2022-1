@@ -193,7 +193,11 @@ const Principal = () => {
 			></Logo>
 			</LogoExt>
 			<ReactPlayer
-            url = {"www.youtube.com/watch?v=kyNsLdhTu3c&ab_channel=LIATERUNAL"}
+            url = {
+               mState.group == 'dos'
+               ? 'https://youtu.be/xAroZDRREYo'
+               : 'https://youtu.be/PAD8gZCSx0o'
+            }
             className='react-player'
             width='100%'
             height='400px'
@@ -217,10 +221,10 @@ const Principal = () => {
 
 
 		<TitleBox>
-			<Title>Conoce a los actores de Quanticon Valley</Title>
+			<Title>Conoce a los asesores y expertos de Quanticon Valley</Title>
 		</TitleBox>
 		<GridB>
-			<Link href='/actors' passHref>
+			{/* <Link href='/actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
@@ -228,17 +232,16 @@ const Principal = () => {
 					</Flex>
 					<TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
 				</Box>
-			</Link>
+			</Link> */}
 			<Link href='/actors' passHref>
 				<Box>
 					<Flex>
 						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
-						Asesores
+						Asesores & Expertos
 					</Flex>
-					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores.</TextBox>
+					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores y expertos.</TextBox>
 				</Box>
 			</Link>
-			
 		</GridB>
 		<TitleBox>
 			<Title>Líderes de innovación abierta - participantes</Title>

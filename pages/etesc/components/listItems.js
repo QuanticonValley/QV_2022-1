@@ -30,12 +30,14 @@ const Content=styled.p`
 	@media screen and (max-width: 800px) {
 		font-size:14px;
 	}
+   white-space: pre-wrap;
 `
 const Content2=styled.p`
 	margin-left:20px;
 	@media screen and (max-width: 800px) {
 		font-size:14px;
 	}
+   white-space: pre-wrap;
 `
 const Logo=styled.img`
 	width: 44px;

@@ -1,5 +1,5 @@
 import { prefix } from '../../utils/prefix.js';
-import {useState} from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
@@ -13,13 +13,13 @@ const Margin = styled.div`
 		margin:0px;
 	}
 `
-const Option= styled.div`
+const Option = styled.div`
     font-size:1.2rem;
     font-weight: 700;
     margin-right: 10px;
     margin-bottom: 10px;
-    border-bottom: ${p=>p.selected ?'3px solid #172BEF':'0px'};
-	color: ${p=>p.selected ?'black':'#999'};
+    border-bottom: ${p => p.selected ? '3px solid #172BEF' : '0px'};
+	color: ${p => p.selected ? 'black' : '#999'};
     :hover{
 		cursor: pointer;
 	}
@@ -27,35 +27,36 @@ const Option= styled.div`
 		font-size:1rem;
 	}
 `
-const Opciones= styled.div`
+const Opciones = styled.div`
 	display: flex;
 	margin-bottom: 20px;
 	margin-left:10px;
 `
 const Actors = () => {
-	const [selected,setSelected]= useState(true);
-    function cambio(opti){
-        setSelected(opti);
-    }
-	return (
-    <QV pg="Actores">
-		<Header
-			title="Actores"
-			desc="Aqui puedes conocer a los actores del juego"
-			imgH={imgCommon}
-		/>
-		<Margin>
-			<Opciones>
-				<Option selected={selected} onClick={() =>cambio(true)}>MENTORES</Option>
-            	<Option selected={!selected} onClick={() =>cambio(false)}>ASESORES</Option>
-			</Opciones>
-			{selected
-			?<Mentores></Mentores>
-			:<Virt active={true}></Virt>}
-			
-			
-		</Margin>
-	</QV>)
+   const [selected, setSelected] = useState(true);
+   function cambio(opti) {
+      setSelected(opti);
+   }
+   return (
+      <QV pg="Asesores">
+         <Header
+            title="Asesores & Expertos"
+            desc="Aqui puedes conocer a los asesores y expertos del juego"
+            imgH={imgCommon}
+         />
+         <Margin>
+            {/* <Opciones>
+               <Option selected={selected} onClick={() => cambio(true)}>MENTORES</Option>
+               <Option selected={!selected} onClick={() => cambio(flase)}>ASESORES</Option>
+            </Opciones> */}
+            {selected
+               ? <Virt active={true}></Virt>
+               : <Mentores></Mentores>
+               // ? <Mentores></Mentores>
+               // : <Virt active={true}></Virt>
+            }
+         </Margin>
+      </QV>)
 }
 
 export default Actors;

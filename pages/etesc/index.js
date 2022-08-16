@@ -144,7 +144,7 @@ const Etesc = () => {
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Encuestas de percepción</TitleCont></Head>
+					<TitleCont>Encuestas</TitleCont></Head>
 				<Content alt={open3}>
                     <ListItems data={pisoCont} tipo={3}></ListItems>
 				</Content>

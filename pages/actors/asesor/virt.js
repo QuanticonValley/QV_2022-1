@@ -43,6 +43,7 @@ const Desc = styled.p`
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 14px;
+   white-space: pre-wrap;
 `
 const CoinsCont = styled.div`
 	display: flex;
@@ -109,7 +110,7 @@ const Virt = ({active}) => {
 				<div>
 					<Name>{i.nombre}</Name>
 					<Rol>{i.rol}</Rol>
-					<Desc>{i.desc.substr(0, 295) + "..."}</Desc>
+					<Desc>{i.desc.substr(0, 512) + "..."}</Desc>
 				</div>
 				<CoinsCont>
 					<AsesorField>{i.campo}</AsesorField>

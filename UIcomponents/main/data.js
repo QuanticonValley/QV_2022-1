@@ -22,17 +22,16 @@ const data = {
 		},
 		{
 			title: 'Ranking',
-			link: '/ranking',
+			link: '',
 			src: `${prefix}/imgs/main/Icon_tabla.png`,
 			dsc: 'Puedes encontrar el avance del juego y la clasificatoria',
 		},
-		// {
-		// 	title: 'Actores',
-		// 	link: '/actors',
-		// 	src: `${prefix}/imgs/main/Icon_actores.svg`,
-		// 	dsc: 'Información sobre los actores del juego',
-		// },
-		
+		{
+			title: 'Asesores & Expertos',
+			link: '/actors',
+			src: `${prefix}/imgs/main/Icon_actores.svg`,
+			dsc: 'Información sobre los actores del juego',
+		},
 		{
 			title: 'Acerca del juego',
 			link: '/info/about',

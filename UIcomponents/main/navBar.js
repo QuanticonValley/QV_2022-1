@@ -4,6 +4,7 @@ import ReactTooltip from 'react-tooltip'
 import { useEffect, useState } from 'react';
 import { prefix } from '../../utils/prefix.js';
 import { getPages } from './data'
+import { useMainState } from '../../libs/stateHooks'
 
 const Logo = styled.img`
 	margin: 10% 0 10% 10%;
@@ -73,35 +74,53 @@ const Container = styled.nav`
 const logo = `${prefix}/imgs/main/QB_blanco_vertical_1.png`
 const navImg = `${prefix}/imgs/main/QV_textura.png`
 
-const NavCont = ({pg}) => {
-	const [isMounted,setIsMounted] = useState(false);
-    useEffect(() => {
-        setIsMounted(true);
-    },[]);
-	const pages = getPages()
-	return (
-		<Container>
-			<NavImg src={navImg} alt="nav-img"/>
-			<Link href={"/principal"} passHref>
-				<Logo src={logo} alt="logo"/>
-			</Link>
-			{pages.map((item, i) => {
-				return(
-					<span key={item.link}>
-						<Link href={item.link} passHref>
-							<Button active={item.title === pg} data-tip data-for={"dscTooltip"+i.toString()}>
-								<Icon src={item.src} alt={item.link}/>
-								<Text>{item.title}</Text>
-							</Button>
-						</Link>
-						{isMounted&&<ReactTooltip id={"dscTooltip"+i} place='right' type='info'>
-							{item.dsc}
-						</ReactTooltip>}
-					</span>
-				)
-			})}
-		</Container>
-	);
+const NavCont = ({ pg }) => {
+   const [isMounted, setIsMounted] = useState(false);
+   useEffect(() => {
+      setIsMounted(true);
+   }, []);
+   const pages = getPages()
+
+   const [_mState, _setMainState] = useMainState()
+	const _openModal = () => {
+		_setMainState({
+		  ..._mState,
+		  modal: {
+			visibility: true,
+         type: 'Salon de la Fama'
+		  }
+		})
+	}
+
+   return (
+      <Container>
+         <NavImg src={navImg} alt="nav-img" />
+         <Link href={"/principal"} passHref>
+            <Logo src={logo} alt="logo" />
+         </Link>
+         {pages.map((item, i) => {
+            return (
+               <span key={item.link}>
+                  <Link href={item.link} passHref>
+                     <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()}
+                     onClick={
+                        item.title == 'Ranking'
+                        ? _openModal
+                        : ''
+                     }
+                     >
+                        <Icon src={item.src} alt={item.link} />
+                        <Text>{item.title}</Text>
+                     </Button>
+                  </Link>
+                  {isMounted && <ReactTooltip id={"dscTooltip" + i} place='right' type='info'>
+                     {item.dsc}
+                  </ReactTooltip>}
+               </span>
+            )
+         })}
+      </Container>
+   );
 }
 
 export default NavCont;
