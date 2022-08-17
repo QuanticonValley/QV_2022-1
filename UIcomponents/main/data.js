@@ -26,6 +26,12 @@ const data = {
 			src: `${prefix}/imgs/main/Icon_tabla.png`,
 			dsc: 'Puedes encontrar el avance del juego y la clasificatoria',
 		},
+      {
+			title: 'Test de roles',
+			link: '/role',
+			src: `${prefix}/imgs/main/Icon_actores.svg`,
+			dsc: 'Prueba de roles',
+		},
 		{
 			title: 'Asesores & Expertos',
 			link: '/actors',

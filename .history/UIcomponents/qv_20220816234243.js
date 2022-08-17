@@ -33,8 +33,8 @@ const GoogleButton = styled.div`
 	top: 1.8vh;
 	
 	@media screen and (max-width: 800px) {
-		position: initial;
-		margin-top: 8vh;
+		left: 4vw;
+		top: 8.5vh;
 	}
 
 `

@@ -1,17 +1,19 @@
-import { useMainState } from "../../libs/stateHooks";
-import ReactPlayer from "react-player";
 import styled from "styled-components";
+import { prefix } from "../utils/prefix.js";
+import ReactPlayer from "react-player";
 import Link from "next/link";
-import { prefix } from "../../utils/prefix.js";
-import { getLogosExt } from "../../public/data";
-import Gallery from "../../UIcomponents/banner";
-import axios from "axios";
-import cookie from "js-cookie";
+import { getLogosExt } from "../public/data/index.js";
+import { useMainState } from "../libs/stateHooks.js";
+import googleOneTap from "google-one-tap";
 import { useEffect, useState } from "react";
-import { useRouter} from "next/router.js";
-import QV from "../../UIcomponents/qv";
-import Header from "../../UIcomponents/header";
-import Router from "next/router.js";
+import Gallery from "../UIcomponents/banner";
+import QV from "../UIcomponents/qv.js";
+import Header from "../UIcomponents/header.js";
+import cookie from "js-cookie";
+import {useRouter} from "next/router.js";
+
+
+
 
 const imgPrin = `${prefix}/imgs/header/principal.png`;
 
@@ -152,6 +154,7 @@ const Box = styled.div`
     cursor: pointer;
   }
 `;
+
 const Imagen = styled.img`
   height: 60px;
   margin: 10px;
@@ -163,78 +166,94 @@ const Imagen = styled.img`
     height: 40px;
   }
 `;
+
+const Container = styled.div`
+  background-image: url("${prefix}/imgs/Rectangle 1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const Imgn = styled.img`
+  margin: 30px;
+`;
+const Intro = styled.p`
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px;
+`;
+const ButtonGoogle = styled.div`
+  position: absolute;
+  right: 2.9vh;
+  top: 1.5vh;
+
+`;
 const Error = styled.div`
   position: absolute;
   right: 2vw;
   top: 1.5vh;
-  color: #1920ef;
-`;
-const UserSession = styled.div`
-  display: flex;
-  justify-content: space-between;
-  background: #1920ef;
-  border-radius: 0.5em 1.5em 1.5em 0.5em;
-  width: 150px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  hover {
-    cursor: pointer;
-    width: 8vw;
-  }
-  @media screen and (max-width: 800px) {
-    margin-top: 0.2em;
-    width: 170px;
-    margin-right: 10vw;
-  }
-`;
-const UserSessionProfile = styled.img`
-  border-radius: 50%;
-  width: 2.2em;
-`;
-const UserSessionButton = styled.div`
-  background: #1920ef;
-  color: #ffffff;
-  border: none;
-  padding: 0.5em;
-  width: 120px;
-  height: 1.5em;
-  border-radius: 0.5em;
-  font-weight: bold;
-  hover {
-    cursor: pointer;
-  }
+  color:#1920ef;
+
 `;
 
-const Principal = () => {
+  
+
+
+
+const Login = (props) => {
   const [mState, setMainState] = useMainState();
   const logos = getLogosExt();
   const router = useRouter();
-  const [data, setData] = useState([]);
-  const [isData, setIsData] = useState(false);
-  const [showAuthError, setShowAuthError] = useState(false);
-  const token = cookie.get("token");
-
-  async function fetchData(endpoint) {
-    console.log(token);
-    const response = await axios
-      .get(endpoint, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      .catch((error) => {
-        console.log(error);
-        if (error.response.status === 401) {
-          console.log("Error de autenticación");
-          setShowAuthError(true);
-          alert("Error de autenticación, por favor contacte al administrador");
-          Router.push( "/");
-          
-        }
-      });
-    if (response) {
-      setData(response.data.data);
+  function handleCredentialResponse(response) {
+    try{
+      const token = response.credential;
+      // console.log("Encoded JWT ID token: " + token);
+      cookie.set("token", token, { expires: 1 });
+      document.getElementById("authenticated").style.setProperty('display', 'none');
+      router.push("/principal");
     }
+    catch(error) {
+      document.getElementById("authenticated").style.removeProperty('display');
+    }
+
   }
+  useEffect(async() => {
+    console.log(props.router.query.name);
+    if (window) {
+      
+		document.getElementById("authenticated").style.removeProperty('display');
+      google.accounts.id.initialize({
+        client_id:
+          "423532745006-33is1fddefafnqkpg3clciqarqqgkuoo.apps.googleusercontent.com",
+        callback: handleCredentialResponse,
+      });
+      google.accounts.id.renderButton(
+        document.getElementById("buttonDiv"),
+        { theme: "outline", size: "medium" } // customization attributes
+      );
+      google.accounts.id.prompt(); // also display the One Tap dialog
+
+    }
+    
+  }, []);
+//   async function showAuthInfo() {
+// 	console.log("auth: " + window.isAuthenticated);
+// 	if (window.isAuthenticated) { 
+// 		document.getElementById("authenticated").style.setProperty('display', 'none');
+		
+		 
+// 	} else {
+// 		document.getElementById("authenticated").style.removeProperty('display');
+		
+// 	}
+// }
+
 
   const openModal = (type) => {
     setMainState({
@@ -245,45 +264,15 @@ const Principal = () => {
       },
     });
   };
-
-  useEffect(async () => {
-    if (window) {
-      const button = document.getElementById("signout_button");
-      button.addEventListener("click", () => {
-        google.accounts.id.disableAutoSelect();
-        cookie.remove("token");
-      });
-    }
-    try {
-      const myUser = fetchData(`https://qv-api.herokuapp.com/api/v1/users/me`);
-    } catch (error) {
-      console.log(error.response);
-    }
-  }, []);
+  
 
   return (
-    <QV
-      pg="Principal"
-      button={
-        <UserSession>
-          <script src="https://accounts.google.com/gsi/client"></script>
+    <QV pg="Principal" button={ <div id="authenticated" ><div id="buttonDiv">Sign in</div></div> }>
+	 <script src="https://accounts.google.com/gsi/client"npm></script>
 
-          <UserSessionButton
-            id="signout_button"
-            class="g_id_signout"
-            onClick={() => {
-              google.accounts.id.disableAutoSelect();
-              cookie.remove("token");
-              router.push("/");
-            }}
-          >
-            Cerrar sesión
-          </UserSessionButton>
+      <Error id="error" style={{"display":"none"}}> Inicia sesión con una cuenta asociada a QV</Error>
 
-          <UserSessionProfile alt="foto" src={`${data?.photoUrl}`} />
-        </UserSession>
-      }
-    >
+      
       <Header
         title="Quanticon Valley"
         desc="Bienvenidos/as"
@@ -303,16 +292,16 @@ const Principal = () => {
           <Logo src={`${prefix}/imgs/info/QV.png`}></Logo>
         </LogoExt>
         <ReactPlayer
-          url={
-            mState.group == "dos"
-              ? "https://youtu.be/xAroZDRREYo"
-              : "https://youtu.be/PAD8gZCSx0o"
-          }
-          className="react-player"
-          width="100%"
-          height="400px"
-          controls
-        ></ReactPlayer>
+            url = {
+               mState.group == 'dos'
+               ? 'https://youtu.be/xAroZDRREYo'
+               : 'https://youtu.be/PAD8gZCSx0o'
+            }
+            className='react-player'
+            width='100%'
+            height='400px'
+            controls
+            ></ReactPlayer>
       </Grid>
 
       <TitleBox>
@@ -335,30 +324,30 @@ const Principal = () => {
       </Grid>
 
       <TitleBox>
-        <Title>Conoce a los asesores y expertos de Quanticon Valley</Title>
+        <Title>Conoce a los actores de Quanticon Valley</Title>
       </TitleBox>
       <GridB>
-        {/* <Link href='/actors' passHref>
-    <Box>
-      <Flex>
-        <Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
-        Mentores
-      </Flex>
-      <TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
-    </Box>
-  </Link> */}
-        <Link href="/actors" passHref>
+        {/* <Link href="/actors" passHref>
           <Box>
             <Flex>
-              <Image src={`${prefix}/imgs/principal/asesores.png`} alt="" />
-              Asesores y Expertos
+              <Image src={`${prefix}/imgs/principal/lobby.png`} alt="" />
+              Mentores
             </Flex>
             <TextBox>
-              Encuentra contenido adicional para apoyar tu proyecto y contacta
-              asesores y expertos.
+              Descubre a los profesores mentores que te acompañarán en tu
+              proyecto
             </TextBox>
           </Box>
-        </Link>
+        </Link> */}
+        <Link href='/actors' passHref>
+				<Box>
+					<Flex>
+						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
+						Asesores & Expertos
+					</Flex>
+					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores y expertos.</TextBox>
+				</Box>
+			</Link>
       </GridB>
       <TitleBox>
         <Title>Líderes de innovación abierta - participantes</Title>
@@ -371,4 +360,5 @@ const Principal = () => {
     </QV>
   );
 };
-export default Principal;
+export default Login;
+

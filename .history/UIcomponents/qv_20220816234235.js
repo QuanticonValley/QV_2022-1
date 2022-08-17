@@ -31,10 +31,11 @@ const GoogleButton = styled.div`
 	position: absolute;
 	right: 2.4vw;
 	top: 1.8vh;
-	
+	display: flex;
+	justify-content: space-between;
 	@media screen and (max-width: 800px) {
-		position: initial;
-		margin-top: 8vh;
+		left: 4vw;
+		top: 8.5vh;
 	}
 
 `

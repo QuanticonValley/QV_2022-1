@@ -8,10 +8,10 @@ import Gallery from "../../UIcomponents/banner";
 import axios from "axios";
 import cookie from "js-cookie";
 import { useEffect, useState } from "react";
-import { useRouter} from "next/router.js";
+import { useRouter } from "next/router.js";
 import QV from "../../UIcomponents/qv";
 import Header from "../../UIcomponents/header";
-import Router from "next/router.js";
+
 
 const imgPrin = `${prefix}/imgs/header/principal.png`;
 
@@ -170,39 +170,43 @@ const Error = styled.div`
   color: #1920ef;
 `;
 const UserSession = styled.div`
-  display: flex;
-  justify-content: space-between;
-  background: #1920ef;
-  border-radius: 0.5em 1.5em 1.5em 0.5em;
-  width: 150px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  hover {
-    cursor: pointer;
-    width: 8vw;
-  }
-  @media screen and (max-width: 800px) {
-    margin-top: 0.2em;
-    width: 170px;
-    margin-right: 10vw;
-  }
+	display: flex;
+	background: #1920ef;
+	border-radius: 0.5em 1.5em 1.5em 0.5em;
+	width: 120px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	hover {
+		cursor: pointer;
+		width: 8vw;
+	}
+	@media screen and (max-width: 800px) {
+		margin-top: 0.2em;
+		width: 30vw;
+		margin-right: 10vw;
+	}
+
+  
 `;
 const UserSessionProfile = styled.img`
   border-radius: 50%;
   width: 2.2em;
+
 `;
 const UserSessionButton = styled.div`
   background: #1920ef;
   color: #ffffff;
   border: none;
   padding: 0.5em;
-  width: 120px;
+  width: 25vw;
   height: 1.5em;
   border-radius: 0.5em;
   font-weight: bold;
   hover {
-    cursor: pointer;
-  }
+	cursor: pointer;
+	}
 `;
+
+
 
 const Principal = () => {
   const [mState, setMainState] = useMainState();
@@ -214,7 +218,7 @@ const Principal = () => {
   const token = cookie.get("token");
 
   async function fetchData(endpoint) {
-    console.log(token);
+	  console.log(token)
     const response = await axios
       .get(endpoint, {
         headers: {
@@ -225,15 +229,15 @@ const Principal = () => {
         console.log(error);
         if (error.response.status === 401) {
           console.log("Error de autenticación");
+          router.push("/");
           setShowAuthError(true);
-          alert("Error de autenticación, por favor contacte al administrador");
-          Router.push( "/");
-          
         }
-      });
-    if (response) {
+      }
+      );
+    if(response){
       setData(response.data.data);
     }
+    
   }
 
   const openModal = (type) => {
@@ -257,8 +261,10 @@ const Principal = () => {
     try {
       const myUser = fetchData(`https://qv-api.herokuapp.com/api/v1/users/me`);
     } catch (error) {
+      
       console.log(error.response);
     }
+
   }, []);
 
   return (
@@ -267,8 +273,8 @@ const Principal = () => {
       button={
         <UserSession>
           <script src="https://accounts.google.com/gsi/client"></script>
-
-          <UserSessionButton
+			 
+			 <UserSessionButton
             id="signout_button"
             class="g_id_signout"
             onClick={() => {
@@ -277,10 +283,12 @@ const Principal = () => {
               router.push("/");
             }}
           >
-            Cerrar sesión
+            Sign Out
           </UserSessionButton>
 
+          
           <UserSessionProfile alt="foto" src={`${data?.photoUrl}`} />
+          
         </UserSession>
       }
     >
@@ -291,54 +299,48 @@ const Principal = () => {
         primary
       />
       <Gallery />
-      <Descr>
-        Quanticon Valley es una apuesta de gamificación desarrollada y propuesta
-        por la Facultad de ingeniería
-      </Descr>
-      <TitleBox>
-        <Title>Conoce Quanticon Valley</Title>
-      </TitleBox>
-      <Grid>
-        <LogoExt>
-          <Logo src={`${prefix}/imgs/info/QV.png`}></Logo>
-        </LogoExt>
-        <ReactPlayer
-          url={
-            mState.group == "dos"
-              ? "https://youtu.be/xAroZDRREYo"
-              : "https://youtu.be/PAD8gZCSx0o"
-          }
-          className="react-player"
-          width="100%"
-          height="400px"
-          controls
+<Descr>Quanticon Valley es una apuesta de gamificación desarrollada y propuesta por la Facultad de ingeniería</Descr>
+<TitleBox>
+  <Title>Conoce Quanticon Valley</Title>
+</TitleBox>
+<Grid>
+  <LogoExt><Logo
+    src={`${prefix}/imgs/info/QV.png`}
+  ></Logo>
+  </LogoExt>
+  <ReactPlayer
+        url = {
+           mState.group == 'dos'
+           ? 'https://youtu.be/xAroZDRREYo'
+           : 'https://youtu.be/PAD8gZCSx0o'
+        }
+        className='react-player'
+        width='100%'
+        height='400px'
+        controls
         ></ReactPlayer>
-      </Grid>
+</Grid>
 
-      <TitleBox>
-        <Title>Conoce a los ganadores de la décima edición</Title>
-      </TitleBox>
-      <Grid>
-        <Noti
-          src={`${prefix}/imgs/principal/lastNoti.png`}
-          onClick={() => openModal("Noticiero")}
-        />
-        <MejoresProyectos
-          href={
-            "https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"
-          }
-          target="_blank"
-          rel="noreferrer"
-        >
-          ¡Conoce los proyectos desarrollados por los ganadores!
-        </MejoresProyectos>
-      </Grid>
+<TitleBox>
+  <Title>Conoce a los ganadores de la décima edición</Title>
+</TitleBox>
+<Grid>
+  <Noti 
+    src={`${prefix}/imgs/principal/lastNoti.png`}
+    onClick={()=>openModal('Noticiero')}
+  />
+  <MejoresProyectos href={"https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"} target="_blank" rel="noreferrer">
+    ¡Conoce los proyectos desarrollados por los ganadores!
+  </MejoresProyectos>
+  
+</Grid>
 
-      <TitleBox>
-        <Title>Conoce a los asesores y expertos de Quanticon Valley</Title>
-      </TitleBox>
-      <GridB>
-        {/* <Link href='/actors' passHref>
+
+<TitleBox>
+  <Title>Conoce a los asesores y expertos de Quanticon Valley</Title>
+</TitleBox>
+<GridB>
+  {/* <Link href='/actors' passHref>
     <Box>
       <Flex>
         <Image src={`${prefix}/imgs/principal/lobby.png`} alt=""/>
@@ -347,28 +349,25 @@ const Principal = () => {
       <TextBox>Descubre a los profesores mentores que te acompañarán en tu proyecto</TextBox>
     </Box>
   </Link> */}
-        <Link href="/actors" passHref>
-          <Box>
-            <Flex>
-              <Image src={`${prefix}/imgs/principal/asesores.png`} alt="" />
-              Asesores y Expertos
-            </Flex>
-            <TextBox>
-              Encuentra contenido adicional para apoyar tu proyecto y contacta
-              asesores y expertos.
-            </TextBox>
-          </Box>
-        </Link>
-      </GridB>
-      <TitleBox>
-        <Title>Líderes de innovación abierta - participantes</Title>
-      </TitleBox>
-      <Flex2>
-        {logos.map((logo, index) => (
-          <Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>
-        ))}
-      </Flex2>
-    </QV>
+  <Link href='/actors' passHref>
+    <Box>
+      <Flex>
+        <Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
+        Asesores & Expertos
+      </Flex>
+      <TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores y expertos.</TextBox>
+    </Box>
+  </Link>
+</GridB>
+<TitleBox>
+  <Title>Líderes de innovación abierta - participantes</Title>
+</TitleBox>
+<Flex2>
+{logos.map((logo,index)=><Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>)}
+</Flex2>
+
+</QV>
   );
 };
 export default Principal;
+

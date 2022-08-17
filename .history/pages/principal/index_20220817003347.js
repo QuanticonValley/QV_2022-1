@@ -226,8 +226,10 @@ const Principal = () => {
         if (error.response.status === 401) {
           console.log("Error de autenticación");
           setShowAuthError(true);
-          alert("Error de autenticación, por favor contacte al administrador");
-          Router.push( "/");
+          Router.push({
+            pathname: '/',
+            state: { showAuthError: {showAuthError}}
+        }, "/");
           
         }
       });

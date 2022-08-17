@@ -8,10 +8,9 @@ import Gallery from "../../UIcomponents/banner";
 import axios from "axios";
 import cookie from "js-cookie";
 import { useEffect, useState } from "react";
-import { useRouter} from "next/router.js";
+import { useRouter } from "next/router.js";
 import QV from "../../UIcomponents/qv";
 import Header from "../../UIcomponents/header";
-import Router from "next/router.js";
 
 const imgPrin = `${prefix}/imgs/header/principal.png`;
 
@@ -174,7 +173,7 @@ const UserSession = styled.div`
   justify-content: space-between;
   background: #1920ef;
   border-radius: 0.5em 1.5em 1.5em 0.5em;
-  width: 150px;
+  width: 120px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   hover {
     cursor: pointer;
@@ -182,7 +181,7 @@ const UserSession = styled.div`
   }
   @media screen and (max-width: 800px) {
     margin-top: 0.2em;
-    width: 170px;
+    width: 130px;
     margin-right: 10vw;
   }
 `;
@@ -195,7 +194,7 @@ const UserSessionButton = styled.div`
   color: #ffffff;
   border: none;
   padding: 0.5em;
-  width: 120px;
+  width: 90px;
   height: 1.5em;
   border-radius: 0.5em;
   font-weight: bold;
@@ -225,10 +224,8 @@ const Principal = () => {
         console.log(error);
         if (error.response.status === 401) {
           console.log("Error de autenticación");
+          router.push("/");
           setShowAuthError(true);
-          alert("Error de autenticación, por favor contacte al administrador");
-          Router.push( "/");
-          
         }
       });
     if (response) {
@@ -277,7 +274,7 @@ const Principal = () => {
               router.push("/");
             }}
           >
-            Cerrar sesión
+            Sign Out
           </UserSessionButton>
 
           <UserSessionProfile alt="foto" src={`${data?.photoUrl}`} />

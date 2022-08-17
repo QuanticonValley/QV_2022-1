@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/calendar2.css'
+import '../styles/cards.css'
 import { RecoilRoot } from 'recoil'
 import { useMainState } from '../libs/stateHooks'
 import { useEffect } from 'react'
