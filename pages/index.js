@@ -10,7 +10,7 @@ import Gallery from "../UIcomponents/banner";
 import QV from "../UIcomponents/qv.js";
 import Header from "../UIcomponents/header.js";
 import cookie from "js-cookie";
-import {useRouter} from "next/router.js";
+import { useRouter } from "next/router.js";
 
 
 
@@ -202,131 +202,132 @@ const Error = styled.div`
 
 `;
 
-  
+
 
 
 
 const Login = (props) => {
-  const [mState, setMainState] = useMainState();
-  const logos = getLogosExt();
-  const router = useRouter();
-  function handleCredentialResponse(response) {
-    try{
-      const token = response.credential;
-      // console.log("Encoded JWT ID token: " + token);
-      cookie.set("token", token, { expires: 1 });
-      document.getElementById("authenticated").style.setProperty('display', 'none');
-      router.push("/principal");
-    }
-    catch(error) {
-      document.getElementById("authenticated").style.removeProperty('display');
-    }
+   const [mState, setMainState] = useMainState();
+   const logos = getLogosExt();
+   const router = useRouter();
+   function handleCredentialResponse(response) {
+      try {
+         const token = response.credential;
+         // console.log("Encoded JWT ID token: " + token);
+         cookie.set("token", token, { expires: 1 });
+         document.getElementById("authenticated").style.setProperty('display', 'none');
+         router.push("/principal");
+      }
+      catch (error) {
+         document.getElementById("authenticated").style.removeProperty('display');
+      }
 
-  }
-  useEffect(async() => {
-    if (window) {
-      
-		document.getElementById("authenticated").style.removeProperty('display');
-      google.accounts.id.initialize({
-        client_id:
-          "423532745006-33is1fddefafnqkpg3clciqarqqgkuoo.apps.googleusercontent.com",
-        callback: handleCredentialResponse,
+   }
+   useEffect(async () => {
+      if (window) {
+
+         document.getElementById("authenticated").style.removeProperty('display');
+         google.accounts.id.initialize({
+            client_id:
+               "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
+            //  "423532745006-33is1fddefafnqkpg3clciqarqqgkuoo.apps.googleusercontent.com",
+            callback: handleCredentialResponse,
+         });
+         google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "outline", size: "medium" } // customization attributes
+         );
+         google.accounts.id.prompt(); // also display the One Tap dialog
+
+      }
+
+   }, []);
+   //   async function showAuthInfo() {
+   // 	console.log("auth: " + window.isAuthenticated);
+   // 	if (window.isAuthenticated) { 
+   // 		document.getElementById("authenticated").style.setProperty('display', 'none');
+
+
+   // 	} else {
+   // 		document.getElementById("authenticated").style.removeProperty('display');
+
+   // 	}
+   // }
+
+
+   const openModal = (type) => {
+      setMainState({
+         ...mState,
+         modal: {
+            visibility: true,
+            type: type,
+         },
       });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "outline", size: "medium" } // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-
-    }
-    
-  }, []);
-//   async function showAuthInfo() {
-// 	console.log("auth: " + window.isAuthenticated);
-// 	if (window.isAuthenticated) { 
-// 		document.getElementById("authenticated").style.setProperty('display', 'none');
-		
-		 
-// 	} else {
-// 		document.getElementById("authenticated").style.removeProperty('display');
-		
-// 	}
-// }
+   };
 
 
-  const openModal = (type) => {
-    setMainState({
-      ...mState,
-      modal: {
-        visibility: true,
-        type: type,
-      },
-    });
-  };
-  
+   return (
+      <QV pg="Principal" button={<div id="authenticated" ><div id="buttonDiv">Sign in</div></div>}>
+         <script src="https://accounts.google.com/gsi/client" npm></script>
 
-  return (
-    <QV pg="Principal" button={ <div id="authenticated" ><div id="buttonDiv">Sign in</div></div> }>
-	 <script src="https://accounts.google.com/gsi/client"npm></script>
+         <Error id="error" style={{ "display": "none" }}> Inicia sesión con una cuenta asociada a QV</Error>
 
-      <Error id="error" style={{"display":"none"}}> Inicia sesión con una cuenta asociada a QV</Error>
 
-      
-      <Header
-        title="Quanticon Valley"
-        desc="Bienvenidos/as"
-        imgH={imgPrin}
-        primary
-      />
-      <Gallery />
-      <Descr>
-        Quanticon Valley es una apuesta de gamificación desarrollada y propuesta
-        por la Facultad de ingeniería
-      </Descr>
-      <TitleBox>
-        <Title>Conoce Quanticon Valley</Title>
-      </TitleBox>
-      <Grid>
-        <LogoExt>
-          <Logo src={`${prefix}/imgs/info/QV.png`}></Logo>
-        </LogoExt>
-        <ReactPlayer
-            url = {
-               mState.group == 'dos'
-               ? 'https://youtu.be/xAroZDRREYo'
-               : 'https://youtu.be/PAD8gZCSx0o'
-            }
-            className='react-player'
-            width='100%'
-            height='400px'
-            controls
+         <Header
+            title="Quanticon Valley"
+            desc="Bienvenidos/as"
+            imgH={imgPrin}
+            primary
+         />
+         <Gallery />
+         <Descr>
+            Quanticon Valley es una apuesta de gamificación desarrollada y propuesta
+            por la Facultad de ingeniería
+         </Descr>
+         <TitleBox>
+            <Title>Conoce Quanticon Valley</Title>
+         </TitleBox>
+         <Grid>
+            <LogoExt>
+               <Logo src={`${prefix}/imgs/info/QV.png`}></Logo>
+            </LogoExt>
+            <ReactPlayer
+               url={
+                  mState.group == 'dos'
+                     ? 'https://youtu.be/xAroZDRREYo'
+                     : 'https://youtu.be/PAD8gZCSx0o'
+               }
+               className='react-player'
+               width='100%'
+               height='400px'
+               controls
             ></ReactPlayer>
-      </Grid>
+         </Grid>
 
-      <TitleBox>
-        <Title>Conoce a los ganadores de la décima edición</Title>
-      </TitleBox>
-      <Grid>
-        <Noti
-          src={`${prefix}/imgs/principal/lastNoti.png`}
-          onClick={() => openModal("Noticiero")}
-        />
-        <MejoresProyectos
-          href={
-            "https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"
-          }
-          target="_blank"
-          rel="noreferrer"
-        >
-          ¡Conoce los proyectos desarrollados por los ganadores!
-        </MejoresProyectos>
-      </Grid>
+         <TitleBox>
+            <Title>Conoce a los ganadores de la décima edición</Title>
+         </TitleBox>
+         <Grid>
+            <Noti
+               src={`${prefix}/imgs/principal/lastNoti.png`}
+               onClick={() => openModal("Noticiero")}
+            />
+            <MejoresProyectos
+               href={
+                  "https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"
+               }
+               target="_blank"
+               rel="noreferrer"
+            >
+               ¡Conoce los proyectos desarrollados por los ganadores!
+            </MejoresProyectos>
+         </Grid>
 
-      <TitleBox>
-        <Title>Conoce a los actores de Quanticon Valley</Title>
-      </TitleBox>
-      <GridB>
-        {/* <Link href="/actors" passHref>
+         <TitleBox>
+            <Title>Conoce a los actores de Quanticon Valley</Title>
+         </TitleBox>
+         <GridB>
+            {/* <Link href="/actors" passHref>
           <Box>
             <Flex>
               <Image src={`${prefix}/imgs/principal/lobby.png`} alt="" />
@@ -338,26 +339,26 @@ const Login = (props) => {
             </TextBox>
           </Box>
         </Link> */}
-        <Link href='/actors' passHref>
-				<Box>
-					<Flex>
-						<Image src={`${prefix}/imgs/principal/asesores.png`} alt=""/>
-						Asesores & Expertos
-					</Flex>
-					<TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores y expertos.</TextBox>
-				</Box>
-			</Link>
-      </GridB>
-      <TitleBox>
-        <Title>Líderes de innovación abierta - participantes</Title>
-      </TitleBox>
-      <Flex2>
-        {logos.map((logo, index) => (
-          <Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>
-        ))}
-      </Flex2>
-    </QV>
-  );
+            <Link href='/actors' passHref>
+               <Box>
+                  <Flex>
+                     <Image src={`${prefix}/imgs/principal/asesores.png`} alt="" />
+                     Asesores & Expertos
+                  </Flex>
+                  <TextBox>Encuentra contenido adicional para apoyar tu proyecto y contacta asesores y expertos.</TextBox>
+               </Box>
+            </Link>
+         </GridB>
+         <TitleBox>
+            <Title>Líderes de innovación abierta - participantes</Title>
+         </TitleBox>
+         <Flex2>
+            {logos.map((logo, index) => (
+               <Imagen key={index} src={`${prefix}/imgs/extern/${logo[0]}`}></Imagen>
+            ))}
+         </Flex2>
+      </QV>
+   );
 };
 export default Login;
 

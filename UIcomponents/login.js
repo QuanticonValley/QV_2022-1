@@ -42,44 +42,45 @@ const Button = styled.button`
 `;
 
 const Login = () => {
-  // options
-  const opts = {
-    client_id:
-      "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
-    auto_select: false, // optional
-    cancel_on_tap_outside: false, // optional
-    context: "signin", // optional
-  };
+   // options
+   const opts = {
+      client_id:
+         "231104193562-jr49orvr3rd8sebmp0bmejfus9qpfsgf.apps.googleusercontent.com", // required
+      //  "423532745006-33is1fddefafnqkpg3clciqarqqgkuoo.apps.googleusercontent.com",
+      auto_select: false, // optional
+      cancel_on_tap_outside: false, // optional
+      context: "signin", // optional
+   };
 
-  useEffect(() => {
-    console.log("init");
-    googleOneTap(opts, (response) => {
-      // Send response to server
-      console.log("Encoded JWT ID token: " + response.credential);
-    });
-  }, []);
+   useEffect(() => {
+      console.log("init");
+      googleOneTap(opts, (response) => {
+         // Send response to server
+         console.log("Encoded JWT ID token: " + response.credential);
+      });
+   }, []);
 
-  const [login, setLogin] = useState(true);
-  function cambio(decision) {
-    setLogin(decision);
-  }
+   const [login, setLogin] = useState(true);
+   function cambio(decision) {
+      setLogin(decision);
+   }
 
-  return (
-    <PanelOut>
-      <PanelIn>
-        <Encabezado>
-          <Button onClick={() => cambio(true)}>Iniciar Sesión</Button>
-          <Button onClick={() => cambio(false)}>Registrarse</Button>
-        </Encabezado>
-        {login ? (
-          /* <LoginForm></LoginForm> */
-          <div></div>
-        ) : (
-          <RegisterForm></RegisterForm>
-        )}
-      </PanelIn>
-    </PanelOut>
-  );
+   return (
+      <PanelOut>
+         <PanelIn>
+            <Encabezado>
+               <Button onClick={() => cambio(true)}>Iniciar Sesión</Button>
+               <Button onClick={() => cambio(false)}>Registrarse</Button>
+            </Encabezado>
+            {login ? (
+               /* <LoginForm></LoginForm> */
+               <div></div>
+            ) : (
+               <RegisterForm></RegisterForm>
+            )}
+         </PanelIn>
+      </PanelOut>
+   );
 };
 
 export default Login;
