@@ -38,12 +38,18 @@ const data = {
 			src: `${prefix}/imgs/main/Icon_actores.svg`,
 			dsc: 'Información sobre los actores del juego',
 		},
+      {
+			title: 'Guías Generales',
+			link: '/info/about',
+			src: `${prefix}/imgs/main/Icon_Informacion.svg`,
+			dsc: 'Para Conocer y Saber mas de Quanticon Valley',
+		},
 		{
 			title: 'Acerca del juego',
 			link: '/info/about',
 			src: `${prefix}/imgs/main/Icon_Informacion.svg`,
 			dsc: 'Para Conocer y Saber mas de Quanticon Valley',
-		},
+		}
 	]
 }
 // {
