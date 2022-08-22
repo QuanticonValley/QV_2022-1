@@ -82,38 +82,40 @@ const NavCont = ({ pg }) => {
    const pages = getPages()
 
    const [_mState, _setMainState] = useMainState()
-	const _openModal = () => {
-		_setMainState({
-		  ..._mState,
-		  modal: {
-			visibility: true,
-         type: 'Salon de la Fama'
-		  }
-		})
-	}
+   const _openModal = () => {
+      _setMainState({
+         ..._mState,
+         modal: {
+            visibility: true,
+            type: 'Salon de la Fama'
+         }
+      })
+   }
 
    return (
       <Container>
-         
-         <NavImg style={{zIndex: "-1"}} src={navImg} alt="nav-img" />
+
+         <NavImg style={{ zIndex: "-1" }} src={navImg} alt="nav-img" />
          <Link href={"/principal"} passHref>
             <Logo src={logo} alt="logo" />
          </Link>
          {pages.map((item, i) => {
             return (
                <span key={item.link}>
-                  <Link href={item.link} passHref>
-                     <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()}
-                     onClick={
-                        item.title == 'Ranking'
-                        ? _openModal
-                        : ''
-                     }
-                     >
-                        <Icon src={item.src} alt={item.link} />
-                        <Text>{item.title}</Text>
-                     </Button>
-                  </Link>
+                  {item.title == 'Ranking'
+                     ? <Link href={item.link} passHref>
+                        <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()} onClick={_openModal}>
+                           <Icon src={item.src} alt={item.link} />
+                           <Text>{item.title}</Text>
+                        </Button>
+                     </Link>
+                     : <Link href={item.link} passHref>
+                        <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()}>
+                           <Icon src={item.src} alt={item.link} />
+                           <Text>{item.title}</Text>
+                        </Button>
+                     </Link>}
+
                   {isMounted && <ReactTooltip id={"dscTooltip" + i} place='right' type='info'>
                      {item.dsc}
                   </ReactTooltip>}
