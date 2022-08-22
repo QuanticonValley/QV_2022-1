@@ -98,7 +98,7 @@ const Etesc = () => {
 	return <QV pg="ETESC">
 		<Header
 			title="ETESC"
-			desc="Edificios Tecnológicos de Empredimiento Sostenible"
+			desc="Espacio Tecnológico de Empredimiento Sostenible Colombia"
 			imgH={imgEtesc}
 		/>
 		<Margin>
