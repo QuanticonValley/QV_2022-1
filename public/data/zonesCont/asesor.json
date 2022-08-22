@@ -1,24 +1,54 @@
 {
 	"virtual" : [
       {
-			"img": "1-ah.jpg",
-			"nombre": "Alejandra Hernández",
-			"rol": "Emprendedora",
-			"desc": "Ingeniera de sistemas y computación de la Universidad Nacional de Colombia con magister en Tecnologías de la Información para el Negocio de la Universidad de los Andes. Emprendedora creadora de Amazul Pastry en Londres, una pastelería inspirada en sabores colombianos. 11 años de experiencia en tecnología pasando por diferentes perfiles en ventas, desarrollo de producto y servicios.\n\nAsesorías:\n - Ventas\n - Desarrollo de productos\n - Diseño de modelos de negocio\n - Social media advertising\n - User experience\n",
-			"campo": "Ingenieria de Sistemas",
+			"img": "1-cm.jpg",
+			"nombre": "Cristian Mendivelso",
+			"rol": "Asesor",
+			"desc": "Cristian puede ayudarlos en la construcción del modelo de negocio y monetización con el fin de generar ventas y estructuración de equipos.",
+			"campo": "Aceleradora de emprendimientos",
 			"costo": 500,
 			"nombreMon": "Leidy Cardozo",
-			"correoMon": "nalejandrahernandez@gmail.com"
+			"correoMon": "cmendivelso@unal.edu.co"
 		},
-		{
-			"img": "1-hc.png",
-			"nombre": "Hernán G. Cortés Mora",
-			"rol": "Profesor facultad de ingenieria",
-			"desc": "Doctor en Ingeniería - Industria y Organizaciones, Magister en Ingeniería Industrial e Ingeniero de Sistemas. Experiencia en gestión universitaria, gestión ambiental, aprendizaje basado en proyectos (PBL), gestión ambiental, de proyectos de extensión, consultoría, asesoría, formación de docentes, docencia universitaria (pregrado y posgrado), investigación, manejo de talento humano, sistemas de información y mentoría de emprendedores, con más de diez años de experiencia en acompañamiento de iniciativas de innovación y emprendimiento. Actualmente Jefe de la Oficina de Gestión Ambiental de la Sede Bogotá de la Universidad Nacional de Colombia.",     
-			"campo": "Ingenieria Industrial",
+      {
+			"img": "1-fb.jpg",
+			"nombre": "Fernando Bernal Martínez",
+			"rol": "Profesor de emprendimiento",
+			"desc": "Profesional en administración de empresas, especialista en finanzas, aspirante a grado de magíster en marketing y publicidad digital, con 19 años de experiencia promoviendo la creación y el fortalecimiento de empresas, como emprendedor, docente universitario, formulador y evaluador de planes de negocio, mentor y asesor de emprendedores y empresas en etapas tempranas.\nHabilidad para el diseño de modelos de negocios y procesos de ideación con equipos de trabajo para desarrollar productos y ofertas de valor que lleven a la materialización de las ventajas competitivas de las empresas. Experiencia en formulación de planes de negocio, propuestas de valor y modelos de negocio para diversas industrias y tipos de emprendimientos, como los de base científica y tecnológica, emprendimientos de TIC's, y de industrias creativas digitales y culturales.",     
+			"campo": "Administración de Empresas",
 			"costo": 500,
 			"nombreMon": "Leidy Cardozo",
-			"correoMon": "lcardozo@unal.edu.co"
+			"correoMon": "fbernalm@unal.edu.co"
+		},
+      {
+			"img": "1-p.jpg",
+			"nombre": "ProFi",
+			"rol": "Asesor",
+			"desc": "En el código QR puedes solicitar un espacio de asesoría individual o grupal con el fin de resolver dudas, recibir recomendaciones o hablar sobre el tema que quieras con relación a habilidades sociales, habilidades comunicativas y ética con alguno/a de los/as profesionales de ProFI.",     
+			"campo": "Facultad de Ingeniería",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "No aplica"
+		},
+      {
+			"img": "1-rav.jpg",
+			"nombre": "Ricardo Agusto Vargas",
+			"rol": "Asesor",
+			"desc": "El profesor Ricardo es un experto en la formulación de emprendimientos. Asesora especialmente en el escalamiento de emprendimientos hacia otros continentes. Le apasiona el emprendimiento en todos sus niveles.",     
+			"campo": "Finanzas y comercio exterior con maestria en innovación",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "Pendiente"
+		},
+      {
+			"img": "1-jfa.jpeg",
+			"nombre": "John Fabio Acuña",
+			"rol": "Profesor de Ingeniería Civil y Agrícola",
+			"desc": "Ing. Agricola - Ph. D. Director Grupo de investigación GTI. Asesor internacional Enfocado en construcciones e infraestructura rural. Invernaderos. Uso y aplicación de plásticos en agricultura.",     
+			"campo": "Ingeniería Civil y Agrícola",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "jfacunac@unal.edu.co"
 		},
       {
 			"img": "1-ah.jpeg",
@@ -28,14 +58,194 @@
 			"campo": "Ingeniería de Sistemas",
 			"costo": 500,
 			"nombreMon": "Leidy Cardozo",
-			"correoMon": "lcardozo@unal.edu.co"
+			"correoMon": "aherreraj@unal.edu.co"
+		},
+      {
+			"img": "1-diln.jpg",
+			"nombre": "Diego Ismael León Nieto",
+			"rol": "Profesor de Ingenieria de Sistemas e Industrial",
+			"desc": "Economista, Magister en Finanzas Cuantitativas y estudios de doctorado en Ingeniería – Machine Learning. Experiencia en docencia e investigación en el área de economía y finanzas computacionales, aprendizaje de maquina e inteligencia artificial aplicados en economía y finanzas. Experiencia laboral en equipos de nivel directivo en instituciones financieras con exposición internacional. Amplios conocimientos en el diseño y modelación económica y financiera, valoración de activos de renta fija y derivados.",     
+			"campo": "Ingeniería de Sistemas e Industrial",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "dileonn@unal.edu.co"
+		},
+      {
+			"img": "1-ah.jpg",
+			"nombre": "Alejandra Hernández",
+			"rol": "Emprendedora",
+			"desc": "Ingeniera de sistemas y computación de la Universidad Nacional de Colombia con magister en Tecnologías de la Información para el Negocio de la Universidad de los Andes. Emprendedora creadora de Amazul Pastry en Londres, una pastelería inspirada en sabores colombianos. 11 años de experiencia en tecnología pasando por diferentes perfiles en ventas, desarrollo de producto y servicios.\n\nAsesorías:\n - Ventas\n - Desarrollo de productos\n - Diseño de modelos de negocio\n - Social media advertising\n - User experience\n",
+			"campo": "Ingenieria de Sistemas",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "nalejandrahernandez@gmail.com"
+		},
+      {
+			"img": "1-mav.jpg",
+			"nombre": "Maribel Anaya",
+			"rol": "Docente ocasional Ingeniería Eléctrica",
+			"desc": "Ingeniera Electrónica y Magister en Ingeniería Electrónica de la Universidad Industrial de Santander (Bucaramanga-Colombia) . Doctora en Ingeniería Sísmica y dinámica estructural de la Universitat Politecnica de Catalunya (Barcelona-España). Actualmente docente ocasional del departamento de Ingeniería Eléctrica y electrónica de la UNAL. Experiencia en docencia e investigación de mas de 10 años en instituciones públicas y privadas. Áreas de trabajo: procesamiento de señales, electrónica análoga, control, inteligencia artificial. Cuenta con mas de 40 publicaciones en revistas de alto impacto, capítulos de libro y conferencias en eventos.",
+			"campo": "Ingeniería Eléctrica y Electrónica",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "manaya@unal.edu.co"
+		},
+      {
+			"img": "1-jv.jpg",
+			"nombre": "Julián David Valbuena Godoy",
+			"rol": "Profesor de Ingeniería Eléctrica y Electrónica",
+			"desc": "Formación académica: Ingeniero Electrónico (Grado Agosto 2016) – UNAL. Ingeniero Electricista (Grado Septiembre 2017) – UNAL. Magister en Ingeniería Eléctrica (Grado Septiembre 2020) – UNAL.",
+			"campo": "Ingeniería Eléctrica y Electrónica",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "jdvalbuenag@unal.edu.co"
+		},
+      {
+			"img": "1-sv.jpg",
+			"nombre": "Sergio Velosa",
+			"rol": "Asesor",
+			"desc": "Sergio como mentor puede ayudarlos especialmente en la protección de conocimiento y construcción del emprendimiento. Ha trabajado mucho tiempo con el área médica.",
+			"campo": "Ingenieria Mecánica",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "savelozag@unal.edu.co"
+		},
+      {
+			"img": "1-cv2.jpg",
+			"nombre": "Cristian Velosa",
+			"rol": "Asesor",
+			"desc": "Cristian es un mentor capaz de ayudarlos en la formulación de modelos de negocios y proyección de su emprendimiento.",
+			"campo": "Ingenieria Industrial",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "ccvelozag@unal.edu.co"
+		},
+      {
+			"img": "1-icf.jpg",
+			"nombre": "Ismael Castañeda Fuentes",
+			"rol": "Profesor de Bases de Datos",
+			"desc": "Ingeniero Mecanico, Maestria en Ingeniería de Sistemas. Profesor de Bases de Datos, Mentor en cursos de TPI y Director de Proyectos.",
+			"campo": "Ingeniería de Sistemas",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "icastanedaf@unal.edu.co "
+		},
+      {
+			"img": "1-or.png",
+			"nombre": "Óscar Rodríguez",
+			"rol": "Profesor de Ingeniería Mecatrónica",
+			"desc": "Soy ingeniero mecatrónico, magíster en ingeniería biomédica y candidato a doctor en ingeniería mecánica y mecatrónica. Mi área de trabajo ha estado orientada principalmente a la investigación interdisciplinar en áreas como la ingeniería biomédica, el modelado computacional de sistemas físicos y biológicos, la simulación multifísica, la programación científica, el diseño, implementación y administración de tecnología biomédica y la docencia en biomecánica y mecánica de sólidos. Entusiasta de todo lo que tenga que ver con nuevas aplicaciones de la tecnología, sistemas computacionales de alto rendimiento y sus aplicaciones.",
+			"campo": "Ingeniería Mecatrónica",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "olrodriguezm@unal.edu.co"
+		},
+      {
+			"img": "1-lirv.jpeg",
+			"nombre": "Luis Ignacio Rodríguez Varela",
+			"rol": "Profesor Ingeniería Química",
+			"desc": "Especialización en Extracción de Productos Naturales con Fluidos Supercríticos.\nMontaje de cuartos fríos a nivel industrial.\nDiseño y Montaje de plantas de alimentos y de café soluble.\nDiseño y Montaje de plantas de Liofilizacion.\nProducción de Biodiesel con metanol supercrítico.\nProducción de éteres de glicerina con metanol supercrítico.\nProducción de biocombustibles a partir de biomasa con agua supercritica.\nExtracción de principios vio activos con CO2 supercrítico.",
+			"campo": "Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "lirodriguezv@unal.edu.co"
+		},
+      {
+			"img": "qv.jpg",
+			"nombre": "Julio Cesar Vargas Sáenz",
+			"rol": "Profesor Ingeniería Química",
+			"desc": "Pendiente",
+			"campo": "Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "jcvargass@unal.edu.co"
+		},
+      {
+			"img": "1-dsb.png",
+			"nombre": "Dolly Santos Barbosa",
+			"rol": "Profesora de Ingeniería Química",
+			"desc": "Soy Ingeniería Química de la UNAL con maestrías en Automatización Industrial de la UNAL y en Aprendizaje Basado en Problemas de la Universidad de Aalborg (Dinamarca), y con Doctorado de la Universidad Federal de Santa Catarina (Florianópolis, Brasil) con énfasis en Control de Procesos. Soy profesora asociada con tenencia de cargo adscrita al Departamento Ingeniería Química y Ambiental de la Universidad Nacional de Colombia, sede Bogotá.",
+			"campo": "Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "dsantosb@unal.edu.co"
+		},
+      {
+			"img": "1-aea.jpg",
+			"nombre": "Alfonso Esteban Alarcón Ortiz",
+			"rol": "Profesor de Ingeniería Química",
+			"desc": "Soy ingeniero biológico, M.Sc. Ingeniería química, con experiencia en el área de bioprocesos, he realizado actividades de docencia en el área de la biotecnología y seminarios de proyectos, he sido evaluador de proyectos en el área de biotecnología para diferentes convocatorias de Colciencias, entre ellas la convocatoria para el fortalecimiento de CTeI en instituciones de educación superior y la convocatoria para la innovación y desarrollo tecnológico en empresas. Actualmente me encuentro desarrollando el doctorado en ingeniería y soy asesor en calidad e inocuidad en la industria alimentaria.",
+			"campo": "Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "aealarcono@unal.edu.co"
+		},
+      {
+			"img": "1-map.jpg",
+			"nombre": "Miguel Angel Pulido",
+			"rol": "Asesor",
+			"desc": "Ingeniero Geógrafo de Universidad de Bogotá Jorge Tadeo Lozano, Candidato a Management and Business Administration – cMBA de la Escuela de Negocios Europea de Barcelona ENEB; profesional con experiencia en Planeación estratégica, Gestión tecnológica y de Innovación, como investigador, consultor y asesor, asociado al grupo de Bionegocios del Instituto de Biotecnología e innovaTE de la Universidad Nacional de Colombia.",
+			"campo": "Ingenierio Generalista",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "mpulidov@unal.edu.co"
+		},
+      {
+			"img": "1-grn.jpg",
+			"nombre": "Gerardo Rodríguez Niño",
+			"rol": "Asesor",
+			"desc": "El profesor Gerardo tiene vasta experiencia en la construcción de iniciativas emprendedoras a través de diferentes campos de la ingeniería. Él les puede guiar en la construcción de su emprendimiento.",
+			"campo": "Ingenieria Química, PHD en Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "grodriguezn@unal.edu.co"
+		},
+      {
+			"img": "1-man.jpg",
+			"nombre": "Mario Andrés Noriega",
+			"rol": "Asesor",
+			"desc": "El profesor Mario puede ayudarles a entender la construcción de modelo de negocio al momento de emprender y comprender los activos básicos que se requieren para tener un negocio fructífero y riguroso.",
+			"campo": "Ingenieria Química, PHD en Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "manoriegava@unal.edu.co"
+		},
+      {
+			"img": "1-jcs.jpg",
+			"nombre": "Juan Carlos Serrato",
+			"rol": "Asesor",
+			"desc": "El profesor Serrato puede ayudarles en la generación de valor agregado de cualquier idea en etapa temprana. Experto en llevar ideas agroindustriales al siguiente nivel.",
+			"campo": "Ingenieria Química, PHD en Ingeniería Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "jcserratob@unal.edu.co"
 		},
       {
 			"img": "1-oe.png",
-			"nombre": "Oscar Andres Erazo",
-			"rol": "Profesor facultad de ingenieria",
+			"nombre": "Oscar Andrés Eraso Eraso",
+			"rol": "Profesor de Ingeniería Electrónica",
 			"desc": "MBA con orientación en Dirección Estratégica. Coach Profesional. Ingeniero en Electrónica y Telecomunicaciones con 20 años de experiencia laboral en la planeación, el diseño y la gestión de redes y proyectos de telecomunicaciones. 5 años como Docente Universitario. Trabajo guiado por objetivos, orientado a obtener excelentes resultados. Buenas relaciones interpersonales y una amplia experiencia en la administración de personas. Aseguro un excelente grado de servicio, logrando identificar necesidades en este sector, disminuyendo la brecha entre la academia y el sector productivo.",
-			"campo": "Ingenieria Electronica",
+			"campo": "Ingenieria Electrónica",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "oeraso@unal.edu.co "
+		},
+      {
+			"img": "1-la.jpg",
+			"nombre": "Liliana Ávila",
+			"rol": "Docente ocasional Ingeniería Química",
+			"desc": "Docente ocasional UNAL, Licenciada en química. Área de profundización en polímeros, doctorando en Ingeniería química, Mag. en Ingeniería de Materiales y Procesos, Especialista en Bioingeniería. Con experiencia en proyectos de investigación relacionados con bioplásticos a partir de residuos orgánicos. Bioremedación de suelos. Almidones. También como docente diseñando material educativo para personas con necesidades educativas especiales.",
+			"campo": "Licenciada en Química",
+			"costo": 500,
+			"nombreMon": "Leidy Cardozo",
+			"correoMon": "lavilam@unal.edu.co"
+		},
+		{
+			"img": "1-hc.png",
+			"nombre": "Hernán G. Cortés Mora",
+			"rol": "Profesor facultad de ingenieria",
+			"desc": "Doctor en Ingeniería - Industria y Organizaciones, Magister en Ingeniería Industrial e Ingeniero de Sistemas. Experiencia en gestión universitaria, gestión ambiental, aprendizaje basado en proyectos (PBL), gestión ambiental, de proyectos de extensión, consultoría, asesoría, formación de docentes, docencia universitaria (pregrado y posgrado), investigación, manejo de talento humano, sistemas de información y mentoría de emprendedores, con más de diez años de experiencia en acompañamiento de iniciativas de innovación y emprendimiento. Actualmente Jefe de la Oficina de Gestión Ambiental de la Sede Bogotá de la Universidad Nacional de Colombia.",     
+			"campo": "Ingenieria Industrial",
 			"costo": 500,
 			"nombreMon": "Leidy Cardozo",
 			"correoMon": "lcardozo@unal.edu.co"
@@ -56,16 +266,6 @@
 			"rol": "",
 			"desc": "Profesor Asociado de la Escuela de Diseño Industrial Líneas de investigación: Innovación impulsada por diseño - la dimensión cultural. Diseño de producto y proceso. Manufactura de prototipos. Acciones de diseño que impulsan el cambio [o la resignificación] en las culturas organizacionales (Investigación en curso en la Maestría en Diseño de la Facultad de Artes UNAL). Consultor en áreas de comunicación de mercadotecnia.",
 			"campo": "Diseño Industrial",
-			"costo": 500,
-			"nombreMon": "Leidy Cardozo",
-			"correoMon": "lcardozo@unal.edu.co"
-		},
-      {
-			"img": "1-fb.jpg",
-			"nombre": "Fernando Bernal",
-			"rol": "Gerente",
-			"desc": "Profesional en administración de empresas, especialista en finanzas, aspirante a grado de magíster en marketing y publicidad digital, con 19 años de experiencia promoviendo la creación y el fortalecimiento de empresas, como emprendedor, docente universitario, formulador y evaluador de planes de negocio, mentor y asesor de emprendedores y empresas en etapas tempranas.\nHabilidad para el diseño de modelos de negocios y procesos de ideación con equipos de trabajo para desarrollar productos y ofertas de valor que lleven a la materialización de las ventajas competitivas de las empresas. Experiencia en formulación de planes de negocio, propuestas de valor y modelos de negocio para diversas industrias y tipos de emprendimientos, como los de base científica y tecnológica, emprendimientos de TIC's, y de industrias creativas digitales y culturales.",     
-			"campo": "Administración de Empresas",
 			"costo": 500,
 			"nombreMon": "Leidy Cardozo",
 			"correoMon": "lcardozo@unal.edu.co"
