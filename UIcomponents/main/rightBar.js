@@ -1,13 +1,14 @@
 import styled from 'styled-components'
-import { prefix } from '../../utils/prefix.js';
 import ReactTooltip from 'react-tooltip'
-import { useState, useEffect } from 'react';
-import { statePiso } from '../../public/data/index.js';
-import { useMainState } from '../../libs/stateHooks'
 import NotiWidget from '../notiWidget'
 import Calendar from '../calendar/index'
 import GroupSel from '../../UIcomponents/groupSel'
-import Miniprofile from '../miniprofile.js';
+import Link from 'next/link'
+import { prefix } from '../../utils/prefix.js';
+import { useState, useEffect } from 'react';
+import { statePiso } from '../../public/data/index.js';
+import { useMainState } from '../../libs/stateHooks'
+// import Miniprofile from '../miniprofile.js';
 
 const Container = styled.div`
 	grid-area: rb;
@@ -174,12 +175,12 @@ const RightBar = ({ active, close }) => {
 				Salon de la Fama
 			</HallFame> */}
 
-            <a href='/info/guide'>
+            <Link href='/info/guide' passHref>
                <HallFame data-tip data-for="dscTooltipHF">
                   <Image src={`${prefix}/imgs/principal/puzzle.png`} alt="" />
                   Guía del Jugador
                </HallFame>
-            </a>
+            </Link>
 
             {isMounted && <ReactTooltip id="dscTooltipPils" place='left' type='info'>
                Informacion para la Semana
