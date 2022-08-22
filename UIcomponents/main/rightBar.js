@@ -111,7 +111,7 @@ const HallFame = styled.div`
 		}
 	}
 `
-const Pis=styled.h2`
+const Pis = styled.h2`
 	text-align:center;
 	color:#1920EF;
 	padding: 2px;
@@ -125,70 +125,72 @@ const Pis=styled.h2`
 const Image = styled.img`
 	margin-right: 1em;
 `
-const Contenedor= styled.div`
+const Contenedor = styled.div`
 	overflow: auto;
 `
 
-const RightBar = ({active, close}) => {
-	const [isMounted,setIsMounted] = useState(false);
-    
-    useEffect(() => {
-        setIsMounted(true);
-    },[]);
-	const [mState, setMainState] = useMainState()
-	// const openModal = (type) => {
-	// 	setMainState({
-	// 	  ...mState,
-	// 	  modal: {
-	// 		visibility: true,
-	// 		type: type
-	// 	  }
-	// 	})
-	// }
-  	const piso = statePiso()
-   let currentSection = `¡Estamos en el piso número ${piso}!`
-   if (mState.group == 'dos') { currentSection = `¡Estamos en el edificio número ${piso}!`}
+const RightBar = ({ active, close }) => {
+   const [isMounted, setIsMounted] = useState(false);
 
-	return (
-		<Container active={active}>
-			<Header>
-					<CloseImg 
-						onClick={close}
-						src={`${prefix}/imgs/exit.png`}
-					/>
-			</Header>
-			<Contenedor>
-			<Pis>{currentSection}</Pis>
-         <GroupSel/>
-			<Calendar/>
-			
-			<NotiWidget open={()=>openModal('Noticiero')}/>
-			{/* <a href="https://drive.google.com/file/d/1gjLNIgF3h0M2DEksdszSECtPe2O439b7/view?usp=sharing" target="_blank" rel="noreferrer">
+   useEffect(() => {
+      setIsMounted(true);
+   }, []);
+   const [mState, setMainState] = useMainState()
+   // const openModal = (type) => {
+   // 	setMainState({
+   // 	  ...mState,
+   // 	  modal: {
+   // 		visibility: true,
+   // 		type: type
+   // 	  }
+   // 	})
+   // }
+   const piso = statePiso()
+   let currentSection = `¡Estamos en el piso número ${piso}!`
+   if (mState.group == 'dos') { currentSection = `¡Estamos en el edificio número ${piso}!` }
+
+   return (
+      <Container active={active}>
+         <Header>
+            <CloseImg
+               onClick={close}
+               src={`${prefix}/imgs/exit.png`}
+            />
+         </Header>
+         <Contenedor>
+            <Pis>{currentSection}</Pis>
+            <GroupSel />
+            <Calendar />
+
+            <NotiWidget open={() => openModal('Noticiero')} />
+            {/* <a href="https://drive.google.com/file/d/1gjLNIgF3h0M2DEksdszSECtPe2O439b7/view?usp=sharing" target="_blank" rel="noreferrer">
 				<ItemB data-tip data-for="dscTooltipPils">
 					<img src={`${prefix}/imgs/pil2.png`}/>
 					Pildoras de la semana
 				</ItemB>
 			</a> */}
-			{/* <HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
+            {/* <HallFame onClick={()=>openModal('Salon de la Fama')} data-tip data-for="dscTooltipHF">
 				<Image src={`${prefix}/imgs/principal/hallfame.png`} alt=""/>
 				Salon de la Fama
 			</HallFame> */}
 
-         <HallFame data-tip data-for="dscTooltipHF">
-				<Image src={`${prefix}/imgs/principal/puzzle.png`} alt=""/>
-				Guía del Jugador
-			</HallFame>
+            <a href='/info/guide'>
+               <HallFame data-tip data-for="dscTooltipHF">
+                  <Image src={`${prefix}/imgs/principal/puzzle.png`} alt="" />
+                  Guía del Jugador
+               </HallFame>
+            </a>
 
-			{isMounted &&<ReactTooltip id="dscTooltipPils" place='left' type='info'>
-				Informacion para la Semana
-			</ReactTooltip>}
+            {isMounted && <ReactTooltip id="dscTooltipPils" place='left' type='info'>
+               Informacion para la Semana
+            </ReactTooltip>}
 
-			{isMounted &&<ReactTooltip id="dscTooltipHF" place='left' type='info'>
-				Aquí encontraras la guía del juego
-			</ReactTooltip>}
-			</Contenedor>
-		</Container>
-	);
+            {isMounted && <ReactTooltip id="dscTooltipHF" place='left' type='info'>
+               Aquí encontraras la guía del juego
+            </ReactTooltip>}
+         </Contenedor>
+      </Container>
+   );
 }
 
 export default RightBar;
