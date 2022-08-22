@@ -38,7 +38,7 @@ const Actors = () => {
       setSelected(opti);
    }
    return (
-      <QV pg="Asesores">
+      <QV pg="Asesores & Expertos">
          <Header
             title="Asesores & Expertos"
             desc="Aqui puedes conocer a los asesores y expertos del juego"
