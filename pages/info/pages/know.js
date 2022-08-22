@@ -103,7 +103,6 @@ const Know = () => {
 	const [sel, setSel] = useState(data[0])
 	const [item, setItem] = useState(0)
 
-
 	return <Cont>
 		<Title>_Conoce Quanticon Valley</Title>
 		<Selector>

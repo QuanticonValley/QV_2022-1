@@ -8,11 +8,9 @@ import styled from 'styled-components'
 import QV from '../../UIcomponents/qv';
 import Header from '../../UIcomponents/header'
 
-import About from './pages/about'
-import Know from './pages/know'
-import Guide from './pages/guide'
-import NavQV from './pages/navqv'
-// import Faqs from './pages/faqs'
+import Syllabus from './pages/syllabus'
+import GuideStudent from './pages/guideStudent'
+import GuideProfessor from './pages/guideProfessor'
 
 const imgInfo = `${prefix}/imgs/header/info.png`
 const Cont = styled.div`
@@ -66,56 +64,40 @@ const Info = () => {
 		setBarPos(barRef?.current?.getBoundingClientRect())
 	}, [type])
 
-	return <QV pg="Acerca del juego">
+	return <QV pg="Guías Generales">
 		<Header
-			title="Información"
-			desc="Acerca del juego"
+			title="Guías Generales"
+			desc="Guías del juegos"
 			imgH={imgInfo}
 		/>
 		<Selector ref={selRef}>
-			<Link href='/info/about' passHref>
+			{/* <Link href='/general/syllabus' passHref>
 				<SelItem 
-					active={type==='about'}
-					ref={type==='about'? barRef : null}
+					active={type==='syllabus'}
+					ref={type==='syllabus'? barRef : null}
 				>
-				GENERALIDADES DEL JUEGO
-			</SelItem></Link>
-			{/* <Link href='/info/conoceQV' passHref>
-				<SelItem 
-					active={type==='conoceQV'}
-					ref={type==='conoceQV'? barRef : null}
-				>
-				CONOCE QV
+				SYLLABUS
 			</SelItem></Link> */}
-			<Link href='/info/guide' passHref>
+			<Link href='/general/guideStudent' passHref>
 				<SelItem 
-					active={type==='guide'}
-					ref={type==='guide'? barRef : null}
+					active={type==='guideStudent'}
+					ref={type==='guideStudent'? barRef : null}
 				>
-				GUÍA DEL JUGADOR
+				GUÍA DEL ESTUDIANTE
 			</SelItem></Link>
-			<Link href='/info/navqv' passHref>
+			<Link href='/general/guideProfessor' passHref>
 				<SelItem 
-					active={type==='navqv'}
-					ref={type==='navqv'? barRef : null}
+					active={type==='guideProfessor'}
+					ref={type==='guideProfessor'? barRef : null}
 				>
-				NAVEGACIÓN QUANTICON VALLEY
+				GUÍA DEL PROFESOR
 			</SelItem></Link>
-			{/* <Link href='/info/faqs' passHref>
-				<SelItem 
-					active={type==='faqs'}
-					ref={type==='faqs'? barRef : null}
-				>
-				FAQS
-			</SelItem></Link> */}
 			<SelBar x={bx} y={by} w={bw}/>
 		</Selector>
 		<Cont>
-			{type === 'about' 	&& (<About />)}
-			{type === 'conoceQV'&& (<Know />)}
-			{type === 'guide'&& (<Guide />)}
-			{type === 'navqv'&& (<NavQV />)}
-			{/* {type === 'faqs' 		&& (<Faqs />)} */}
+			{/* {type === 'syllabus' 	&& (<Syllabus />)} */}
+			{type === 'guideStudent'&& (<GuideStudent />)}
+			{type === 'guideProfessor'&& (<GuideProfessor />)}
 		</Cont>
 	</QV>
 }

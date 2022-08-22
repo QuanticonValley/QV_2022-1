@@ -40,9 +40,9 @@ const data = {
 		},
       {
 			title: 'Guías Generales',
-			link: '/info/about',
+			link: '/general/guideStudent',
 			src: `${prefix}/imgs/main/Icon_Informacion.svg`,
-			dsc: 'Para Conocer y Saber mas de Quanticon Valley'
+			dsc: 'Guías generales del juego'
 		},
 		{
 			title: 'Acerca del juego',
