@@ -307,21 +307,21 @@ const Login = (props) => {
          <TitleBox>
             <Title>Conoce a los ganadores de la décima edición</Title>
          </TitleBox>
-         <Grid>
-            <Noti
+         {/* <Grid> */}
+            {/* <Noti
                src={`${prefix}/imgs/principal/lastNoti.png`}
                onClick={() => openModal("Noticiero")}
-            />
+            /> */}
             <MejoresProyectos
                href={
-                  "https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"
+                  "https://ingenieria.bogota.unal.edu.co/tpi/tpi-expoideas/tpi-expoideas-2022-1?id=519"
                }
                target="_blank"
                rel="noreferrer"
             >
                ¡Conoce los proyectos desarrollados por los ganadores!
             </MejoresProyectos>
-         </Grid>
+         {/* </Grid> */}
 
          <TitleBox>
             <Title>Conoce a los actores de Quanticon Valley</Title>

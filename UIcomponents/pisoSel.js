@@ -63,21 +63,21 @@ const PisosSel = () => {
       </Selector>
    );
 
-   if (mState.group == "cuatro") {
-      seccion = (
-         <Selector>
-            {[1, 2, 3, 4, 5, 6].map((item) =>
-               <SelItem
-                  onClick={() => set(item)}
-                  primary={mState.piso === item}
-                  key={item.toString()}
-               >
-                  Piso {item}
-               </SelItem>
-            )}
-         </Selector>
-      );
-   }
+   // if (mState.group == "cuatro") {
+   //    seccion = (
+   //       <Selector>
+   //          {[1, 2, 3, 4, 5, 6].map((item) =>
+   //             <SelItem
+   //                onClick={() => set(item)}
+   //                primary={mState.piso === item}
+   //                key={item.toString()}
+   //             >
+   //                Piso {item}
+   //             </SelItem>
+   //          )}
+   //       </Selector>
+   //    );
+   // }
 
    return seccion;
 }

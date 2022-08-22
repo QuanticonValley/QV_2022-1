@@ -43,6 +43,7 @@ const events = [
    { d: 17, m: 11, y: 2022, expires: 'Fin zona de\nbúsqueda de expertos\n\nEntregables:\nFormulario charla\nde emprendimiento' },
    { d: 21, m: 11, y: 2022, event: 'Mentoría\nLugar: Salones 2do piso CyT', expires: 'Inicio zona inversión\nde asesores\nEntregables: Trabajo escrito final (también subirlo a página WIX)' },
    { d: 23, m: 11, y: 2022, event: 'Feria: Ingenia Futuro\nLugar: Plaza', expires: 'Evaluación pitch final, página web y prototipo' },
+   { d: 27, m: 11, y: 2022, expires: 'Encuesta de percepción de la asignatura' },
    { d: 28, m: 11, y: 2022, event: 'Gran Final\nLugar: Auditorio CyT' },
    { d: 30, m: 11, y: 2022, event: 'Mentoría de retroalimentación\nLugar: Salones 2do piso CyT', expires: 'Entregables:\nEvaluación de desempeño 2,\nNota apreciativa del mentor' },
 ]

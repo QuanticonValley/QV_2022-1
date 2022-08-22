@@ -94,7 +94,8 @@ const NavCont = ({ pg }) => {
 
    return (
       <Container>
-         <NavImg src={navImg} alt="nav-img" />
+         
+         <NavImg style={{zIndex: "-1"}} src={navImg} alt="nav-img" />
          <Link href={"/principal"} passHref>
             <Logo src={logo} alt="logo" />
          </Link>

@@ -174,12 +174,17 @@ const RightBar = ({active, close}) => {
 				Salon de la Fama
 			</HallFame> */}
 
+         <HallFame data-tip data-for="dscTooltipHF">
+				<Image src={`${prefix}/imgs/principal/puzzle.png`} alt=""/>
+				Guía del Jugador
+			</HallFame>
+
 			{isMounted &&<ReactTooltip id="dscTooltipPils" place='left' type='info'>
 				Informacion para la Semana
 			</ReactTooltip>}
 
 			{isMounted &&<ReactTooltip id="dscTooltipHF" place='left' type='info'>
-				Tabla de Clasificación 
+				Aquí encontraras la guía del juego
 			</ReactTooltip>}
 			</Contenedor>
 		</Container>

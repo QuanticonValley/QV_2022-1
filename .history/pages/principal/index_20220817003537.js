@@ -316,13 +316,13 @@ const Principal = () => {
       </Grid>
 
       <TitleBox>
-        <Title>Conoce a los ganadores de la décima edición</Title>
+        <Title>Conoce a los ganadores de la undécima edición</Title>
       </TitleBox>
       <Grid>
-        <Noti
+        {/* <Noti
           src={`${prefix}/imgs/principal/lastNoti.png`}
           onClick={() => openModal("Noticiero")}
-        />
+        /> */}
         <MejoresProyectos
           href={
             "https://ingenieria.unal.edu.co/tpi/index.php/tpi-expoideas/tpi-expoideas-2021-3?id=513"

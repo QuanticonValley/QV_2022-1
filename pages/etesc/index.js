@@ -93,8 +93,7 @@ const Etesc = () => {
 		if(a===3){open3===0?setOpen3(1600):setOpen3(0);}
 	}
 
-   let tituloRetos = 'Retos de piso';
-   if (group == 'dos') { tituloRetos = 'Retos de edificio' }
+   let tituloRetos = 'Retos de edificio';
 
 	return <QV pg="ETESC">
 		<Header
@@ -127,7 +126,7 @@ const Etesc = () => {
 						<ListItems data={pisoCont} tipo={1}></ListItems>
 				</Content>
 			</Card>
-			<Card>
+			{/* <Card>
 				<Head onClick={()=>cambio(2)}>
 					{open2===0
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
@@ -137,14 +136,14 @@ const Etesc = () => {
 				<Content alt={open2}>
                     <ListItems data={pisoCont} tipo={2}></ListItems>
 				</Content>
-			</Card>
+			</Card> */}
 			<Card>
 				<Head onClick={()=>cambio(3)}>
 					{open3===0
 					?<Icon src={`${prefix}/imgs/main/Icon_flecha_abajo.png`}></Icon>
 					:<Icon src={`${prefix}/imgs/main/Icon_flecha_arriba.png`}></Icon>
 					}
-					<TitleCont>Encuestas</TitleCont></Head>
+					<TitleCont>Charlas & Encuestas</TitleCont></Head>
 				<Content alt={open3}>
                     <ListItems data={pisoCont} tipo={3}></ListItems>
 				</Content>

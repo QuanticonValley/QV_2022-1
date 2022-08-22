@@ -77,15 +77,15 @@ const Info = () => {
 					active={type==='about'}
 					ref={type==='about'? barRef : null}
 				>
-				ACERCA DE
+				GENERALIDADES DEL JUEGO
 			</SelItem></Link>
-			<Link href='/info/conoceQV' passHref>
+			{/* <Link href='/info/conoceQV' passHref>
 				<SelItem 
 					active={type==='conoceQV'}
 					ref={type==='conoceQV'? barRef : null}
 				>
 				CONOCE QV
-			</SelItem></Link>
+			</SelItem></Link> */}
 			<Link href='/info/guide' passHref>
 				<SelItem 
 					active={type==='guide'}
@@ -93,13 +93,20 @@ const Info = () => {
 				>
 				GUÍA DEL JUGADOR
 			</SelItem></Link>
-			<Link href='/info/faqs' passHref>
+			<Link href='/info/nav-qv' passHref>
+				<SelItem 
+					active={type==='nav-qv'}
+					ref={type==='nav-qv'? barRef : null}
+				>
+				NAVEGACIÓN QUANTICON VALLEY
+			</SelItem></Link>
+			{/* <Link href='/info/faqs' passHref>
 				<SelItem 
 					active={type==='faqs'}
 					ref={type==='faqs'? barRef : null}
 				>
 				FAQS
-			</SelItem></Link>
+			</SelItem></Link> */}
 			<SelBar x={bx} y={by} w={bw}/>
 		</Selector>
 		<Cont>

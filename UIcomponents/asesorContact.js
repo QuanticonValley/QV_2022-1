@@ -26,9 +26,9 @@ const List = () => {
   return (
     <Ul>
       <Li>Preparar un correo con el Asunto: <strong>TPI-SolicitudAsesoria-GXX</strong> donde XX es el numero de tu grupo</Li>
-      <Li>En el cuerpo del correo escribe tu <strong>Horario</strong> (2-4pm o 4-6pm), el <strong>Numero y Nombre de tu grupo</strong> y <strong>el Nombre del Asesor</strong> con el que deseas solicitar una reunion.</Li>
-      <Li>Adicionalmente puedes definir un <strong>Dia y Hora</strong> en la que tu grupo podria estar disponible. (la fecha y hora final dependera de la disponibilidad del asesor)</Li>
-      <Li>Enviar el mensaje al <strong>Monitor Correspondiente</strong> que aparece abajo, ellos se comunicaran contigo y organizaran una fecha para reunirse con el asesor.</Li>
+      <Li>En el cuerpo del correo escribe tu <strong>Horario</strong> (2-4pm o 4-6pm), el <strong>número y nombre de tu grupo</strong> y <strong>el nombre del asesor</strong> con el que deseas solicitar una reunion.</Li>
+      <Li>Adicionalmente puedes definir un <strong>día y hora</strong> en la que tu grupo podria estar disponible. (la fecha y hora final dependera de la disponibilidad del asesor)</Li>
+      <Li>Enviar el mensaje al correo que aparece abajo,  el experto o asesor se comunicaran contigo y acordará con tu equipo la fecha para reunirse.</Li>
     </Ul>
   )
 }
@@ -39,8 +39,10 @@ const AseContact = ({ asesor }) => {
       <h3>Instrucciones para solicitar una Asesoria</h3>
       <p>Si deseas recibir una asesoria para apoyar el desarrollo de tu proyecto debes:</p>
       <List/>
-      <h4>Monitor :</h4>
-      <p>{asesor.nombreMon} - <strong>{asesor.correoMon}</strong></p>
+      <h4>Correo del asesor:</h4>
+      <p>{asesor.correoMon}</p>
+      <br/>
+      <p><strong>Nota:</strong> es muy importante que envíen el <strong>correo con copia a tpi_fibog@unal.edu.co</strong> para que sean tenidos en cuenta los innocoins y para llevar la trazabilidad de las reuniones agendadas.</p>
     </Container>
   )
 }
