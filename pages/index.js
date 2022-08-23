@@ -295,7 +295,8 @@ const Login = (props) => {
                url={
                   mState.group == 'dos'
                      ? 'https://youtu.be/xAroZDRREYo'
-                     : 'https://youtu.be/PAD8gZCSx0o'
+                     : null
+                     // : 'https://youtu.be/PAD8gZCSx0o'
                }
                className='react-player'
                width='100%'

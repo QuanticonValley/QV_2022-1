@@ -41,33 +41,40 @@ const NotiWidget = ({ open }) => {
    const video = noti[0]
       ? noti[0].video : null
    return (
-      <Container onClick={open}>
-         <Img src={`${prefix}/imgs/noti/news.png`} data-tip data-for="dscTooltipNoti" />
-         {video ?
-            <iframe
-               // src={`https://www.youtube.com/embed/${video}`}
-               src={
-                  mState.group == 'dos'
-                  ? 'https://www.youtube.com/embed/xAroZDRREYo'
-                  : 'https://www.youtube.com/embed/PAD8gZCSx0o'
-               }
-               frameBorder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-               allowFullScreen
-               title="Noticias"
-               style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  width: '100%',
-                  height: '80%',
-                  borderRadius: '0 0 1em 1em'
-               }}
-            /> : null}
 
-         {isMounted && <ReactTooltip id="dscTooltipNoti" place='left' type='info'>
-            Revisa todos los Noticieros
-         </ReactTooltip>}
+      <Container onClick={open}>
+         {
+            mState.group == 'dos'
+               ? <div>
+                  <Img src={`${prefix}/imgs/noti/news.png`} data-tip data-for="dscTooltipNoti" />
+                  {video ?
+                     <iframe
+                        // src={`https://www.youtube.com/embed/${video}`}
+                        src={
+                           mState.group == 'dos'
+                              ? 'https://www.youtube.com/embed/xAroZDRREYo'
+                              : 'https://www.youtube.com/embed/PAD8gZCSx0o'
+                        }
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Noticias"
+                        style={{
+                           position: 'absolute',
+                           bottom: 0,
+                           left: 0,
+                           width: '100%',
+                           height: '80%',
+                           borderRadius: '0 0 1em 1em'
+                        }}
+                     /> : null}
+
+                  {isMounted && <ReactTooltip id="dscTooltipNoti" place='left' type='info'>
+                     Revisa todos los Noticieros
+                  </ReactTooltip>}
+               </div>
+               : null
+         }
       </Container>
    );
 }
