@@ -7,7 +7,7 @@ const events = [
    { d: 19, m: 8, y: 2022, expires: 'Entregables:\nFormulario charla roles de personalidad,\nEncuesta de conocimientos previos' },
    { d: 22, m: 8, y: 2022, event: 'Mentoria\nLugar: Salones 2do piso CyT', expires: 'Inicia zona de búsqueda de expertos' },
    { d: 24, m: 8, y: 2022, event: 'Charla: 6 roles de compañia\nLugar: Auditorio CyT,\nluego salones\nde clase 2do piso' },
-   { d: 26, m: 8, y: 2022, expires: 'Entregables:\nFormulario charla 6 roles de compañia,\nInscripción de ideas de emprendimiento' },
+   { d: 26, m: 8, y: 2022, expires: 'Entregables:\nFormulario charla 6 roles de compañia' },
    { d: 29, m: 8, y: 2022, event: 'Charla de ética\nLugar: Auditorio CyT,\nluego salones\nde clase 2do piso', expires: 'Entrega acta de compromiso' },
    { d: 31, m: 8, y: 2022, event: 'Charla:\nBases de un pitch\nLugar: Auditorio CyT' },
    { d: 2, m: 9, y: 2022, expires: 'Entregables:\nFormulario charla\nbases de un pitch' },
