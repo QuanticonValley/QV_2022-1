@@ -103,12 +103,12 @@ const NavCont = ({ pg }) => {
             return (
                <span key={item.link}>
                   {item.title == 'Ranking'
-                     ? <Link href={item.link} passHref>
+                     ? 
                         <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()} onClick={_openModal}>
                            <Icon src={item.src} alt={item.link} />
                            <Text>{item.title}</Text>
                         </Button>
-                     </Link>
+                     
                      : <Link href={item.link} passHref>
                         <Button active={item.title === pg} data-tip data-for={"dscTooltip" + i.toString()}>
                            <Icon src={item.src} alt={item.link} />
