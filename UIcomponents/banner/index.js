@@ -14,7 +14,7 @@ const Gallery = () => {
          <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="3000" >
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/01.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/02.png`} onDragStart={handleDragStart} className="sliderimg" />
-            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/03.png`} onDragStart={handleDragStart} className="sliderimg" />
+            {/* <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/03.png`} onDragStart={handleDragStart} className="sliderimg" /> */}
          </AliceCarousel>
       );
    }
