@@ -1,9 +1,8 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { useMainState } from '../../libs/stateHooks'
 import { prefix } from '../../utils/prefix.js';
-// import image1 from '../../public/imgs/banner/editable.jpg'
+import { useMainState } from '../../libs/stateHooks'
 
 const handleDragStart = (e) => e.preventDefault();
 

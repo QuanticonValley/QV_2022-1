@@ -34,7 +34,7 @@ const data = {
 		},
       {
 			title: 'Test de roles',
-			link: '/role',
+			link: '/roleTest/stats',
 			src: `${prefix}/imgs/main/Icon_actores.svg`,
 			dsc: 'Prueba de roles'
 		},
