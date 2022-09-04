@@ -23,14 +23,14 @@ const GuideProfessor = () => {
       <Title></Title>
       {
          mState.group == 'dos'
-            ? <Pdf file={"content/Guia de trabajo profesor mentor - emprendimiento 2022-3.pdf"}></Pdf>
-            : <Pdf file={"content/Guía de trabajo profesor mentor - innovación abierta 2022-3.pdf"}></Pdf>
+            ? <Pdf file={"content/TPI - Guía de trabajo profesor mentor - emprendimiento 2022-3.pdf"}></Pdf>
+            : <Pdf file={"content/TPI - Guía de trabajo profesor mentor - innovación abierta 2022-3.pdf"}></Pdf>
       }
 
       {
          mState.group == 'dos'
-            ? <ExtLink><a href={`${prefix}/content/Guia de trabajo profesor mentor - emprendimiento 2022-3.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
-            : <ExtLink><a href={`${prefix}/content/Guía de trabajo profesor mentor - innovación abierta 2022-3.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
+            ? <ExtLink><a href={`${prefix}/content/TPI - Guía de trabajo profesor mentor - emprendimiento 2022-3.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
+            : <ExtLink><a href={`${prefix}/content/TPI - Guía de trabajo profesor mentor - innovación abierta 2022-3.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
       }
    </div>
 }
