@@ -22,7 +22,7 @@
                   "¿Cómo hacerlo?\n",
                   "Presentación Lina Cuervo",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812896",
-                  "TODOS",
+                  "icon-resources",
                   "Pregunta esencial",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812903"
                ],
@@ -30,13 +30,13 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu propuesta aquí",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=850492",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la feria de ideas, 29 de agosto 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -47,19 +47,19 @@
                   "¿Cómo hacerlo?\n",
                   "Acta de compromiso y perfiles de roles",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=844126",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu acta de compromiso aquí",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=849895",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Permanentemente por el equipo",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -70,7 +70,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de pitch de Edificio 1 (Infografía)",
                   "",
-                  "TODOS",
+                  "icon-resources",
                   "Metodología Vester y árbol de problemas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812929",
                   "Como hacer un PESTAL",
@@ -84,7 +84,7 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu pitch Edificio 1 (Infografía) FORMATIVA aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812919",
-                  "TODOS",
+                  "icon-upload",
                   "Consulta tu nota de pitch Edificio 1 (Infografía) SUMATIVA aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812920"
                ],
@@ -92,7 +92,7 @@
                   "¿Cómo se evalúa?\n",
                   "Rúbrica pitch Edificio 1 (Infografía)",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812910",
-                  "TODOS",
+                  "icon-qualification",
                   "Grabaciones Pitch Edificio 1 (Infografía)",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=812933"
                ]
@@ -105,19 +105,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía avance del trabajo escrito",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812913",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu avance del trabajo escrito aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812921",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica avance del trabajo escrito",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812911",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -127,27 +127,27 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850663",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Video charla 1",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850665",
-                  "TODOS"
+                  "icon-video"
                ],
                [
                   "Encuesta charla 1",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812962",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Encuesta conocimientos previos",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812909",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=851306&chapterid=9998",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -157,22 +157,22 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812896",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Vídeo charla 2",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850672",
-                  "TODOS"
+                  "icon-video"
                ],
                [
                   "Encuesta charla 2",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812894",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851387&forceview=1",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -182,17 +182,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850676",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 3",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812895",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851407&forceview=1",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -202,17 +202,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850685",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 4",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812922",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851630&forceview=1",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -222,17 +222,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850691",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 5",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812923",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851650&forceview=1",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -242,17 +242,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=850802",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 6",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812924",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851729&forceview=1",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -262,17 +262,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851786",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 7",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812925",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851789",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -282,17 +282,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851803",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 8",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812928",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851804",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
@@ -305,19 +305,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de desempeño 1",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812940",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n19 de octubre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -328,19 +328,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de trabajo en equipo",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812941",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n19 de octubre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -351,7 +351,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de pitch de Edificio 2 (Prototipo)",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812937",
-                  "TODOS",
+                  "icon-resources",
                   "Modelo de negocio",
                   "https://www.youtube.com/watch?v=ZQgXyiozmYY",
                   "Propuesta de valor",
@@ -361,13 +361,13 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu pitch Edificio 2 (Prototipo) aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812939",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica pitch Edificio 2 (Prototipo)",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812937",
-                  "TODOS",
+                  "icon-qualification",
                   "Grabaciones Pitch Edificio 2 (Prototipo)",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=812938"
                ]
@@ -380,19 +380,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía diseño preliminar página Wix",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu diseño preliminar página Wix aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812944",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica diseño preliminar página Wix",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812936",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -402,17 +402,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 9",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812942",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -422,17 +422,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=812946",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 10 (UNLab 4.0, LAB101, diseño)",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812947",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -442,17 +442,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 11",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812943",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -462,17 +462,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 12",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=812945",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
@@ -485,7 +485,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de presentación pitch Edificio 3",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812955",
-                  "TODOS",
+                  "icon-resources",
                   "Guía de participación para estudiantes",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812954",
                   "Guía de participación para profesores",
@@ -495,13 +495,13 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu presentación en TPI+Expoideas (Emprendimiento) aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812958",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbricas presentación en Expoideas (Emprendimiento)",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812948",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -512,19 +512,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de página Wix",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu documentación TPI+Expoideas (página wix + video 1 min) aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812956",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica página Wix",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812950",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -535,19 +535,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de presentación prototipo",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812955",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu prototipo final aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812959",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica prototipo final",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812949",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -558,19 +558,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía trabajo escrito final",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=812952",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu trabajo escrito final aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812957",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica trabajo escrito final",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=812951",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -581,19 +581,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de desempeño 2",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n30 de noviembre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -604,7 +604,7 @@
                   "¿Cómo se evalúa?\n",
                   "Consulta aquí la nota apreciativa que te ha dado tu mentor",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=812960",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -614,17 +614,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 13",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -634,12 +634,12 @@
                [
                   "Llena tu encuesta aquí",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812961",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
@@ -654,19 +654,19 @@
                   "¿Cómo hacerlo?\n",
                   "Acta de compromiso y perfiles de roles",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=844128",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu acta de compromiso aquí",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=849894",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Permanentemente por el equipo",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -677,7 +677,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de pitch de Edificio 1 (Infografía)",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=813035",
-                  "TODOS",
+                  "icon-resources",
                   "Metodología Vester y árbol de problemas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=813025",
                   "Como hacer un PESTAL",
@@ -691,7 +691,7 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu pitch Edificio 1 (Infografía) FORMATIVA aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=813033",
-                  "TODOS",
+                  "icon-upload",
                   "Consulta tu nota de pitch Edificio 1 (Infografía) SUMATIVA aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=851919"
                ],
@@ -699,7 +699,7 @@
                   "¿Cómo se evalúa?\n",
                   "Rúbrica pitch Edificio 1 (Infografía)",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=813034",
-                  "TODOS",
+                  "icon-qualification",
                   "Grabaciones Pitch Edificio 1 (Infografía)",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=813036"
                ]
@@ -712,19 +712,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía avance del trabajo escrito",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=840124",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu avance del trabajo escrito aquí",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=840172",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica avance del trabajo escrito",
                   "https://micampus.unal.edu.co/mod/folder/view.php?id=840176",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -734,22 +734,22 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851927",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 1",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812972",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Encuesta conocimientos previos",
                   "https://micampus.unal.edu.co/mod/feedback/view.php?id=812973",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=851948",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -759,17 +759,17 @@
                [
                   "Diapositivas",
                   "https://drive.google.com/file/d/11OGqCYcDTVyhalLIrVqDaiVLhbcI6jIL/view?usp=sharing",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 2",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=813017",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851964",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -779,17 +779,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851985",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 3",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=844282",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851986",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -799,17 +799,17 @@
                [
                   "Diapositivas",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=852396",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 4",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=847881",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=852397",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -819,17 +819,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 5",
                   "https://micampus.unal.edu.co/mod/url/view.php?id=813032",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -839,17 +839,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 6",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -859,17 +859,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 7",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
@@ -882,19 +882,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de desempeño 1",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=840203",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n19 de octubre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -905,19 +905,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de trabajo en equipo",
                   "https://micampus.unal.edu.co/mod/assign/view.php?id=840204",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n19 de octubre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -928,7 +928,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de pitch de Edificio 2 (Prototipo)",
                   "",
-                  "TODOS",
+                  "icon-resources",
                   "Modelo de negocio",
                   "https://www.youtube.com/watch?v=ZQgXyiozmYY",
                   "Propuesta de valor",
@@ -938,13 +938,13 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu pitch Edificio 2 (Prototipo) aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica pitch Edificio 2 (Prototipo)",
                   "",
-                  "TODOS",
+                  "icon-qualification",
                   "Grabaciones Pitch Edificio 2 (Prototipo)",
                   ""
                ]
@@ -957,19 +957,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía diseño preliminar página Wix",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu diseño preliminar página Wix aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica diseño preliminar página Wix",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -979,17 +979,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 8",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ],
@@ -999,17 +999,17 @@
                [
                   "Diapositivas",
                   "",
-                  "TODOS"
+                  "icon-slide"
                ],
                [
                   "Encuesta charla 9",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
@@ -1022,7 +1022,7 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de presentación pitch Edificio 3",
                   "",
-                  "TODOS",
+                  "icon-resources",
                   "Guía de participación para estudiantes",
                   "",
                   "Guía de participación para profesores",
@@ -1032,13 +1032,13 @@
                   "¿Dónde se entrega?\n",
                   "Entrega tu presentación en TPI+Expoideas (Innovación Abierta) aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbricas presentación en Expoideas (Innovación Abierta)",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1049,19 +1049,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de página Wix",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu documentación TPI+Expoideas (página wix + video 1 min) aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica página Wix",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1072,19 +1072,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía de presentación prototipo",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu prototipo final aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica prototipo final",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1095,19 +1095,19 @@
                   "¿Cómo hacerlo?\n",
                   "Guía trabajo escrito final",
                   "",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Entrega tu trabajo escrito final aquí",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "Rúbrica trabajo escrito final",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1118,19 +1118,19 @@
                   "¿Cómo hacerlo?\n",
                   "En equipos, bajo las instrucciones del profesor mentor",
                   "N/A",
-                  "TODOS"
+                  "icon-resources"
                ],
                [
                   "¿Dónde se entrega?\n",
                   "Formulario evalúación de desempeño 2",
                   "",
-                  "TODOS"
+                  "icon-upload"
                ],
                [
                   "¿Cómo se evalúa?\n",
                   "En la clase de mentoría del\n30 de noviembre 2022",
                   "N/A",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1141,7 +1141,7 @@
                   "¿Cómo se evalúa?\n",
                   "Consulta aquí la nota apreciativa que te ha dado tu mentor",
                   "",
-                  "TODOS"
+                  "icon-qualification"
                ]
             ]
          ],
@@ -1151,12 +1151,12 @@
                [
                   "Llena tu encuesta aquí",
                   "",
-                  "TODOS"
+                  "icon-survey"
                ],
                [
                   "Resultados de encuesta",
                   "",
-                  "TODOS"
+                  "icon-stats"
                ]
             ]
          ]
