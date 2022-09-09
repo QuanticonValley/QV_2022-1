@@ -71,13 +71,13 @@ const Info = () => {
 			imgH={imgInfo}
 		/>
 		<Selector ref={selRef}>
-			{/* <Link href='/general/syllabus' passHref>
+			<Link href='/general/syllabus' passHref>
 				<SelItem 
 					active={type==='syllabus'}
 					ref={type==='syllabus'? barRef : null}
 				>
 				SYLLABUS
-			</SelItem></Link> */}
+			</SelItem></Link>
 			<Link href='/general/guideStudent' passHref>
 				<SelItem 
 					active={type==='guideStudent'}
@@ -95,7 +95,7 @@ const Info = () => {
 			<SelBar x={bx} y={by} w={bw}/>
 		</Selector>
 		<Cont>
-			{/* {type === 'syllabus' 	&& (<Syllabus />)} */}
+			{type === 'syllabus' 	&& (<Syllabus />)}
 			{type === 'guideStudent'&& (<GuideStudent />)}
 			{type === 'guideProfessor'&& (<GuideProfessor />)}
 		</Cont>

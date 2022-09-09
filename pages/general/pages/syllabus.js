@@ -19,8 +19,8 @@ const ExtLink= styled.div`
 const Syllabus = () => {
 	return <div>
 		<Title></Title>
-		<Pdf file={"content/Guia del Jugador 2022-3.pdf"}></Pdf>
-		<ExtLink><a href={`${prefix}/content/Guia del Jugador 2022-3.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
+		<Pdf file={"content/TPI - Syllabus 2022-2.pdf"}></Pdf>
+		<ExtLink><a href={`${prefix}/content/TPI - Syllabus 2022-2.pdf`} target="_blank" rel="noreferrer">¿Cargar en una pestaña nueva?</a></ExtLink>
     </div>
 }
 

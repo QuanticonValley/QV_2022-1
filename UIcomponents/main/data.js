@@ -40,7 +40,7 @@ const data = {
 		},
       {
 			title: 'Guías Generales',
-			link: '/general/guideStudent',
+			link: '/general/syllabus',
 			src: `${prefix}/imgs/main/Icon_Informacion.svg`,
 			dsc: 'Guías generales del juego'
 		},
