@@ -2,7 +2,7 @@
 	"hallFame" : {
 		"studio" : {
 			"dos": "https://datastudio.google.com/embed/reporting/7671cf5a-d774-4b46-880c-23647fc20e18/page/jPHdC",
-			"cuatro": "https://datastudio.google.com/embed/reporting/b2e81457-d8e9-4159-9018-5a9ce44dc68c/page/QnbdC"
+			"cuatro": "https://datastudio.google.com/embed/reporting/8a7a7dab-a2fd-48e2-9815-8dd6e439fc7d/page/QnbdC"
 		},
 		"btns" : [ 
 			{"gr": "dos",    "name": "Horario 2-4"} ,
