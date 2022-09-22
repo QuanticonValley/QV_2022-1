@@ -260,8 +260,13 @@
             "Charla 7: Emprendimiento Social\n📅 Miércoles, 7 de septiembre 2022",
             [
                [
-                  "Diapositivas",
+                  "Diapositivas Emprendimiento Social",
                   "https://micampus.unal.edu.co/mod/book/view.php?id=853758&chapterid=10134",
+                  "icon-slide"
+               ],
+               [
+                  "Diapositivas Teoría del Emprendimiento Social",
+                  "",
                   "icon-slide"
                ],
                [
@@ -292,6 +297,21 @@
                [
                   "Resultados de encuesta",
                   "https://micampus.unal.edu.co/mod/page/view.php?id=851804",
+                  "icon-stats"
+               ]
+            ]
+         ],
+         "11": [
+            "Percepción desempeño docente",
+            [
+               [
+                  "Encuesta de percepción desempeño docente",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=855504",
+                  "icon-survey"
+               ],
+               [
+                  "Resultados de encuesta",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=855507",
                   "icon-stats"
                ]
             ]
