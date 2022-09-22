@@ -11,7 +11,7 @@ const Gallery = () => {
 
    if (mState.group == "dos") {
       return (
-         <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="3000" >
+         <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000" >
             <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
                <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/00.png`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
@@ -24,7 +24,7 @@ const Gallery = () => {
 
    else {
       return (
-         <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="3000">
+         <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000">
             <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
                <img width="90%" src={`${prefix}/imgs/banner/innovacion/00.png`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
