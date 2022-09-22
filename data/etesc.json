@@ -892,6 +892,21 @@
                   "icon-stats"
                ]
             ]
+         ],
+         "10": [
+            "Percepción desempeño docente",
+            [
+               [
+                  "Encuesta de percepción desempeño docente",
+                  "https://micampus.unal.edu.co/mod/url/view.php?id=855512",
+                  "icon-survey"
+               ],
+               [
+                  "Resultados de encuesta",
+                  "https://micampus.unal.edu.co/mod/page/view.php?id=855513",
+                  "icon-stats"
+               ]
+            ]
          ]
       },
       "2": {
