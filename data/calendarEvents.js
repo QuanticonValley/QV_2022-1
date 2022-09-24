@@ -26,7 +26,7 @@ const events = [
    { d: 3, m: 10, y: 2022, event: 'Reto de Piso:\n Pitch 1.0 (infografía)\nLugar: Salones 2do y 3er piso CyT' },
    { d: 5, m: 10, y: 2022, event: 'Charla:\nConstrucción del\nBuyer persona (1a hora)\nMentoría (2da hora)\nLugar: Auditorio CyT,\nluego salones\nde clase 2do y 3er piso' },
    { d: 7, m: 10, y: 2022, expires: 'Entregables:\nFormulario charla\nconstrucción Buyer persona\n\nAsignación puntos de victoria' },
-   { d: 10, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do y 3er piso CyT', expires: 'Zona de búsqueda de partes interesadas Edifico 2' },
+   { d: 10, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do y 3er piso CyT', expires: 'Inicio zona de búsqueda de partes interesadas Edifico 2' },
    { d: 12, m: 10, y: 2022, event: 'Asesorías de prototipado\nLugar: Salones' },
    { d: 14, m: 10, y: 2022, expires: 'Entregables:\nFormulario charla\nAsesorías de prototipado' },
    { d: 17, m: 10, y: 2022, event: 'Festivo' },
