@@ -12,12 +12,17 @@ const Gallery = () => {
    if (mState.group == "dos") {
       return (
          <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000" >
-            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
-               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/00.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/01.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/02.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/03.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/04.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+
+            <a href="" rel="noreferrer" target="_blank">
+               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/05.jpg`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
-            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/01.png`} onDragStart={handleDragStart} className="sliderimg" />
-            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/02.png`} onDragStart={handleDragStart} className="sliderimg" />
-            {/* <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/03.png`} onDragStart={handleDragStart} className="sliderimg" /> */}
+            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
+               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/06.png`} onDragStart={handleDragStart} className="sliderimg" />
+            </a>
          </AliceCarousel>
       );
    }
@@ -25,12 +30,17 @@ const Gallery = () => {
    else {
       return (
          <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000">
-            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
-               <img width="90%" src={`${prefix}/imgs/banner/innovacion/00.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/01.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/02.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/03.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/04.jpg`} onDragStart={handleDragStart} className="sliderimg" />
+
+            <a href="" rel="noreferrer" target="_blank">
+               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/05.jpg`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
-            <img width="90%" src={`${prefix}/imgs/banner/innovacion/01.png`} onDragStart={handleDragStart} className="sliderimg" />
-            <img width="90%" src={`${prefix}/imgs/banner/innovacion/02.png`} onDragStart={handleDragStart} className="sliderimg" />
-            <img width="90%" src={`${prefix}/imgs/banner/innovacion/03.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
+               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/06.png`} onDragStart={handleDragStart} className="sliderimg" />
+            </a>
          </AliceCarousel>
       );
    }

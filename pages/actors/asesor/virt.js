@@ -93,7 +93,6 @@ const Button = styled.button`
 	}
 `
 
-
 const Virt = ({active}) => {
 	const data = getAsesorVir()
 	const [isOpen, openModal, closeModal] = useModal(false)
@@ -114,11 +113,11 @@ const Virt = ({active}) => {
 				</div>
 				<CoinsCont>
 					<AsesorField>{i.campo}</AsesorField>
-					<Coins>
+					{/* <Coins>
 						<CostLabel>Costo Asesoria</CostLabel>
 						<CoinsImg src={`${prefix}/imgs/innocoin1.png`}/>
 						{i.costo}
-					</Coins>
+					</Coins> */}
 					<Button onClick={() => chooseAse(i)}>Mas Información</Button>
 				</CoinsCont>
 			</AsesorCard>

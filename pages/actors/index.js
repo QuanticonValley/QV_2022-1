@@ -32,18 +32,38 @@ const Opciones = styled.div`
 	margin-bottom: 20px;
 	margin-left:10px;
 `
+
+const Title = styled.a`
+   color: #85bb65;
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	width: 100%;
+`
+
+const Descr = styled.a`
+	text-align: left;
+   font-weight: normal;
+   font-size: 16px;
+   width: 100%;
+`
+
 const Actors = () => {
    const [selected, setSelected] = useState(true);
-   function cambio(opti) {
-      setSelected(opti);
-   }
+
+   // function cambio(opti) {
+   //    setSelected(opti);
+   // }
+
    return (
       <QV pg="Asesores & Expertos">
          <Header
             title="Asesores & Expertos"
-            desc="Aqui puedes conocer a los asesores y expertos del juego"
+            desc="Aqui puedes conocer asesores y expertos para tu proyecto"
             imgH={imgCommon}
          />
+         <Title>Zona de Inversión</Title>
+         <Descr>Lorem ipsum</Descr>
          <Margin>
             {/* <Opciones>
                <Option selected={selected} onClick={() => cambio(true)}>MENTORES</Option>
