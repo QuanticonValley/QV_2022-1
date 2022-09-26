@@ -62,8 +62,8 @@ const Actors = () => {
             desc="Aqui puedes conocer asesores y expertos para tu proyecto"
             imgH={imgCommon}
          />
-         <Title>Zona de Inversión</Title>
-         <Descr>Lorem ipsum</Descr>
+         {/* <Title>Zona de Inversión</Title>
+         <Descr>Lorem ipsum</Descr> */}
          <Margin>
             {/* <Opciones>
                <Option selected={selected} onClick={() => cambio(true)}>MENTORES</Option>
