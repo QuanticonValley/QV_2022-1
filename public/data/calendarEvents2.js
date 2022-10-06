@@ -29,7 +29,7 @@ const events = [
    { d: 12, m: 10, y: 2022, event: 'Asesorías de prototipado\nLugar: Salones' },
    { d: 14, m: 10, y: 2022, event: 'Entregables:\nFormulario charla\nAsesorías de prototipado' },
    { d: 17, m: 10, y: 2022, event: 'Festivo' },
-   { d: 18, m: 10, y: 2022, expires: 'Entregables:\nPrimera entrega\ntrabajo escrito' },
+   { d: 22, m: 10, y: 2022, expires: 'Entregables:\nPrimera entrega\ntrabajo escrito' },
    { d: 19, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do piso CyT', expires: 'Entregables:\nEvaluación de desempeño 1,\nTrabajo en equipo' },
    { d: 20, m: 10, y: 2022, expires: 'Fin zona de\nbúsqueda de partes interesadas Edifcio 2' },
    { d: 22, m: 10, y: 2022, expires: 'Zona de liquidación de innocoins Edificio 2' },
