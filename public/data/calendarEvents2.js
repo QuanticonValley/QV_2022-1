@@ -32,7 +32,7 @@ const events = [
    { d: 19, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do piso CyT', expires: 'Entregables:\nEvaluación de desempeño 1,\nTrabajo en equipo' },
    { d: 20, m: 10, y: 2022, event: 'Fin zona de\nbúsqueda de partes interesadas Edifcio 2' },
    { d: 22, m: 10, y: 2022, event: 'Zona de liquidación de innocoins Edificio 2', expires: 'Entregable:\nPrimera entrega\ntrabajo escrito' },
-   { d: 24, m: 10, y: 2022, event: 'Charla:\nnHerramientas prototipado y viabilidad\n(4 charlas)\n Lugar: Salones', expires: 'Inicio zona de\ninversión en asesores Edificio 2' },
+   { d: 24, m: 10, y: 2022, event: 'Charla:\nHerramientas prototipado y viabilidad\n(4 charlas)\n Lugar: Salones', expires: 'Inicio zona de\ninversión en asesores Edificio 2' },
    { d: 26, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do piso CyT', expires: 'Entregables:\nFormulario charla\nprototipado y viabilidad' },
    { d: 31, m: 10, y: 2022, event: 'Mentoría\nLugar: Salones 2do piso CyT' },
    { d: 2, m: 11, y: 2022, event: 'Mentoría formativa\npitch de edificio 2\nLugar: Salones 2do piso CyT' },
