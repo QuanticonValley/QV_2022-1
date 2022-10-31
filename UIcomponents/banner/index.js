@@ -12,7 +12,6 @@ const Gallery = () => {
    if (mState.group == "dos") {
       return (
          <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000" >
-            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/01.png`} onDragStart={handleDragStart} className="sliderimg" />
             <a href="https://youtu.be/wri7qUF8_TE" rel="noreferrer" target="_blank">
                <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/02.png`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
@@ -22,10 +21,8 @@ const Gallery = () => {
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/05.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/06.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/07.png`} onDragStart={handleDragStart} className="sliderimg" />
-
-            {/* <a href="" rel="noreferrer" target="_blank">
-               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/_06.png`} onDragStart={handleDragStart} className="sliderimg" />
-            </a> */}
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/08.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/09.png`} onDragStart={handleDragStart} className="sliderimg" />
          </AliceCarousel>
       );
    }
@@ -33,7 +30,6 @@ const Gallery = () => {
    else {
       return (
          <AliceCarousel autoPlay disableButtonsControls autoPlayInterval="6000">
-            <img width="90%" src={`${prefix}/imgs/banner/innovacion/01.png`} onDragStart={handleDragStart} className="sliderimg" />
             <a href="https://youtu.be/wri7qUF8_TE" rel="noreferrer" target="_blank">
                <img width="90%" src={`${prefix}/imgs/banner/innovacion/02.png`} onDragStart={handleDragStart} className="sliderimg" />
             </a>
@@ -43,6 +39,8 @@ const Gallery = () => {
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/05.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/06.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/07.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/innovacion/08.png`} onDragStart={handleDragStart} className="sliderimg" />
+            <img width="90%" src={`${prefix}/imgs/banner/innovacion/09.png`} onDragStart={handleDragStart} className="sliderimg" />
          </AliceCarousel>
       );
    }
