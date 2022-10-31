@@ -23,9 +23,9 @@ const Gallery = () => {
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/06.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/07.png`} onDragStart={handleDragStart} className="sliderimg" />
 
-            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
+            {/* <a href="" rel="noreferrer" target="_blank">
                <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/_06.png`} onDragStart={handleDragStart} className="sliderimg" />
-            </a>
+            </a> */}
          </AliceCarousel>
       );
    }
@@ -43,10 +43,6 @@ const Gallery = () => {
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/05.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/06.png`} onDragStart={handleDragStart} className="sliderimg" />
             <img width="90%" src={`${prefix}/imgs/banner/innovacion/07.png`} onDragStart={handleDragStart} className="sliderimg" />
-
-            <a href="https://twitter.com/UNALOficial/status/1572619231685971968?t=m-K1B3_jz4nfJvH7YGjYNQ&s=08" rel="noreferrer" target="_blank">
-               <img width="90%" src={`${prefix}/imgs/banner/emprendimiento/_06.png`} onDragStart={handleDragStart} className="sliderimg" />
-            </a>
          </AliceCarousel>
       );
    }
