@@ -147,7 +147,7 @@ const RightBar = ({ active, close }) => {
    // 	})
    // }
    const piso = statePiso()
-   let currentSection = `¡Estamos en el piso número ${piso}!`
+   let currentSection = `¡Estamos en el edificio número ${piso}!`
    if (mState.group == 'dos') { currentSection = `¡Estamos en el edificio número ${piso}!` }
 
    return (
